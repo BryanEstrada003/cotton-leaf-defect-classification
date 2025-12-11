@@ -1,0 +1,18 @@
+Accuracy: 0.8166666666666667
+
+Confusion Matrix:
+[[29  0  0  1]
+ [ 1 22  7  0]
+ [ 0  0 30  0]
+ [10  2  1 17]]
+
+Metrics Table:
+                     Clase  Accuracy  Precision   Recall  F1-Score
+                Fresh_Leaf  0.966667   0.725000 0.966667  0.828571
+            Leaf_Reddening  0.733333   0.916667 0.733333  0.814815
+Leaf_Spot_Bacterial_Blight  1.000000   0.789474 1.000000  0.882353
+            Yellowish_Leaf  0.566667   0.944444 0.566667  0.708333
+
+Average Precision: 0.8438961988304094
+Average Recall: 0.8166666666666667
+Average F1-Score: 0.8085181294740119

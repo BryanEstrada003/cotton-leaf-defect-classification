@@ -1,0 +1,1404 @@
+2025-11-12 15:48:04,776 - INFO - Modelo SBTAYLOR_KAN.Net importado correctamente.
+2025-11-12 15:48:04,776 - INFO - Los pesos del modelo se guardarán en: 'models/sbtaylor_kan_cotton\run_20251112_154804\sbtaylor_kan.best_weights.pth'
+2025-11-12 15:48:04,781 - INFO - El registro de entrenamiento se guardará en: 'models/sbtaylor_kan_cotton\run_20251112_154804\training_run.log'
+2025-11-12 15:48:04,789 - INFO - Versión de PyTorch: 2.9.0+cu126
+2025-11-12 15:48:04,809 - INFO - ¿CUDA está disponible?: True
+2025-11-12 15:48:04,809 - INFO - Versión de CUDA con la que PyTorch fue compilado: 12.6
+2025-11-12 15:48:04,809 - INFO - Número de GPUs disponibles: 1
+2025-11-12 15:48:04,825 - INFO - Nombre de la GPU actual: NVIDIA GeForce RTX 4090
+2025-11-12 15:48:04,858 - INFO - --- Hyperparámetros de Entrenamiento ---
+2025-11-12 15:48:04,859 - INFO - Batch Size: 32
+2025-11-12 15:48:04,860 - INFO - Num Epochs: 300
+2025-11-12 15:48:04,861 - INFO - Learning Rate: 0.0001
+2025-11-12 15:48:04,863 - INFO - Num Classes: 4
+2025-11-12 15:48:04,863 - INFO - Num Workers: 4
+2025-11-12 15:48:04,883 - INFO - 
+Cargando dataset de ./data...
+2025-11-12 15:48:04,924 - INFO - Dataset cargado exitosamente.
+2025-11-12 15:48:04,925 - INFO -   - 5160 imágenes de entrenamiento.
+2025-11-12 15:48:04,926 - INFO -   - 120 imágenes de validación.
+2025-11-12 15:48:04,940 - INFO - 
+Usando dispositivo: cuda
+2025-11-12 15:48:10,550 - INFO - Aplicando pesos de clase a la función de pérdida CrossEntropyLoss.
+2025-11-12 15:48:13,284 - INFO - 
+--- INICIANDO ENTRENAMIENTO ---
+2025-11-12 15:48:13,285 - INFO - 
+--- Época 1/300 ---
+2025-11-12 15:48:48,551 - INFO - Entrenamiento | Pérdida: 1.0704, Accuracy: 0.4911, Tiempo: 35.26s
+2025-11-12 15:48:55,339 - INFO - Validación    | Pérdida: 0.8201, Accuracy: 0.5333
+2025-11-12 15:48:55,339 - INFO - Tasa de aprendizaje reducida de 0.0001 a 9.999815591588775e-05
+2025-11-12 15:48:55,738 - INFO - [+] Mejora en val_loss. Guardando el mejor modelo en 'models/sbtaylor_kan_cotton\run_20251112_154804\sbtaylor_kan.best_weights.pth'
+2025-11-12 15:48:55,738 - INFO - 
+--- Época 2/300 ---
+2025-11-12 15:49:30,341 - INFO - Entrenamiento | Pérdida: 0.8735, Accuracy: 0.5934, Tiempo: 34.60s
+2025-11-12 15:49:37,256 - INFO - Validación    | Pérdida: 0.7981, Accuracy: 0.5417
+2025-11-12 15:49:37,673 - INFO - [+] Mejora en val_loss. Guardando el mejor modelo en 'models/sbtaylor_kan_cotton\run_20251112_154804\sbtaylor_kan.best_weights.pth'
+2025-11-12 15:49:37,673 - INFO - 
+--- Época 3/300 ---
+2025-11-12 15:50:11,123 - INFO - Entrenamiento | Pérdida: 0.8068, Accuracy: 0.6221, Tiempo: 33.45s
+2025-11-12 15:50:17,927 - INFO - Validación    | Pérdida: 0.8106, Accuracy: 0.5583
+2025-11-12 15:50:17,937 - INFO - Tasa de aprendizaje reducida de 9.999825394963969e-05 a 9.999819855068743e-05
+2025-11-12 15:50:17,937 - INFO - 
+--- Época 4/300 ---
+2025-11-12 15:50:52,446 - INFO - Entrenamiento | Pérdida: 0.7732, Accuracy: 0.6335, Tiempo: 34.51s
+2025-11-12 15:50:59,374 - INFO - Validación    | Pérdida: 0.7280, Accuracy: 0.6250
+2025-11-12 15:50:59,808 - INFO - [+] Mejora en val_loss. Guardando el mejor modelo en 'models/sbtaylor_kan_cotton\run_20251112_154804\sbtaylor_kan.best_weights.pth'
+2025-11-12 15:50:59,808 - INFO - 
+--- Época 5/300 ---
+2025-11-12 15:51:33,535 - INFO - Entrenamiento | Pérdida: 0.7442, Accuracy: 0.6585, Tiempo: 33.73s
+2025-11-12 15:51:40,312 - INFO - Validación    | Pérdida: 0.7376, Accuracy: 0.6083
+2025-11-12 15:51:40,312 - INFO - Tasa de aprendizaje reducida de 9.999854713350261e-05 a 9.999850858158928e-05
+2025-11-12 15:51:40,312 - INFO - 
+--- Época 6/300 ---
+2025-11-12 15:52:14,313 - INFO - Entrenamiento | Pérdida: 0.7259, Accuracy: 0.6647, Tiempo: 34.00s
+2025-11-12 15:52:21,145 - INFO - Validación    | Pérdida: 0.7530, Accuracy: 0.6167
+2025-11-12 15:52:21,145 - INFO - Tasa de aprendizaje reducida de 9.999850858158928e-05 a 9.999844556417537e-05
+2025-11-12 15:52:21,145 - INFO - 
+--- Época 7/300 ---
+2025-11-12 15:52:55,414 - INFO - Entrenamiento | Pérdida: 0.6940, Accuracy: 0.6829, Tiempo: 34.27s
+2025-11-12 15:53:02,362 - INFO - Validación    | Pérdida: 0.7311, Accuracy: 0.6333
+2025-11-12 15:53:02,362 - INFO - 
+--- Época 8/300 ---
+2025-11-12 15:53:35,582 - INFO - Entrenamiento | Pérdida: 0.6675, Accuracy: 0.7047, Tiempo: 33.22s
+2025-11-12 15:53:42,446 - INFO - Validación    | Pérdida: 0.7251, Accuracy: 0.6333
+2025-11-12 15:53:42,863 - INFO - [+] Mejora en val_loss. Guardando el mejor modelo en 'models/sbtaylor_kan_cotton\run_20251112_154804\sbtaylor_kan.best_weights.pth'
+2025-11-12 15:53:42,863 - INFO - 
+--- Época 9/300 ---
+2025-11-12 15:54:17,080 - INFO - Entrenamiento | Pérdida: 0.6517, Accuracy: 0.7103, Tiempo: 34.22s
+2025-11-12 15:54:23,897 - INFO - Validación    | Pérdida: 0.7138, Accuracy: 0.6333
+2025-11-12 15:54:24,281 - INFO - [+] Mejora en val_loss. Guardando el mejor modelo en 'models/sbtaylor_kan_cotton\run_20251112_154804\sbtaylor_kan.best_weights.pth'
+2025-11-12 15:54:24,281 - INFO - 
+--- Época 10/300 ---
+2025-11-12 15:54:58,253 - INFO - Entrenamiento | Pérdida: 0.6314, Accuracy: 0.7200, Tiempo: 33.96s
+2025-11-12 15:55:05,148 - INFO - Validación    | Pérdida: 0.7222, Accuracy: 0.6333
+2025-11-12 15:55:05,148 - INFO - Tasa de aprendizaje reducida de 9.999860313133989e-05 a 9.999856999314494e-05
+2025-11-12 15:55:05,148 - INFO - 
+--- Época 11/300 ---
+2025-11-12 15:55:39,798 - INFO - Entrenamiento | Pérdida: 0.6042, Accuracy: 0.7390, Tiempo: 34.65s
+2025-11-12 15:55:46,632 - INFO - Validación    | Pérdida: 0.7094, Accuracy: 0.6667
+2025-11-12 15:55:47,033 - INFO - [+] Mejora en val_loss. Guardando el mejor modelo en 'models/sbtaylor_kan_cotton\run_20251112_154804\sbtaylor_kan.best_weights.pth'
+2025-11-12 15:55:47,035 - INFO - 
+--- Época 12/300 ---
+2025-11-12 15:56:20,616 - INFO - Entrenamiento | Pérdida: 0.5959, Accuracy: 0.7364, Tiempo: 33.58s
+2025-11-12 15:56:27,426 - INFO - Validación    | Pérdida: 0.7049, Accuracy: 0.6167
+2025-11-12 15:56:27,806 - INFO - [+] Mejora en val_loss. Guardando el mejor modelo en 'models/sbtaylor_kan_cotton\run_20251112_154804\sbtaylor_kan.best_weights.pth'
+2025-11-12 15:56:27,806 - INFO - 
+--- Época 13/300 ---
+2025-11-12 15:57:02,271 - INFO - Entrenamiento | Pérdida: 0.5922, Accuracy: 0.7492, Tiempo: 34.47s
+2025-11-12 15:57:09,250 - INFO - Validación    | Pérdida: 0.7110, Accuracy: 0.6750
+2025-11-12 15:57:09,250 - INFO - Tasa de aprendizaje reducida de 9.999863780328608e-05 a 9.999861397576487e-05
+2025-11-12 15:57:09,250 - INFO - 
+--- Época 14/300 ---
+2025-11-12 15:57:42,851 - INFO - Entrenamiento | Pérdida: 0.5613, Accuracy: 0.7603, Tiempo: 33.60s
+2025-11-12 15:57:49,723 - INFO - Validación    | Pérdida: 0.7649, Accuracy: 0.6917
+2025-11-12 15:57:49,723 - INFO - Tasa de aprendizaje reducida de 9.999861397576487e-05 a 9.999839612272619e-05
+2025-11-12 15:57:49,733 - INFO - 
+--- Época 15/300 ---
+2025-11-12 15:58:24,735 - INFO - Entrenamiento | Pérdida: 0.5384, Accuracy: 0.7721, Tiempo: 35.00s
+2025-11-12 15:58:31,647 - INFO - Validación    | Pérdida: 0.7467, Accuracy: 0.6750
+2025-11-12 15:58:31,647 - INFO - 
+--- Época 16/300 ---
+2025-11-12 15:59:05,736 - INFO - Entrenamiento | Pérdida: 0.5431, Accuracy: 0.7740, Tiempo: 34.08s
+2025-11-12 15:59:12,619 - INFO - Validación    | Pérdida: 0.7546, Accuracy: 0.6417
+2025-11-12 15:59:12,619 - INFO - Tasa de aprendizaje reducida de 9.999847133337047e-05 a 9.999843876605505e-05
+2025-11-12 15:59:12,619 - INFO - 
+--- Época 17/300 ---
+2025-11-12 15:59:46,592 - INFO - Entrenamiento | Pérdida: 0.5210, Accuracy: 0.7810, Tiempo: 33.97s
+2025-11-12 15:59:53,254 - INFO - Validación    | Pérdida: 0.6703, Accuracy: 0.6750
+2025-11-12 15:59:53,619 - INFO - [+] Mejora en val_loss. Guardando el mejor modelo en 'models/sbtaylor_kan_cotton\run_20251112_154804\sbtaylor_kan.best_weights.pth'
+2025-11-12 15:59:53,620 - INFO - 
+--- Época 18/300 ---
+2025-11-12 16:00:27,587 - INFO - Entrenamiento | Pérdida: 0.5043, Accuracy: 0.7959, Tiempo: 33.96s
+2025-11-12 16:00:34,230 - INFO - Validación    | Pérdida: 0.7083, Accuracy: 0.6917
+2025-11-12 16:00:34,230 - INFO - Tasa de aprendizaje reducida de 9.999876820862684e-05 a 9.999862466160837e-05
+2025-11-12 16:00:34,230 - INFO - 
+--- Época 19/300 ---
+2025-11-12 16:01:08,092 - INFO - Entrenamiento | Pérdida: 0.4987, Accuracy: 0.7874, Tiempo: 33.86s
+2025-11-12 16:01:14,890 - INFO - Validación    | Pérdida: 0.6580, Accuracy: 0.7000
+2025-11-12 16:01:15,239 - INFO - [+] Mejora en val_loss. Guardando el mejor modelo en 'models/sbtaylor_kan_cotton\run_20251112_154804\sbtaylor_kan.best_weights.pth'
+2025-11-12 16:01:15,239 - INFO - 
+--- Época 20/300 ---
+2025-11-12 16:01:50,073 - INFO - Entrenamiento | Pérdida: 0.4814, Accuracy: 0.7973, Tiempo: 34.83s
+2025-11-12 16:01:56,882 - INFO - Validación    | Pérdida: 0.6799, Accuracy: 0.6833
+2025-11-12 16:01:56,882 - INFO - Tasa de aprendizaje reducida de 9.999881314317557e-05 a 9.999873276874983e-05
+2025-11-12 16:01:56,882 - INFO - 
+--- Época 21/300 ---
+2025-11-12 16:02:30,741 - INFO - Entrenamiento | Pérdida: 0.4709, Accuracy: 0.8052, Tiempo: 33.85s
+2025-11-12 16:02:37,410 - INFO - Validación    | Pérdida: 0.6905, Accuracy: 0.6583
+2025-11-12 16:02:37,410 - INFO - Tasa de aprendizaje reducida de 9.999873276874983e-05 a 9.999869270633179e-05
+2025-11-12 16:02:37,410 - INFO - 
+--- Época 22/300 ---
+2025-11-12 16:03:11,858 - INFO - Entrenamiento | Pérdida: 0.4555, Accuracy: 0.8147, Tiempo: 34.45s
+2025-11-12 16:03:18,484 - INFO - Validación    | Pérdida: 0.7577, Accuracy: 0.6500
+2025-11-12 16:03:18,491 - INFO - Tasa de aprendizaje reducida de 9.999869270633179e-05 a 9.99984258799883e-05
+2025-11-12 16:03:18,492 - INFO - 
+--- Época 23/300 ---
+2025-11-12 16:03:52,818 - INFO - Entrenamiento | Pérdida: 0.4413, Accuracy: 0.8178, Tiempo: 34.32s
+2025-11-12 16:03:59,559 - INFO - Validación    | Pérdida: 0.6910, Accuracy: 0.6750
+2025-11-12 16:03:59,561 - INFO - 
+--- Época 24/300 ---
+2025-11-12 16:04:33,564 - INFO - Entrenamiento | Pérdida: 0.4459, Accuracy: 0.8165, Tiempo: 34.00s
+2025-11-12 16:04:40,293 - INFO - Validación    | Pérdida: 0.7458, Accuracy: 0.7000
+2025-11-12 16:04:40,293 - INFO - Tasa de aprendizaje reducida de 9.999869078485144e-05 a 9.999847523939127e-05
+2025-11-12 16:04:40,293 - INFO - 
+--- Época 25/300 ---
+2025-11-12 16:05:14,344 - INFO - Entrenamiento | Pérdida: 0.4478, Accuracy: 0.8196, Tiempo: 34.05s
+2025-11-12 16:05:21,261 - INFO - Validación    | Pérdida: 0.7637, Accuracy: 0.6833
+2025-11-12 16:05:21,261 - INFO - Tasa de aprendizaje reducida de 9.999847523939127e-05 a 9.999840119639878e-05
+2025-11-12 16:05:21,261 - INFO - 
+--- Época 26/300 ---
+2025-11-12 16:05:55,011 - INFO - Entrenamiento | Pérdida: 0.4092, Accuracy: 0.8405, Tiempo: 33.75s
+2025-11-12 16:06:01,895 - INFO - Validación    | Pérdida: 0.8125, Accuracy: 0.7250
+2025-11-12 16:06:01,912 - INFO - Tasa de aprendizaje reducida de 9.999840119639878e-05 a 9.99981903441698e-05
+2025-11-12 16:06:01,912 - INFO - 
+--- Época 27/300 ---
+2025-11-12 16:06:35,979 - INFO - Entrenamiento | Pérdida: 0.4045, Accuracy: 0.8397, Tiempo: 34.06s
+2025-11-12 16:06:42,752 - INFO - Validación    | Pérdida: 0.6848, Accuracy: 0.7167
+2025-11-12 16:06:42,754 - INFO - 
+--- Época 28/300 ---
+2025-11-12 16:07:17,183 - INFO - Entrenamiento | Pérdida: 0.4004, Accuracy: 0.8393, Tiempo: 34.43s
+2025-11-12 16:07:23,906 - INFO - Validación    | Pérdida: 0.7752, Accuracy: 0.6667
+2025-11-12 16:07:23,908 - INFO - Tasa de aprendizaje reducida de 9.999871434566475e-05 a 9.999835234125563e-05
+2025-11-12 16:07:23,908 - INFO - 
+--- Época 29/300 ---
+2025-11-12 16:07:58,617 - INFO - Entrenamiento | Pérdida: 0.4000, Accuracy: 0.8403, Tiempo: 34.71s
+2025-11-12 16:08:05,351 - INFO - Validación    | Pérdida: 0.7201, Accuracy: 0.6917
+2025-11-12 16:08:05,351 - INFO - 
+--- Época 30/300 ---
+2025-11-12 16:08:39,914 - INFO - Entrenamiento | Pérdida: 0.3748, Accuracy: 0.8525, Tiempo: 34.56s
+2025-11-12 16:08:46,748 - INFO - Validación    | Pérdida: 0.7075, Accuracy: 0.6917
+2025-11-12 16:08:46,748 - INFO - 
+--- Época 31/300 ---
+2025-11-12 16:09:20,999 - INFO - Entrenamiento | Pérdida: 0.3652, Accuracy: 0.8560, Tiempo: 34.25s
+2025-11-12 16:09:27,849 - INFO - Validación    | Pérdida: 0.7508, Accuracy: 0.7000
+2025-11-12 16:09:27,849 - INFO - Tasa de aprendizaje reducida de 9.999862779696936e-05 a 9.999845439955776e-05
+2025-11-12 16:09:27,849 - INFO - 
+--- Época 32/300 ---
+2025-11-12 16:10:02,542 - INFO - Entrenamiento | Pérdida: 0.3797, Accuracy: 0.8537, Tiempo: 34.68s
+2025-11-12 16:10:09,249 - INFO - Validación    | Pérdida: 0.7028, Accuracy: 0.7167
+2025-11-12 16:10:09,249 - INFO - 
+--- Época 33/300 ---
+2025-11-12 16:10:43,338 - INFO - Entrenamiento | Pérdida: 0.3654, Accuracy: 0.8560, Tiempo: 34.09s
+2025-11-12 16:10:50,101 - INFO - Validación    | Pérdida: 0.6641, Accuracy: 0.7000
+2025-11-12 16:10:50,101 - INFO - 
+--- Época 34/300 ---
+2025-11-12 16:11:23,501 - INFO - Entrenamiento | Pérdida: 0.3529, Accuracy: 0.8614, Tiempo: 33.40s
+2025-11-12 16:11:30,235 - INFO - Validación    | Pérdida: 0.7191, Accuracy: 0.6750
+2025-11-12 16:11:30,235 - INFO - Tasa de aprendizaje reducida de 9.999879090626869e-05 a 9.999858238968909e-05
+2025-11-12 16:11:30,235 - INFO - 
+--- Época 35/300 ---
+2025-11-12 16:12:03,802 - INFO - Entrenamiento | Pérdida: 0.3533, Accuracy: 0.8589, Tiempo: 33.57s
+2025-11-12 16:12:10,428 - INFO - Validación    | Pérdida: 0.7363, Accuracy: 0.7000
+2025-11-12 16:12:10,428 - INFO - Tasa de aprendizaje reducida de 9.999858238968909e-05 a 9.999851365454636e-05
+2025-11-12 16:12:10,428 - INFO - 
+--- Época 36/300 ---
+2025-11-12 16:12:44,603 - INFO - Entrenamiento | Pérdida: 0.3563, Accuracy: 0.8566, Tiempo: 34.18s
+2025-11-12 16:12:51,179 - INFO - Validación    | Pérdida: 0.7026, Accuracy: 0.6917
+2025-11-12 16:12:51,179 - INFO - 
+--- Época 37/300 ---
+2025-11-12 16:13:25,070 - INFO - Entrenamiento | Pérdida: 0.3364, Accuracy: 0.8709, Tiempo: 33.89s
+2025-11-12 16:13:31,938 - INFO - Validación    | Pérdida: 0.7320, Accuracy: 0.7083
+2025-11-12 16:13:31,938 - INFO - Tasa de aprendizaje reducida de 9.999864652435548e-05 a 9.999853116170547e-05
+2025-11-12 16:13:31,938 - INFO - 
+--- Época 38/300 ---
+2025-11-12 16:14:05,605 - INFO - Entrenamiento | Pérdida: 0.3336, Accuracy: 0.8692, Tiempo: 33.67s
+2025-11-12 16:14:12,381 - INFO - Validación    | Pérdida: 0.7371, Accuracy: 0.7250
+2025-11-12 16:14:12,381 - INFO - Tasa de aprendizaje reducida de 9.999853116170547e-05 a 9.99985105221248e-05
+2025-11-12 16:14:12,381 - INFO - 
+--- Época 39/300 ---
+2025-11-12 16:14:45,239 - INFO - Entrenamiento | Pérdida: 0.3344, Accuracy: 0.8721, Tiempo: 32.86s
+2025-11-12 16:14:52,139 - INFO - Validación    | Pérdida: 0.7228, Accuracy: 0.7000
+2025-11-12 16:14:52,154 - INFO - 
+--- Época 40/300 ---
+2025-11-12 16:15:25,901 - INFO - Entrenamiento | Pérdida: 0.3164, Accuracy: 0.8829, Tiempo: 33.75s
+2025-11-12 16:15:32,657 - INFO - Validación    | Pérdida: 0.6752, Accuracy: 0.7000
+2025-11-12 16:15:32,657 - INFO - 
+--- Época 41/300 ---
+2025-11-12 16:16:06,912 - INFO - Entrenamiento | Pérdida: 0.3240, Accuracy: 0.8736, Tiempo: 34.25s
+2025-11-12 16:16:13,628 - INFO - Validación    | Pérdida: 0.6308, Accuracy: 0.7333
+2025-11-12 16:16:14,014 - INFO - [+] Mejora en val_loss. Guardando el mejor modelo en 'models/sbtaylor_kan_cotton\run_20251112_154804\sbtaylor_kan.best_weights.pth'
+2025-11-12 16:16:14,016 - INFO - 
+--- Época 42/300 ---
+2025-11-12 16:16:47,934 - INFO - Entrenamiento | Pérdida: 0.3225, Accuracy: 0.8731, Tiempo: 33.92s
+2025-11-12 16:16:54,758 - INFO - Validación    | Pérdida: 0.8696, Accuracy: 0.7000
+2025-11-12 16:16:54,758 - INFO - Tasa de aprendizaje reducida de 9.999890920947216e-05 a 9.999792669125563e-05
+2025-11-12 16:16:54,758 - INFO - 
+--- Época 43/300 ---
+2025-11-12 16:17:28,959 - INFO - Entrenamiento | Pérdida: 0.2971, Accuracy: 0.8932, Tiempo: 34.20s
+2025-11-12 16:17:35,724 - INFO - Validación    | Pérdida: 0.6355, Accuracy: 0.7583
+2025-11-12 16:17:35,725 - INFO - 
+--- Época 44/300 ---
+2025-11-12 16:18:10,385 - INFO - Entrenamiento | Pérdida: 0.3022, Accuracy: 0.8847, Tiempo: 34.66s
+2025-11-12 16:18:17,309 - INFO - Validación    | Pérdida: 0.7740, Accuracy: 0.6833
+2025-11-12 16:18:17,311 - INFO - Tasa de aprendizaje reducida de 9.999889271584637e-05 a 9.999835740800865e-05
+2025-11-12 16:18:17,312 - INFO - 
+--- Época 45/300 ---
+2025-11-12 16:18:50,777 - INFO - Entrenamiento | Pérdida: 0.3028, Accuracy: 0.8884, Tiempo: 33.46s
+2025-11-12 16:18:57,411 - INFO - Validación    | Pérdida: 0.7181, Accuracy: 0.6917
+2025-11-12 16:18:57,412 - INFO - 
+--- Época 46/300 ---
+2025-11-12 16:19:32,261 - INFO - Entrenamiento | Pérdida: 0.3027, Accuracy: 0.8934, Tiempo: 34.85s
+2025-11-12 16:19:39,110 - INFO - Validación    | Pérdida: 0.6712, Accuracy: 0.7167
+2025-11-12 16:19:39,112 - INFO - 
+--- Época 47/300 ---
+2025-11-12 16:20:13,211 - INFO - Entrenamiento | Pérdida: 0.3006, Accuracy: 0.8853, Tiempo: 34.10s
+2025-11-12 16:20:19,917 - INFO - Validación    | Pérdida: 0.7357, Accuracy: 0.7000
+2025-11-12 16:20:19,917 - INFO - Tasa de aprendizaje reducida de 9.999876478776213e-05 a 9.999851621153078e-05
+2025-11-12 16:20:19,917 - INFO - 
+--- Época 48/300 ---
+2025-11-12 16:20:54,200 - INFO - Entrenamiento | Pérdida: 0.2990, Accuracy: 0.8899, Tiempo: 34.27s
+2025-11-12 16:21:00,938 - INFO - Validación    | Pérdida: 0.6880, Accuracy: 0.6917
+2025-11-12 16:21:00,944 - INFO - 
+--- Época 49/300 ---
+2025-11-12 16:21:35,014 - INFO - Entrenamiento | Pérdida: 0.2799, Accuracy: 0.8934, Tiempo: 34.07s
+2025-11-12 16:21:41,800 - INFO - Validación    | Pérdida: 0.6927, Accuracy: 0.7250
+2025-11-12 16:21:41,800 - INFO - Tasa de aprendizaje reducida de 9.999870237048481e-05 a 9.999868457400964e-05
+2025-11-12 16:21:41,816 - INFO - 
+--- Época 50/300 ---
+2025-11-12 16:22:16,530 - INFO - Entrenamiento | Pérdida: 0.2840, Accuracy: 0.8919, Tiempo: 34.71s
+2025-11-12 16:22:24,546 - INFO - Validación    | Pérdida: 0.6824, Accuracy: 0.7333
+2025-11-12 16:22:24,562 - INFO - 
+--- Época 51/300 ---
+2025-11-12 16:22:59,398 - INFO - Entrenamiento | Pérdida: 0.2734, Accuracy: 0.9031, Tiempo: 34.84s
+2025-11-12 16:23:06,883 - INFO - Validación    | Pérdida: 0.6928, Accuracy: 0.7333
+2025-11-12 16:23:06,885 - INFO - Tasa de aprendizaje reducida de 9.99987231840083e-05 a 9.999868428072486e-05
+2025-11-12 16:23:06,886 - INFO - 
+--- Época 52/300 ---
+2025-11-12 16:23:42,742 - INFO - Entrenamiento | Pérdida: 0.2617, Accuracy: 0.9006, Tiempo: 35.86s
+2025-11-12 16:23:49,667 - INFO - Validación    | Pérdida: 0.7219, Accuracy: 0.7000
+2025-11-12 16:23:49,669 - INFO - Tasa de aprendizaje reducida de 9.999868428072486e-05 a 9.999857135741097e-05
+2025-11-12 16:23:49,670 - INFO - 
+--- Época 53/300 ---
+2025-11-12 16:24:24,023 - INFO - Entrenamiento | Pérdida: 0.2781, Accuracy: 0.8921, Tiempo: 34.35s
+2025-11-12 16:24:30,934 - INFO - Validación    | Pérdida: 0.6585, Accuracy: 0.7417
+2025-11-12 16:24:30,934 - INFO - 
+--- Época 54/300 ---
+2025-11-12 16:25:04,718 - INFO - Entrenamiento | Pérdida: 0.2719, Accuracy: 0.9023, Tiempo: 33.78s
+2025-11-12 16:25:11,552 - INFO - Validación    | Pérdida: 0.7619, Accuracy: 0.6833
+2025-11-12 16:25:11,552 - INFO - Tasa de aprendizaje reducida de 9.99988112734868e-05 a 9.999840855834949e-05
+2025-11-12 16:25:11,552 - INFO - 
+--- Época 55/300 ---
+2025-11-12 16:25:46,103 - INFO - Entrenamiento | Pérdida: 0.2710, Accuracy: 0.8986, Tiempo: 34.55s
+2025-11-12 16:25:53,385 - INFO - Validación    | Pérdida: 0.7174, Accuracy: 0.7167
+2025-11-12 16:25:53,387 - INFO - 
+--- Época 56/300 ---
+2025-11-12 16:26:28,229 - INFO - Entrenamiento | Pérdida: 0.2777, Accuracy: 0.8971, Tiempo: 34.84s
+2025-11-12 16:26:35,356 - INFO - Validación    | Pérdida: 0.7154, Accuracy: 0.6917
+2025-11-12 16:26:35,369 - INFO - 
+--- Época 57/300 ---
+2025-11-12 16:27:11,038 - INFO - Entrenamiento | Pérdida: 0.2597, Accuracy: 0.9064, Tiempo: 35.67s
+2025-11-12 16:27:18,160 - INFO - Validación    | Pérdida: 0.6739, Accuracy: 0.7250
+2025-11-12 16:27:18,160 - INFO - 
+--- Época 58/300 ---
+2025-11-12 16:27:52,821 - INFO - Entrenamiento | Pérdida: 0.2622, Accuracy: 0.9037, Tiempo: 34.66s
+2025-11-12 16:28:00,021 - INFO - Validación    | Pérdida: 0.6950, Accuracy: 0.7000
+2025-11-12 16:28:00,030 - INFO - Tasa de aprendizaje reducida de 9.999875505699683e-05 a 9.999867579622466e-05
+2025-11-12 16:28:00,030 - INFO - 
+--- Época 59/300 ---
+2025-11-12 16:28:35,805 - INFO - Entrenamiento | Pérdida: 0.2772, Accuracy: 0.9019, Tiempo: 35.78s
+2025-11-12 16:28:43,007 - INFO - Validación    | Pérdida: 0.6881, Accuracy: 0.6833
+2025-11-12 16:28:43,007 - INFO - 
+--- Época 60/300 ---
+2025-11-12 16:29:17,840 - INFO - Entrenamiento | Pérdida: 0.2640, Accuracy: 0.9060, Tiempo: 34.83s
+2025-11-12 16:29:25,481 - INFO - Validación    | Pérdida: 0.6418, Accuracy: 0.7667
+2025-11-12 16:29:25,481 - INFO - 
+--- Época 61/300 ---
+2025-11-12 16:29:59,880 - INFO - Entrenamiento | Pérdida: 0.2655, Accuracy: 0.9081, Tiempo: 34.40s
+2025-11-12 16:30:07,024 - INFO - Validación    | Pérdida: 0.8374, Accuracy: 0.6750
+2025-11-12 16:30:07,024 - INFO - Tasa de aprendizaje reducida de 9.999887061816929e-05 a 9.999807773574826e-05
+2025-11-12 16:30:07,024 - INFO - 
+--- Época 62/300 ---
+2025-11-12 16:30:41,325 - INFO - Entrenamiento | Pérdida: 0.2556, Accuracy: 0.9037, Tiempo: 34.29s
+2025-11-12 16:30:48,158 - INFO - Validación    | Pérdida: 0.5882, Accuracy: 0.8000
+2025-11-12 16:30:48,525 - INFO - [+] Mejora en val_loss. Guardando el mejor modelo en 'models/sbtaylor_kan_cotton\run_20251112_154804\sbtaylor_kan.best_weights.pth'
+2025-11-12 16:30:48,525 - INFO - 
+--- Época 63/300 ---
+2025-11-12 16:31:23,176 - INFO - Entrenamiento | Pérdida: 0.2565, Accuracy: 0.9039, Tiempo: 34.65s
+2025-11-12 16:31:30,459 - INFO - Validación    | Pérdida: 0.6302, Accuracy: 0.7083
+2025-11-12 16:31:30,459 - INFO - Tasa de aprendizaje reducida de 9.999905132585739e-05 a 9.999891119472574e-05
+2025-11-12 16:31:30,459 - INFO - 
+--- Época 64/300 ---
+2025-11-12 16:32:04,760 - INFO - Entrenamiento | Pérdida: 0.2541, Accuracy: 0.9089, Tiempo: 34.30s
+2025-11-12 16:32:11,977 - INFO - Validación    | Pérdida: 0.6421, Accuracy: 0.7167
+2025-11-12 16:32:11,978 - INFO - Tasa de aprendizaje reducida de 9.999891119472574e-05 a 9.99988696189502e-05
+2025-11-12 16:32:11,979 - INFO - 
+--- Época 65/300 ---
+2025-11-12 16:32:45,981 - INFO - Entrenamiento | Pérdida: 0.2531, Accuracy: 0.9110, Tiempo: 34.00s
+2025-11-12 16:32:52,794 - INFO - Validación    | Pérdida: 0.6395, Accuracy: 0.6917
+2025-11-12 16:32:52,794 - INFO - 
+--- Época 66/300 ---
+2025-11-12 16:33:27,685 - INFO - Entrenamiento | Pérdida: 0.2454, Accuracy: 0.9072, Tiempo: 34.89s
+2025-11-12 16:33:35,049 - INFO - Validación    | Pérdida: 0.6997, Accuracy: 0.7167
+2025-11-12 16:33:35,049 - INFO - Tasa de aprendizaje reducida de 9.999887877371776e-05 a 9.999865773128445e-05
+2025-11-12 16:33:35,049 - INFO - 
+--- Época 67/300 ---
+2025-11-12 16:34:09,161 - INFO - Entrenamiento | Pérdida: 0.2541, Accuracy: 0.9085, Tiempo: 34.11s
+2025-11-12 16:34:16,544 - INFO - Validación    | Pérdida: 0.7999, Accuracy: 0.6750
+2025-11-12 16:34:16,544 - INFO - Tasa de aprendizaje reducida de 9.999865773128445e-05 a 9.999824567599391e-05
+2025-11-12 16:34:16,544 - INFO - 
+--- Época 68/300 ---
+2025-11-12 16:34:51,211 - INFO - Entrenamiento | Pérdida: 0.2555, Accuracy: 0.9070, Tiempo: 34.67s
+2025-11-12 16:34:58,782 - INFO - Validación    | Pérdida: 0.6419, Accuracy: 0.6917
+2025-11-12 16:34:58,782 - INFO - 
+--- Época 69/300 ---
+2025-11-12 16:35:33,413 - INFO - Entrenamiento | Pérdida: 0.2572, Accuracy: 0.9074, Tiempo: 34.63s
+2025-11-12 16:35:40,847 - INFO - Validación    | Pérdida: 0.7415, Accuracy: 0.6833
+2025-11-12 16:35:40,847 - INFO - Tasa de aprendizaje reducida de 9.999887022697138e-05 a 9.999849248409247e-05
+2025-11-12 16:35:40,847 - INFO - 
+--- Época 70/300 ---
+2025-11-12 16:36:15,898 - INFO - Entrenamiento | Pérdida: 0.2532, Accuracy: 0.9079, Tiempo: 35.05s
+2025-11-12 16:36:23,010 - INFO - Validación    | Pérdida: 0.6999, Accuracy: 0.7083
+2025-11-12 16:36:23,012 - INFO - 
+--- Época 71/300 ---
+2025-11-12 16:36:57,268 - INFO - Entrenamiento | Pérdida: 0.2431, Accuracy: 0.9110, Tiempo: 34.25s
+2025-11-12 16:37:04,291 - INFO - Validación    | Pérdida: 0.6811, Accuracy: 0.7500
+2025-11-12 16:37:04,291 - INFO - 
+--- Época 72/300 ---
+2025-11-12 16:37:39,398 - INFO - Entrenamiento | Pérdida: 0.2490, Accuracy: 0.9114, Tiempo: 35.11s
+2025-11-12 16:37:46,334 - INFO - Validación    | Pérdida: 0.6596, Accuracy: 0.7083
+2025-11-12 16:37:46,334 - INFO - 
+--- Época 73/300 ---
+2025-11-12 16:38:20,901 - INFO - Entrenamiento | Pérdida: 0.2487, Accuracy: 0.9083, Tiempo: 34.56s
+2025-11-12 16:38:27,984 - INFO - Validación    | Pérdida: 0.6845, Accuracy: 0.6917
+2025-11-12 16:38:28,000 - INFO - Tasa de aprendizaje reducida de 9.999880708825467e-05 a 9.999871529574645e-05
+2025-11-12 16:38:28,001 - INFO - 
+--- Época 74/300 ---
+2025-11-12 16:39:02,612 - INFO - Entrenamiento | Pérdida: 0.2475, Accuracy: 0.9143, Tiempo: 34.61s
+2025-11-12 16:39:09,569 - INFO - Validación    | Pérdida: 0.7088, Accuracy: 0.7000
+2025-11-12 16:39:09,571 - INFO - Tasa de aprendizaje reducida de 9.999871529574645e-05 a 9.999862268299127e-05
+2025-11-12 16:39:09,572 - INFO - 
+--- Época 75/300 ---
+2025-11-12 16:39:44,686 - INFO - Entrenamiento | Pérdida: 0.2347, Accuracy: 0.9134, Tiempo: 35.11s
+2025-11-12 16:39:51,926 - INFO - Validación    | Pérdida: 0.6384, Accuracy: 0.7250
+2025-11-12 16:39:51,928 - INFO - 
+--- Época 76/300 ---
+2025-11-12 16:40:27,103 - INFO - Entrenamiento | Pérdida: 0.2468, Accuracy: 0.9091, Tiempo: 35.17s
+2025-11-12 16:40:34,654 - INFO - Validación    | Pérdida: 0.8873, Accuracy: 0.6583
+2025-11-12 16:40:34,654 - INFO - Tasa de aprendizaje reducida de 9.99988828052701e-05 a 9.99978417728326e-05
+2025-11-12 16:40:34,654 - INFO - 
+--- Época 77/300 ---
+2025-11-12 16:41:10,838 - INFO - Entrenamiento | Pérdida: 0.2375, Accuracy: 0.9184, Tiempo: 36.18s
+2025-11-12 16:41:18,305 - INFO - Validación    | Pérdida: 0.6494, Accuracy: 0.7417
+2025-11-12 16:41:18,306 - INFO - 
+--- Época 78/300 ---
+2025-11-12 16:41:53,301 - INFO - Entrenamiento | Pérdida: 0.2287, Accuracy: 0.9165, Tiempo: 34.99s
+2025-11-12 16:42:00,488 - INFO - Validación    | Pérdida: 0.6435, Accuracy: 0.7250
+2025-11-12 16:42:00,488 - INFO - 
+--- Época 79/300 ---
+2025-11-12 16:42:34,672 - INFO - Entrenamiento | Pérdida: 0.2385, Accuracy: 0.9155, Tiempo: 34.17s
+2025-11-12 16:42:41,513 - INFO - Validación    | Pérdida: 0.6357, Accuracy: 0.6917
+2025-11-12 16:42:41,514 - INFO - 
+--- Época 80/300 ---
+2025-11-12 16:43:16,641 - INFO - Entrenamiento | Pérdida: 0.2466, Accuracy: 0.9074, Tiempo: 35.13s
+2025-11-12 16:43:23,612 - INFO - Validación    | Pérdida: 0.7505, Accuracy: 0.6750
+2025-11-12 16:43:23,613 - INFO - Tasa de aprendizaje reducida de 9.999889207283941e-05 a 9.999845572760871e-05
+2025-11-12 16:43:23,614 - INFO - 
+--- Época 81/300 ---
+2025-11-12 16:43:57,691 - INFO - Entrenamiento | Pérdida: 0.2438, Accuracy: 0.9087, Tiempo: 34.08s
+2025-11-12 16:44:04,474 - INFO - Validación    | Pérdida: 0.6966, Accuracy: 0.6750
+2025-11-12 16:44:04,474 - INFO - 
+--- Época 82/300 ---
+2025-11-12 16:44:38,833 - INFO - Entrenamiento | Pérdida: 0.2418, Accuracy: 0.9153, Tiempo: 34.35s
+2025-11-12 16:44:45,592 - INFO - Validación    | Pérdida: 0.6714, Accuracy: 0.7000
+2025-11-12 16:44:45,592 - INFO - 
+--- Época 83/300 ---
+2025-11-12 16:45:20,966 - INFO - Entrenamiento | Pérdida: 0.2459, Accuracy: 0.9052, Tiempo: 35.37s
+2025-11-12 16:45:27,891 - INFO - Validación    | Pérdida: 0.6674, Accuracy: 0.7083
+2025-11-12 16:45:27,892 - INFO - 
+--- Época 84/300 ---
+2025-11-12 16:46:04,094 - INFO - Entrenamiento | Pérdida: 0.2361, Accuracy: 0.9140, Tiempo: 36.20s
+2025-11-12 16:46:11,244 - INFO - Validación    | Pérdida: 0.7721, Accuracy: 0.6750
+2025-11-12 16:46:11,244 - INFO - Tasa de aprendizaje reducida de 9.999877897618988e-05 a 9.999836545567873e-05
+2025-11-12 16:46:11,244 - INFO - 
+--- Época 85/300 ---
+2025-11-12 16:46:45,728 - INFO - Entrenamiento | Pérdida: 0.2545, Accuracy: 0.9095, Tiempo: 34.48s
+2025-11-12 16:46:52,687 - INFO - Validación    | Pérdida: 0.7645, Accuracy: 0.6833
+2025-11-12 16:46:52,694 - INFO - 
+--- Época 86/300 ---
+2025-11-12 16:47:27,890 - INFO - Entrenamiento | Pérdida: 0.2367, Accuracy: 0.9138, Tiempo: 35.20s
+2025-11-12 16:47:34,929 - INFO - Validación    | Pérdida: 0.6831, Accuracy: 0.6917
+2025-11-12 16:47:34,929 - INFO - 
+--- Época 87/300 ---
+2025-11-12 16:48:10,638 - INFO - Entrenamiento | Pérdida: 0.2367, Accuracy: 0.9176, Tiempo: 35.71s
+2025-11-12 16:48:17,149 - INFO - Validación    | Pérdida: 0.8018, Accuracy: 0.6667
+2025-11-12 16:48:17,149 - INFO - Tasa de aprendizaje reducida de 9.999872084221377e-05 a 9.999823736844958e-05
+2025-11-12 16:48:17,149 - INFO - 
+--- Época 88/300 ---
+2025-11-12 16:48:50,894 - INFO - Entrenamiento | Pérdida: 0.2247, Accuracy: 0.9192, Tiempo: 33.74s
+2025-11-12 16:48:58,551 - INFO - Validación    | Pérdida: 0.8069, Accuracy: 0.7167
+2025-11-12 16:48:58,553 - INFO - Tasa de aprendizaje reducida de 9.999823736844958e-05 a 9.999821512738907e-05
+2025-11-12 16:48:58,553 - INFO - 
+--- Época 89/300 ---
+2025-11-12 16:49:32,998 - INFO - Entrenamiento | Pérdida: 0.2305, Accuracy: 0.9172, Tiempo: 34.45s
+2025-11-12 16:49:40,148 - INFO - Validación    | Pérdida: 0.6928, Accuracy: 0.7083
+2025-11-12 16:49:40,148 - INFO - 
+--- Época 90/300 ---
+2025-11-12 16:50:16,082 - INFO - Entrenamiento | Pérdida: 0.2326, Accuracy: 0.9182, Tiempo: 35.93s
+2025-11-12 16:50:23,266 - INFO - Validación    | Pérdida: 0.7377, Accuracy: 0.6917
+2025-11-12 16:50:23,266 - INFO - Tasa de aprendizaje reducida de 9.999868410007704e-05 a 9.999850787987757e-05
+2025-11-12 16:50:23,266 - INFO - 
+--- Época 91/300 ---
+2025-11-12 16:50:58,232 - INFO - Entrenamiento | Pérdida: 0.2364, Accuracy: 0.9174, Tiempo: 34.97s
+2025-11-12 16:51:05,074 - INFO - Validación    | Pérdida: 0.6801, Accuracy: 0.7333
+2025-11-12 16:51:05,076 - INFO - 
+--- Época 92/300 ---
+2025-11-12 16:51:39,404 - INFO - Entrenamiento | Pérdida: 0.2274, Accuracy: 0.9233, Tiempo: 34.33s
+2025-11-12 16:51:46,458 - INFO - Validación    | Pérdida: 0.6537, Accuracy: 0.7000
+2025-11-12 16:51:46,462 - INFO - 
+--- Época 93/300 ---
+2025-11-12 16:52:21,285 - INFO - Entrenamiento | Pérdida: 0.2340, Accuracy: 0.9112, Tiempo: 34.82s
+2025-11-12 16:52:27,835 - INFO - Validación    | Pérdida: 0.8402, Accuracy: 0.6667
+2025-11-12 16:52:27,835 - INFO - Tasa de aprendizaje reducida de 9.999882863508295e-05 a 9.999806451539319e-05
+2025-11-12 16:52:27,835 - INFO - 
+--- Época 94/300 ---
+2025-11-12 16:53:03,535 - INFO - Entrenamiento | Pérdida: 0.2317, Accuracy: 0.9184, Tiempo: 35.70s
+2025-11-12 16:53:10,902 - INFO - Validación    | Pérdida: 0.7048, Accuracy: 0.7250
+2025-11-12 16:53:10,917 - INFO - 
+--- Época 95/300 ---
+2025-11-12 16:53:45,419 - INFO - Entrenamiento | Pérdida: 0.2384, Accuracy: 0.9157, Tiempo: 34.50s
+2025-11-12 16:53:53,089 - INFO - Validación    | Pérdida: 0.8202, Accuracy: 0.6667
+2025-11-12 16:53:53,089 - INFO - Tasa de aprendizaje reducida de 9.99986380511835e-05 a 9.999815582164466e-05
+2025-11-12 16:53:53,102 - INFO - 
+--- Época 96/300 ---
+2025-11-12 16:54:27,398 - INFO - Entrenamiento | Pérdida: 0.2273, Accuracy: 0.9165, Tiempo: 34.30s
+2025-11-12 16:54:33,987 - INFO - Validación    | Pérdida: 0.8400, Accuracy: 0.6667
+2025-11-12 16:54:33,987 - INFO - Tasa de aprendizaje reducida de 9.999815582164466e-05 a 9.999806536926611e-05
+2025-11-12 16:54:33,987 - INFO - 
+--- Época 97/300 ---
+2025-11-12 16:55:08,810 - INFO - Entrenamiento | Pérdida: 0.2204, Accuracy: 0.9236, Tiempo: 34.82s
+2025-11-12 16:55:19,143 - INFO - Validación    | Pérdida: 0.7319, Accuracy: 0.6667
+2025-11-12 16:55:19,143 - INFO - 
+--- Época 98/300 ---
+2025-11-12 16:55:50,722 - INFO - Entrenamiento | Pérdida: 0.2347, Accuracy: 0.9145, Tiempo: 31.58s
+2025-11-12 16:55:57,228 - INFO - Validación    | Pérdida: 0.7794, Accuracy: 0.6833
+2025-11-12 16:55:57,230 - INFO - Tasa de aprendizaje reducida de 9.99985315953903e-05 a 9.999833456961138e-05
+2025-11-12 16:55:57,231 - INFO - 
+--- Época 99/300 ---
+2025-11-12 16:56:28,773 - INFO - Entrenamiento | Pérdida: 0.2142, Accuracy: 0.9240, Tiempo: 31.54s
+2025-11-12 16:56:35,556 - INFO - Validación    | Pérdida: 0.7438, Accuracy: 0.7333
+2025-11-12 16:56:35,572 - INFO - 
+--- Época 100/300 ---
+2025-11-12 16:57:08,903 - INFO - Entrenamiento | Pérdida: 0.2214, Accuracy: 0.9207, Tiempo: 33.33s
+2025-11-12 16:57:15,691 - INFO - Validación    | Pérdida: 0.7181, Accuracy: 0.6917
+2025-11-12 16:57:15,691 - INFO - 
+--- Época 101/300 ---
+2025-11-12 16:57:49,282 - INFO - Entrenamiento | Pérdida: 0.2246, Accuracy: 0.9200, Tiempo: 33.59s
+2025-11-12 16:57:56,028 - INFO - Validación    | Pérdida: 0.8451, Accuracy: 0.6833
+2025-11-12 16:57:56,028 - INFO - Tasa de aprendizaje reducida de 9.999858645226942e-05 a 9.99980421904561e-05
+2025-11-12 16:57:56,028 - INFO - 
+--- Época 102/300 ---
+2025-11-12 16:58:29,661 - INFO - Entrenamiento | Pérdida: 0.2263, Accuracy: 0.9223, Tiempo: 33.63s
+2025-11-12 16:58:36,242 - INFO - Validación    | Pérdida: 0.7269, Accuracy: 0.7333
+2025-11-12 16:58:36,242 - INFO - 
+--- Época 103/300 ---
+2025-11-12 16:59:09,993 - INFO - Entrenamiento | Pérdida: 0.2408, Accuracy: 0.9132, Tiempo: 33.75s
+2025-11-12 16:59:16,776 - INFO - Validación    | Pérdida: 0.6358, Accuracy: 0.7500
+2025-11-12 16:59:16,776 - INFO - 
+--- Época 104/300 ---
+2025-11-12 16:59:49,886 - INFO - Entrenamiento | Pérdida: 0.2224, Accuracy: 0.9198, Tiempo: 33.11s
+2025-11-12 16:59:56,636 - INFO - Validación    | Pérdida: 0.7367, Accuracy: 0.7167
+2025-11-12 16:59:56,636 - INFO - Tasa de aprendizaje reducida de 9.999889158238846e-05 a 9.999851225751946e-05
+2025-11-12 16:59:56,642 - INFO - 
+--- Época 105/300 ---
+2025-11-12 17:00:29,863 - INFO - Entrenamiento | Pérdida: 0.2314, Accuracy: 0.9171, Tiempo: 33.22s
+2025-11-12 17:00:36,561 - INFO - Validación    | Pérdida: 0.6820, Accuracy: 0.7250
+2025-11-12 17:00:36,561 - INFO - 
+--- Época 106/300 ---
+2025-11-12 17:01:10,545 - INFO - Entrenamiento | Pérdida: 0.2205, Accuracy: 0.9194, Tiempo: 33.98s
+2025-11-12 17:01:17,445 - INFO - Validación    | Pérdida: 0.7202, Accuracy: 0.6833
+2025-11-12 17:01:17,445 - INFO - Tasa de aprendizaje reducida de 9.999872487222983e-05 a 9.99985781841164e-05
+2025-11-12 17:01:17,445 - INFO - 
+--- Época 107/300 ---
+2025-11-12 17:01:51,246 - INFO - Entrenamiento | Pérdida: 0.2217, Accuracy: 0.9211, Tiempo: 33.80s
+2025-11-12 17:01:57,919 - INFO - Validación    | Pérdida: 0.6244, Accuracy: 0.7250
+2025-11-12 17:01:57,919 - INFO - 
+--- Época 108/300 ---
+2025-11-12 17:02:31,716 - INFO - Entrenamiento | Pérdida: 0.2232, Accuracy: 0.9190, Tiempo: 33.80s
+2025-11-12 17:02:38,539 - INFO - Validación    | Pérdida: 0.8296, Accuracy: 0.7000
+2025-11-12 17:02:38,539 - INFO - Tasa de aprendizaje reducida de 9.999893119511593e-05 a 9.99981130497569e-05
+2025-11-12 17:02:38,539 - INFO - 
+--- Época 109/300 ---
+2025-11-12 17:03:12,564 - INFO - Entrenamiento | Pérdida: 0.2248, Accuracy: 0.9182, Tiempo: 34.03s
+2025-11-12 17:03:19,264 - INFO - Validación    | Pérdida: 0.7047, Accuracy: 0.7250
+2025-11-12 17:03:19,264 - INFO - 
+--- Época 110/300 ---
+2025-11-12 17:03:53,090 - INFO - Entrenamiento | Pérdida: 0.2135, Accuracy: 0.9225, Tiempo: 33.83s
+2025-11-12 17:03:59,898 - INFO - Validación    | Pérdida: 0.7194, Accuracy: 0.7083
+2025-11-12 17:03:59,900 - INFO - Tasa de aprendizaje reducida de 9.999863871969683e-05 a 9.99985810493524e-05
+2025-11-12 17:03:59,901 - INFO - 
+--- Época 111/300 ---
+2025-11-12 17:04:33,191 - INFO - Entrenamiento | Pérdida: 0.2178, Accuracy: 0.9209, Tiempo: 33.29s
+2025-11-12 17:04:40,066 - INFO - Validación    | Pérdida: 0.7613, Accuracy: 0.6667
+2025-11-12 17:04:40,066 - INFO - Tasa de aprendizaje reducida de 9.99985810493524e-05 a 9.999841116826706e-05
+2025-11-12 17:04:40,066 - INFO - 
+--- Época 112/300 ---
+2025-11-12 17:05:14,200 - INFO - Entrenamiento | Pérdida: 0.2292, Accuracy: 0.9176, Tiempo: 34.13s
+2025-11-12 17:05:21,033 - INFO - Validación    | Pérdida: 0.7852, Accuracy: 0.6917
+2025-11-12 17:05:21,042 - INFO - Tasa de aprendizaje reducida de 9.999841116826706e-05 a 9.999830984818095e-05
+2025-11-12 17:05:21,042 - INFO - 
+--- Época 113/300 ---
+2025-11-12 17:05:54,894 - INFO - Entrenamiento | Pérdida: 0.2186, Accuracy: 0.9277, Tiempo: 33.85s
+2025-11-12 17:06:01,684 - INFO - Validación    | Pérdida: 0.7848, Accuracy: 0.6833
+2025-11-12 17:06:01,684 - INFO - 
+--- Época 114/300 ---
+2025-11-12 17:06:35,251 - INFO - Entrenamiento | Pérdida: 0.2260, Accuracy: 0.9167, Tiempo: 33.57s
+2025-11-12 17:06:41,902 - INFO - Validación    | Pérdida: 0.6985, Accuracy: 0.6833
+2025-11-12 17:06:41,902 - INFO - 
+--- Época 115/300 ---
+2025-11-12 17:07:16,028 - INFO - Entrenamiento | Pérdida: 0.2152, Accuracy: 0.9238, Tiempo: 34.11s
+2025-11-12 17:07:22,828 - INFO - Validación    | Pérdida: 0.9437, Accuracy: 0.6583
+2025-11-12 17:07:22,828 - INFO - Tasa de aprendizaje reducida de 9.999866233295145e-05 a 9.999755828196033e-05
+2025-11-12 17:07:22,828 - INFO - 
+--- Época 116/300 ---
+2025-11-12 17:07:57,520 - INFO - Entrenamiento | Pérdida: 0.2230, Accuracy: 0.9182, Tiempo: 34.68s
+2025-11-12 17:08:04,270 - INFO - Validación    | Pérdida: 0.7257, Accuracy: 0.7167
+2025-11-12 17:08:04,270 - INFO - 
+--- Época 117/300 ---
+2025-11-12 17:08:37,857 - INFO - Entrenamiento | Pérdida: 0.2100, Accuracy: 0.9308, Tiempo: 33.59s
+2025-11-12 17:08:44,404 - INFO - Validación    | Pérdida: 0.7831, Accuracy: 0.7000
+2025-11-12 17:08:44,404 - INFO - Tasa de aprendizaje reducida de 9.999855601863684e-05 a 9.999831866085304e-05
+2025-11-12 17:08:44,404 - INFO - 
+--- Época 118/300 ---
+2025-11-12 17:09:18,705 - INFO - Entrenamiento | Pérdida: 0.2096, Accuracy: 0.9293, Tiempo: 34.30s
+2025-11-12 17:09:25,610 - INFO - Validación    | Pérdida: 0.7066, Accuracy: 0.7083
+2025-11-12 17:09:25,610 - INFO - 
+--- Época 119/300 ---
+2025-11-12 17:09:59,822 - INFO - Entrenamiento | Pérdida: 0.2137, Accuracy: 0.9202, Tiempo: 34.21s
+2025-11-12 17:10:06,589 - INFO - Validación    | Pérdida: 0.8269, Accuracy: 0.6667
+2025-11-12 17:10:06,589 - INFO - Tasa de aprendizaje reducida de 9.999863124344284e-05 a 9.999812532567767e-05
+2025-11-12 17:10:06,589 - INFO - 
+--- Época 120/300 ---
+2025-11-12 17:10:40,482 - INFO - Entrenamiento | Pérdida: 0.2053, Accuracy: 0.9291, Tiempo: 33.89s
+2025-11-12 17:10:47,215 - INFO - Validación    | Pérdida: 0.9294, Accuracy: 0.6500
+2025-11-12 17:10:47,217 - INFO - Tasa de aprendizaje reducida de 9.999812532567767e-05 a 9.9997632139192e-05
+2025-11-12 17:10:47,218 - INFO - 
+--- Época 121/300 ---
+2025-11-12 17:11:21,863 - INFO - Entrenamiento | Pérdida: 0.2056, Accuracy: 0.9297, Tiempo: 34.64s
+2025-11-12 17:11:28,558 - INFO - Validación    | Pérdida: 0.7112, Accuracy: 0.7000
+2025-11-12 17:11:28,558 - INFO - 
+--- Época 122/300 ---
+2025-11-12 17:12:02,274 - INFO - Entrenamiento | Pérdida: 0.2245, Accuracy: 0.9190, Tiempo: 33.71s
+2025-11-12 17:12:09,111 - INFO - Validación    | Pérdida: 0.7795, Accuracy: 0.6917
+2025-11-12 17:12:09,114 - INFO - Tasa de aprendizaje reducida de 9.999861344138817e-05 a 9.999833416563001e-05
+2025-11-12 17:12:09,115 - INFO - 
+--- Época 123/300 ---
+2025-11-12 17:12:43,326 - INFO - Entrenamiento | Pérdida: 0.2049, Accuracy: 0.9256, Tiempo: 34.21s
+2025-11-12 17:12:49,935 - INFO - Validación    | Pérdida: 0.8057, Accuracy: 0.7000
+2025-11-12 17:12:49,935 - INFO - Tasa de aprendizaje reducida de 9.999833416563001e-05 a 9.999822053272362e-05
+2025-11-12 17:12:49,935 - INFO - 
+--- Época 124/300 ---
+2025-11-12 17:13:23,543 - INFO - Entrenamiento | Pérdida: 0.2091, Accuracy: 0.9264, Tiempo: 33.61s
+2025-11-12 17:13:30,425 - INFO - Validación    | Pérdida: 0.7720, Accuracy: 0.7167
+2025-11-12 17:13:30,426 - INFO - 
+--- Época 125/300 ---
+2025-11-12 17:14:04,415 - INFO - Entrenamiento | Pérdida: 0.2184, Accuracy: 0.9182, Tiempo: 33.99s
+2025-11-12 17:14:11,111 - INFO - Validación    | Pérdida: 0.7890, Accuracy: 0.7000
+2025-11-12 17:14:11,111 - INFO - Tasa de aprendizaje reducida de 9.999836590062583e-05 a 9.999829314489322e-05
+2025-11-12 17:14:11,111 - INFO - 
+--- Época 126/300 ---
+2025-11-12 17:14:45,295 - INFO - Entrenamiento | Pérdida: 0.2114, Accuracy: 0.9229, Tiempo: 34.18s
+2025-11-12 17:14:52,237 - INFO - Validación    | Pérdida: 0.7347, Accuracy: 0.7167
+2025-11-12 17:14:52,245 - INFO - 
+--- Época 127/300 ---
+2025-11-12 17:15:26,245 - INFO - Entrenamiento | Pérdida: 0.2083, Accuracy: 0.9211, Tiempo: 34.00s
+2025-11-12 17:15:32,886 - INFO - Validación    | Pérdida: 0.8610, Accuracy: 0.7000
+2025-11-12 17:15:32,887 - INFO - Tasa de aprendizaje reducida de 9.99985202548032e-05 a 9.999796762910026e-05
+2025-11-12 17:15:32,888 - INFO - 
+--- Época 128/300 ---
+2025-11-12 17:16:07,513 - INFO - Entrenamiento | Pérdida: 0.2065, Accuracy: 0.9256, Tiempo: 34.62s
+2025-11-12 17:16:14,430 - INFO - Validación    | Pérdida: 0.7562, Accuracy: 0.6833
+2025-11-12 17:16:14,430 - INFO - 
+--- Época 129/300 ---
+2025-11-12 17:16:48,439 - INFO - Entrenamiento | Pérdida: 0.2084, Accuracy: 0.9281, Tiempo: 34.00s
+2025-11-12 17:16:55,239 - INFO - Validación    | Pérdida: 0.6787, Accuracy: 0.7083
+2025-11-12 17:16:55,247 - INFO - 
+--- Época 130/300 ---
+2025-11-12 17:17:28,915 - INFO - Entrenamiento | Pérdida: 0.1994, Accuracy: 0.9285, Tiempo: 33.67s
+2025-11-12 17:17:35,615 - INFO - Validación    | Pérdida: 0.8188, Accuracy: 0.6750
+2025-11-12 17:17:35,615 - INFO - Tasa de aprendizaje reducida de 9.999873699789326e-05 a 9.999816207892716e-05
+2025-11-12 17:17:35,615 - INFO - 
+--- Época 131/300 ---
+2025-11-12 17:18:10,123 - INFO - Entrenamiento | Pérdida: 0.2085, Accuracy: 0.9248, Tiempo: 34.51s
+2025-11-12 17:18:16,982 - INFO - Validación    | Pérdida: 0.6791, Accuracy: 0.7167
+2025-11-12 17:18:16,982 - INFO - 
+--- Época 132/300 ---
+2025-11-12 17:18:51,016 - INFO - Entrenamiento | Pérdida: 0.1997, Accuracy: 0.9306, Tiempo: 34.03s
+2025-11-12 17:18:57,784 - INFO - Validación    | Pérdida: 0.8849, Accuracy: 0.6750
+2025-11-12 17:18:57,784 - INFO - Tasa de aprendizaje reducida de 9.999873573912936e-05 a 9.99978530924801e-05
+2025-11-12 17:18:57,792 - INFO - 
+--- Época 133/300 ---
+2025-11-12 17:19:32,621 - INFO - Entrenamiento | Pérdida: 0.2111, Accuracy: 0.9256, Tiempo: 34.83s
+2025-11-12 17:19:39,381 - INFO - Validación    | Pérdida: 0.8433, Accuracy: 0.6667
+2025-11-12 17:19:39,382 - INFO - 
+--- Época 134/300 ---
+2025-11-12 17:20:13,335 - INFO - Entrenamiento | Pérdida: 0.1960, Accuracy: 0.9316, Tiempo: 33.95s
+2025-11-12 17:20:20,018 - INFO - Validación    | Pérdida: 0.7784, Accuracy: 0.7083
+2025-11-12 17:20:20,028 - INFO - 
+--- Época 135/300 ---
+2025-11-12 17:20:53,343 - INFO - Entrenamiento | Pérdida: 0.2124, Accuracy: 0.9267, Tiempo: 33.31s
+2025-11-12 17:21:00,118 - INFO - Validación    | Pérdida: 0.7260, Accuracy: 0.7417
+2025-11-12 17:21:00,119 - INFO - 
+--- Época 136/300 ---
+2025-11-12 17:21:34,002 - INFO - Entrenamiento | Pérdida: 0.2014, Accuracy: 0.9300, Tiempo: 33.87s
+2025-11-12 17:21:40,720 - INFO - Validación    | Pérdida: 0.7224, Accuracy: 0.7083
+2025-11-12 17:21:40,720 - INFO - 
+--- Época 137/300 ---
+2025-11-12 17:22:15,587 - INFO - Entrenamiento | Pérdida: 0.1998, Accuracy: 0.9264, Tiempo: 34.87s
+2025-11-12 17:22:22,384 - INFO - Validación    | Pérdida: 0.7537, Accuracy: 0.7000
+2025-11-12 17:22:22,385 - INFO - Tasa de aprendizaje reducida de 9.99985693310872e-05 a 9.99984425821854e-05
+2025-11-12 17:22:22,386 - INFO - 
+--- Época 138/300 ---
+2025-11-12 17:22:56,580 - INFO - Entrenamiento | Pérdida: 0.2058, Accuracy: 0.9273, Tiempo: 34.19s
+2025-11-12 17:23:03,410 - INFO - Validación    | Pérdida: 0.7827, Accuracy: 0.6917
+2025-11-12 17:23:03,410 - INFO - Tasa de aprendizaje reducida de 9.99984425821854e-05 a 9.99983205831735e-05
+2025-11-12 17:23:03,410 - INFO - 
+--- Época 139/300 ---
+2025-11-12 17:23:38,009 - INFO - Entrenamiento | Pérdida: 0.1851, Accuracy: 0.9331, Tiempo: 34.60s
+2025-11-12 17:23:45,093 - INFO - Validación    | Pérdida: 0.7938, Accuracy: 0.6667
+2025-11-12 17:23:45,093 - INFO - Tasa de aprendizaje reducida de 9.99983205831735e-05 a 9.999827252731258e-05
+2025-11-12 17:23:45,093 - INFO - 
+--- Época 140/300 ---
+2025-11-12 17:24:18,590 - INFO - Entrenamiento | Pérdida: 0.2015, Accuracy: 0.9250, Tiempo: 33.50s
+2025-11-12 17:24:25,532 - INFO - Validación    | Pérdida: 0.7884, Accuracy: 0.6917
+2025-11-12 17:24:25,539 - INFO - 
+--- Época 141/300 ---
+2025-11-12 17:24:59,291 - INFO - Entrenamiento | Pérdida: 0.1959, Accuracy: 0.9339, Tiempo: 33.75s
+2025-11-12 17:25:06,447 - INFO - Validación    | Pérdida: 0.7258, Accuracy: 0.7167
+2025-11-12 17:25:06,447 - INFO - 
+--- Época 142/300 ---
+2025-11-12 17:25:40,015 - INFO - Entrenamiento | Pérdida: 0.1969, Accuracy: 0.9308, Tiempo: 33.57s
+2025-11-12 17:25:47,091 - INFO - Validación    | Pérdida: 0.8350, Accuracy: 0.6583
+2025-11-12 17:25:47,091 - INFO - Tasa de aprendizaje reducida de 9.999855589109199e-05 a 9.999808835176917e-05
+2025-11-12 17:25:47,091 - INFO - 
+--- Época 143/300 ---
+2025-11-12 17:26:13,600 - INFO - Entrenamiento | Pérdida: 0.2007, Accuracy: 0.9316, Tiempo: 26.49s
+2025-11-12 17:26:19,907 - INFO - Validación    | Pérdida: 0.6539, Accuracy: 0.7417
+2025-11-12 17:26:19,908 - INFO - 
+--- Época 144/300 ---
+2025-11-12 17:26:53,889 - INFO - Entrenamiento | Pérdida: 0.1974, Accuracy: 0.9314, Tiempo: 33.98s
+2025-11-12 17:27:00,660 - INFO - Validación    | Pérdida: 0.7556, Accuracy: 0.7500
+2025-11-12 17:27:00,660 - INFO - Tasa de aprendizaje reducida de 9.999882792958666e-05 a 9.999843463012643e-05
+2025-11-12 17:27:00,660 - INFO - 
+--- Época 145/300 ---
+2025-11-12 17:27:33,947 - INFO - Entrenamiento | Pérdida: 0.1982, Accuracy: 0.9293, Tiempo: 33.29s
+2025-11-12 17:27:41,094 - INFO - Validación    | Pérdida: 0.7846, Accuracy: 0.7000
+2025-11-12 17:27:41,094 - INFO - Tasa de aprendizaje reducida de 9.999843463012643e-05 a 9.99983124988456e-05
+2025-11-12 17:27:41,094 - INFO - 
+--- Época 146/300 ---
+2025-11-12 17:28:15,678 - INFO - Entrenamiento | Pérdida: 0.1885, Accuracy: 0.9335, Tiempo: 34.58s
+2025-11-12 17:28:22,586 - INFO - Validación    | Pérdida: 0.7673, Accuracy: 0.6917
+2025-11-12 17:28:22,595 - INFO - 
+--- Época 147/300 ---
+2025-11-12 17:28:56,321 - INFO - Entrenamiento | Pérdida: 0.1973, Accuracy: 0.9335, Tiempo: 33.73s
+2025-11-12 17:29:02,988 - INFO - Validación    | Pérdida: 0.7119, Accuracy: 0.7167
+2025-11-12 17:29:02,989 - INFO - 
+--- Época 148/300 ---
+2025-11-12 17:29:37,262 - INFO - Entrenamiento | Pérdida: 0.1986, Accuracy: 0.9302, Tiempo: 34.27s
+2025-11-12 17:29:44,147 - INFO - Validación    | Pérdida: 0.7584, Accuracy: 0.6917
+2025-11-12 17:29:44,147 - INFO - Tasa de aprendizaje reducida de 9.999861069369867e-05 a 9.999842305702534e-05
+2025-11-12 17:29:44,147 - INFO - 
+--- Época 149/300 ---
+2025-11-12 17:30:18,850 - INFO - Entrenamiento | Pérdida: 0.1843, Accuracy: 0.9337, Tiempo: 34.70s
+2025-11-12 17:30:25,480 - INFO - Validación    | Pérdida: 0.6982, Accuracy: 0.7167
+2025-11-12 17:30:25,482 - INFO - 
+--- Época 150/300 ---
+2025-11-12 17:30:59,031 - INFO - Entrenamiento | Pérdida: 0.1856, Accuracy: 0.9347, Tiempo: 33.55s
+2025-11-12 17:31:05,701 - INFO - Validación    | Pérdida: 0.8077, Accuracy: 0.6833
+2025-11-12 17:31:05,701 - INFO - Tasa de aprendizaje reducida de 9.99986634643729e-05 a 9.999821135321724e-05
+2025-11-12 17:31:05,701 - INFO - 
+--- Época 151/300 ---
+2025-11-12 17:31:45,619 - INFO - Entrenamiento | Pérdida: 0.1867, Accuracy: 0.9326, Tiempo: 39.90s
+2025-11-12 17:31:52,300 - INFO - Validación    | Pérdida: 0.7324, Accuracy: 0.7083
+2025-11-12 17:31:52,302 - INFO - 
+--- Época 152/300 ---
+2025-11-12 17:32:26,016 - INFO - Entrenamiento | Pérdida: 0.1902, Accuracy: 0.9322, Tiempo: 33.71s
+2025-11-12 17:32:32,583 - INFO - Validación    | Pérdida: 0.8858, Accuracy: 0.6833
+2025-11-12 17:32:32,587 - INFO - Tasa de aprendizaje reducida de 9.999852941059192e-05 a 9.999784893049304e-05
+2025-11-12 17:32:32,587 - INFO - 
+--- Época 153/300 ---
+2025-11-12 17:33:06,668 - INFO - Entrenamiento | Pérdida: 0.1881, Accuracy: 0.9326, Tiempo: 34.08s
+2025-11-12 17:33:13,504 - INFO - Validación    | Pérdida: 0.8176, Accuracy: 0.6667
+2025-11-12 17:33:13,504 - INFO - 
+--- Época 154/300 ---
+2025-11-12 17:33:48,318 - INFO - Entrenamiento | Pérdida: 0.2012, Accuracy: 0.9341, Tiempo: 34.81s
+2025-11-12 17:33:54,870 - INFO - Validación    | Pérdida: 0.8910, Accuracy: 0.6583
+2025-11-12 17:33:54,871 - INFO - Tasa de aprendizaje reducida de 9.999816734623973e-05 a 9.999782377575267e-05
+2025-11-12 17:33:54,873 - INFO - 
+--- Época 155/300 ---
+2025-11-12 17:34:28,336 - INFO - Entrenamiento | Pérdida: 0.1951, Accuracy: 0.9322, Tiempo: 33.46s
+2025-11-12 17:34:35,219 - INFO - Validación    | Pérdida: 0.7050, Accuracy: 0.6917
+2025-11-12 17:34:35,220 - INFO - 
+--- Época 156/300 ---
+2025-11-12 17:35:08,851 - INFO - Entrenamiento | Pérdida: 0.1922, Accuracy: 0.9316, Tiempo: 33.63s
+2025-11-12 17:35:15,753 - INFO - Validación    | Pérdida: 0.7319, Accuracy: 0.7083
+2025-11-12 17:35:15,753 - INFO - Tasa de aprendizaje reducida de 9.999863756034253e-05 a 9.999853136039262e-05
+2025-11-12 17:35:15,753 - INFO - 
+--- Época 157/300 ---
+2025-11-12 17:35:49,320 - INFO - Entrenamiento | Pérdida: 0.1825, Accuracy: 0.9343, Tiempo: 33.57s
+2025-11-12 17:35:56,087 - INFO - Validación    | Pérdida: 0.8219, Accuracy: 0.6833
+2025-11-12 17:35:56,087 - INFO - Tasa de aprendizaje reducida de 9.999853136039262e-05 a 9.999814822490281e-05
+2025-11-12 17:35:56,087 - INFO - 
+--- Época 158/300 ---
+2025-11-12 17:36:29,988 - INFO - Entrenamiento | Pérdida: 0.1791, Accuracy: 0.9391, Tiempo: 33.89s
+2025-11-12 17:36:36,893 - INFO - Validación    | Pérdida: 0.8481, Accuracy: 0.6750
+2025-11-12 17:36:36,894 - INFO - Tasa de aprendizaje reducida de 9.999814822490281e-05 a 9.999802805924692e-05
+2025-11-12 17:36:36,895 - INFO - 
+--- Época 159/300 ---
+2025-11-12 17:37:10,905 - INFO - Entrenamiento | Pérdida: 0.1905, Accuracy: 0.9349, Tiempo: 34.01s
+2025-11-12 17:37:17,655 - INFO - Validación    | Pérdida: 0.8181, Accuracy: 0.7083
+2025-11-12 17:37:17,655 - INFO - 
+--- Época 160/300 ---
+2025-11-12 17:37:51,431 - INFO - Entrenamiento | Pérdida: 0.1860, Accuracy: 0.9353, Tiempo: 33.78s
+2025-11-12 17:37:58,439 - INFO - Validación    | Pérdida: 0.7340, Accuracy: 0.6917
+2025-11-12 17:37:58,439 - INFO - 
+--- Época 161/300 ---
+2025-11-12 17:38:33,073 - INFO - Entrenamiento | Pérdida: 0.1959, Accuracy: 0.9256, Tiempo: 34.63s
+2025-11-12 17:38:39,732 - INFO - Validación    | Pérdida: 0.8430, Accuracy: 0.6917
+2025-11-12 17:38:39,732 - INFO - Tasa de aprendizaje reducida de 9.999852312238054e-05 a 9.999805175742612e-05
+2025-11-12 17:38:39,732 - INFO - 
+--- Época 162/300 ---
+2025-11-12 17:39:14,158 - INFO - Entrenamiento | Pérdida: 0.1822, Accuracy: 0.9349, Tiempo: 34.43s
+2025-11-12 17:39:20,958 - INFO - Validación    | Pérdida: 0.8429, Accuracy: 0.6917
+2025-11-12 17:39:20,958 - INFO - 
+--- Época 163/300 ---
+2025-11-12 17:39:54,610 - INFO - Entrenamiento | Pérdida: 0.1807, Accuracy: 0.9395, Tiempo: 33.64s
+2025-11-12 17:40:01,442 - INFO - Validación    | Pérdida: 0.6609, Accuracy: 0.7250
+2025-11-12 17:40:01,442 - INFO - 
+--- Época 164/300 ---
+2025-11-12 17:40:34,617 - INFO - Entrenamiento | Pérdida: 0.1802, Accuracy: 0.9366, Tiempo: 33.18s
+2025-11-12 17:40:41,293 - INFO - Validación    | Pérdida: 0.7835, Accuracy: 0.6833
+2025-11-12 17:40:41,309 - INFO - Tasa de aprendizaje reducida de 9.99988026712324e-05 a 9.999831719823166e-05
+2025-11-12 17:40:41,310 - INFO - 
+--- Época 165/300 ---
+2025-11-12 17:41:14,736 - INFO - Entrenamiento | Pérdida: 0.1783, Accuracy: 0.9359, Tiempo: 33.43s
+2025-11-12 17:41:21,777 - INFO - Validación    | Pérdida: 0.8242, Accuracy: 0.6750
+2025-11-12 17:41:21,777 - INFO - Tasa de aprendizaje reducida de 9.999831719823166e-05 a 9.999813784974948e-05
+2025-11-12 17:41:21,777 - INFO - 
+--- Época 166/300 ---
+2025-11-12 17:41:56,344 - INFO - Entrenamiento | Pérdida: 0.1824, Accuracy: 0.9343, Tiempo: 34.57s
+2025-11-12 17:42:03,019 - INFO - Validación    | Pérdida: 0.8403, Accuracy: 0.7083
+2025-11-12 17:42:03,021 - INFO - Tasa de aprendizaje reducida de 9.999813784974948e-05 a 9.999806396838941e-05
+2025-11-12 17:42:03,022 - INFO - 
+--- Época 167/300 ---
+2025-11-12 17:42:37,013 - INFO - Entrenamiento | Pérdida: 0.1807, Accuracy: 0.9359, Tiempo: 33.99s
+2025-11-12 17:42:43,778 - INFO - Validación    | Pérdida: 0.9047, Accuracy: 0.6750
+2025-11-12 17:42:43,778 - INFO - Tasa de aprendizaje reducida de 9.999806396838941e-05 a 9.999775606893607e-05
+2025-11-12 17:42:43,778 - INFO - 
+--- Época 168/300 ---
+2025-11-12 17:43:16,817 - INFO - Entrenamiento | Pérdida: 0.1755, Accuracy: 0.9403, Tiempo: 33.04s
+2025-11-12 17:43:23,513 - INFO - Validación    | Pérdida: 0.9055, Accuracy: 0.6833
+2025-11-12 17:43:23,513 - INFO - Tasa de aprendizaje reducida de 9.999775606893607e-05 a 9.999775210279008e-05
+2025-11-12 17:43:23,513 - INFO - 
+--- Época 169/300 ---
+2025-11-12 17:43:57,564 - INFO - Entrenamiento | Pérdida: 0.1912, Accuracy: 0.9347, Tiempo: 34.05s
+2025-11-12 17:44:04,414 - INFO - Validación    | Pérdida: 0.9970, Accuracy: 0.6750
+2025-11-12 17:44:04,414 - INFO - Tasa de aprendizaje reducida de 9.999775210279008e-05 a 9.999727512346402e-05
+2025-11-12 17:44:04,414 - INFO - 
+--- Época 170/300 ---
+2025-11-12 17:44:38,664 - INFO - Entrenamiento | Pérdida: 0.1785, Accuracy: 0.9401, Tiempo: 34.25s
+2025-11-12 17:44:45,356 - INFO - Validación    | Pérdida: 0.8049, Accuracy: 0.7333
+2025-11-12 17:44:45,356 - INFO - 
+--- Época 171/300 ---
+2025-11-12 17:45:19,309 - INFO - Entrenamiento | Pérdida: 0.1828, Accuracy: 0.9378, Tiempo: 33.95s
+2025-11-12 17:45:26,149 - INFO - Validación    | Pérdida: 0.8296, Accuracy: 0.7250
+2025-11-12 17:45:26,166 - INFO - Tasa de aprendizaje reducida de 9.99982239323999e-05 a 9.999811328892613e-05
+2025-11-12 17:45:26,166 - INFO - 
+--- Época 172/300 ---
+2025-11-12 17:46:00,199 - INFO - Entrenamiento | Pérdida: 0.1676, Accuracy: 0.9415, Tiempo: 34.03s
+2025-11-12 17:46:07,199 - INFO - Validación    | Pérdida: 0.7475, Accuracy: 0.7250
+2025-11-12 17:46:07,199 - INFO - 
+--- Época 173/300 ---
+2025-11-12 17:46:41,450 - INFO - Entrenamiento | Pérdida: 0.1831, Accuracy: 0.9324, Tiempo: 34.25s
+2025-11-12 17:46:48,050 - INFO - Validación    | Pérdida: 0.7954, Accuracy: 0.6750
+2025-11-12 17:46:48,050 - INFO - Tasa de aprendizaje reducida de 9.999846813840117e-05 a 9.999826549948478e-05
+2025-11-12 17:46:48,050 - INFO - 
+--- Época 174/300 ---
+2025-11-12 17:47:21,854 - INFO - Entrenamiento | Pérdida: 0.1860, Accuracy: 0.9386, Tiempo: 33.80s
+2025-11-12 17:47:28,578 - INFO - Validación    | Pérdida: 0.8560, Accuracy: 0.7000
+2025-11-12 17:47:28,580 - INFO - Tasa de aprendizaje reducida de 9.999826549948478e-05 a 9.999799100279199e-05
+2025-11-12 17:47:28,581 - INFO - 
+--- Época 175/300 ---
+2025-11-12 17:48:02,685 - INFO - Entrenamiento | Pérdida: 0.1703, Accuracy: 0.9395, Tiempo: 34.10s
+2025-11-12 17:48:09,728 - INFO - Validación    | Pérdida: 0.7412, Accuracy: 0.6750
+2025-11-12 17:48:09,733 - INFO - 
+--- Época 176/300 ---
+2025-11-12 17:48:44,036 - INFO - Entrenamiento | Pérdida: 0.1835, Accuracy: 0.9349, Tiempo: 34.30s
+2025-11-12 17:48:50,819 - INFO - Validación    | Pérdida: 0.7856, Accuracy: 0.7000
+2025-11-12 17:48:50,829 - INFO - Tasa de aprendizaje reducida de 9.99984939737986e-05 a 9.999830809602744e-05
+2025-11-12 17:48:50,829 - INFO - 
+--- Época 177/300 ---
+2025-11-12 17:49:25,009 - INFO - Entrenamiento | Pérdida: 0.1814, Accuracy: 0.9376, Tiempo: 34.18s
+2025-11-12 17:49:31,737 - INFO - Validación    | Pérdida: 0.8329, Accuracy: 0.7083
+2025-11-12 17:49:31,737 - INFO - Tasa de aprendizaje reducida de 9.999830809602744e-05 a 9.999809835994913e-05
+2025-11-12 17:49:31,737 - INFO - 
+--- Época 178/300 ---
+2025-11-12 17:50:05,904 - INFO - Entrenamiento | Pérdida: 0.1718, Accuracy: 0.9372, Tiempo: 34.17s
+2025-11-12 17:50:12,905 - INFO - Validación    | Pérdida: 0.7929, Accuracy: 0.7000
+2025-11-12 17:50:12,921 - INFO - 
+--- Época 179/300 ---
+2025-11-12 17:50:47,255 - INFO - Entrenamiento | Pérdida: 0.1793, Accuracy: 0.9368, Tiempo: 34.33s
+2025-11-12 17:50:54,189 - INFO - Validación    | Pérdida: 0.8038, Accuracy: 0.7167
+2025-11-12 17:50:54,189 - INFO - Tasa de aprendizaje reducida de 9.999827625623389e-05 a 9.99982288541515e-05
+2025-11-12 17:50:54,189 - INFO - 
+--- Época 180/300 ---
+2025-11-12 17:51:28,422 - INFO - Entrenamiento | Pérdida: 0.1849, Accuracy: 0.9328, Tiempo: 34.23s
+2025-11-12 17:51:35,358 - INFO - Validación    | Pérdida: 0.6524, Accuracy: 0.7000
+2025-11-12 17:51:35,358 - INFO - 
+--- Época 181/300 ---
+2025-11-12 17:52:11,297 - INFO - Entrenamiento | Pérdida: 0.1736, Accuracy: 0.9372, Tiempo: 35.94s
+2025-11-12 17:52:18,040 - INFO - Validación    | Pérdida: 0.9008, Accuracy: 0.6750
+2025-11-12 17:52:18,054 - INFO - Tasa de aprendizaje reducida de 9.999883317890307e-05 a 9.999777528188146e-05
+2025-11-12 17:52:18,055 - INFO - 
+--- Época 182/300 ---
+2025-11-12 17:52:53,691 - INFO - Entrenamiento | Pérdida: 0.1633, Accuracy: 0.9426, Tiempo: 35.63s
+2025-11-12 17:53:00,625 - INFO - Validación    | Pérdida: 0.8114, Accuracy: 0.6917
+2025-11-12 17:53:00,625 - INFO - 
+--- Época 183/300 ---
+2025-11-12 17:53:36,158 - INFO - Entrenamiento | Pérdida: 0.1658, Accuracy: 0.9399, Tiempo: 35.53s
+2025-11-12 17:53:43,059 - INFO - Validación    | Pérdida: 0.8193, Accuracy: 0.7000
+2025-11-12 17:53:43,059 - INFO - Tasa de aprendizaje reducida de 9.999819524612489e-05 a 9.999815995692343e-05
+2025-11-12 17:53:43,075 - INFO - 
+--- Época 184/300 ---
+2025-11-12 17:54:18,193 - INFO - Entrenamiento | Pérdida: 0.1778, Accuracy: 0.9372, Tiempo: 35.12s
+2025-11-12 17:54:24,910 - INFO - Validación    | Pérdida: 0.8237, Accuracy: 0.7083
+2025-11-12 17:54:24,910 - INFO - Tasa de aprendizaje reducida de 9.999815995692343e-05 a 9.99981399850223e-05
+2025-11-12 17:54:24,910 - INFO - 
+--- Época 185/300 ---
+2025-11-12 17:55:00,327 - INFO - Entrenamiento | Pérdida: 0.1764, Accuracy: 0.9372, Tiempo: 35.42s
+2025-11-12 17:55:07,344 - INFO - Validación    | Pérdida: 0.8582, Accuracy: 0.7083
+2025-11-12 17:55:07,344 - INFO - Tasa de aprendizaje reducida de 9.99981399850223e-05 a 9.999798062134633e-05
+2025-11-12 17:55:07,344 - INFO - 
+--- Época 186/300 ---
+2025-11-12 17:55:42,594 - INFO - Entrenamiento | Pérdida: 0.1688, Accuracy: 0.9421, Tiempo: 35.25s
+2025-11-12 17:55:49,311 - INFO - Validación    | Pérdida: 0.8778, Accuracy: 0.7167
+2025-11-12 17:55:49,311 - INFO - Tasa de aprendizaje reducida de 9.999798062134633e-05 a 9.999788774058849e-05
+2025-11-12 17:55:49,311 - INFO - 
+--- Época 187/300 ---
+2025-11-12 17:56:25,397 - INFO - Entrenamiento | Pérdida: 0.1630, Accuracy: 0.9438, Tiempo: 36.09s
+2025-11-12 17:56:32,179 - INFO - Validación    | Pérdida: 0.7688, Accuracy: 0.7417
+2025-11-12 17:56:32,180 - INFO - 
+--- Época 188/300 ---
+2025-11-12 17:57:07,696 - INFO - Entrenamiento | Pérdida: 0.1629, Accuracy: 0.9455, Tiempo: 35.52s
+2025-11-12 17:57:14,579 - INFO - Validación    | Pérdida: 0.7361, Accuracy: 0.6917
+2025-11-12 17:57:14,587 - INFO - 
+--- Época 189/300 ---
+2025-11-12 17:57:50,447 - INFO - Entrenamiento | Pérdida: 0.1664, Accuracy: 0.9405, Tiempo: 35.86s
+2025-11-12 17:57:57,347 - INFO - Validación    | Pérdida: 0.8478, Accuracy: 0.7000
+2025-11-12 17:57:57,364 - INFO - Tasa de aprendizaje reducida de 9.999851450753608e-05 a 9.999802969954979e-05
+2025-11-12 17:57:57,366 - INFO - 
+--- Época 190/300 ---
+2025-11-12 17:58:33,315 - INFO - Entrenamiento | Pérdida: 0.1693, Accuracy: 0.9399, Tiempo: 35.95s
+2025-11-12 17:58:40,391 - INFO - Validación    | Pérdida: 0.8414, Accuracy: 0.7250
+2025-11-12 17:58:40,393 - INFO - 
+--- Época 191/300 ---
+2025-11-12 17:59:16,131 - INFO - Entrenamiento | Pérdida: 0.1705, Accuracy: 0.9399, Tiempo: 35.74s
+2025-11-12 17:59:22,991 - INFO - Validación    | Pérdida: 0.7478, Accuracy: 0.7417
+2025-11-12 17:59:22,991 - INFO - 
+--- Época 192/300 ---
+2025-11-12 17:59:58,967 - INFO - Entrenamiento | Pérdida: 0.1722, Accuracy: 0.9411, Tiempo: 35.98s
+2025-11-12 18:00:05,833 - INFO - Validación    | Pérdida: 0.7278, Accuracy: 0.6583
+2025-11-12 18:00:05,842 - INFO - 
+--- Época 193/300 ---
+2025-11-12 18:00:41,517 - INFO - Entrenamiento | Pérdida: 0.1590, Accuracy: 0.9483, Tiempo: 35.67s
+2025-11-12 18:00:48,382 - INFO - Validación    | Pérdida: 0.7439, Accuracy: 0.7083
+2025-11-12 18:00:48,384 - INFO - Tasa de aprendizaje reducida de 9.999854787192284e-05 a 9.999848295618511e-05
+2025-11-12 18:00:48,385 - INFO - 
+--- Época 194/300 ---
+2025-11-12 18:01:22,234 - INFO - Entrenamiento | Pérdida: 0.1665, Accuracy: 0.9421, Tiempo: 33.85s
+2025-11-12 18:01:29,000 - INFO - Validación    | Pérdida: 0.7926, Accuracy: 0.7083
+2025-11-12 18:01:29,001 - INFO - Tasa de aprendizaje reducida de 9.999848295618511e-05 a 9.999827757084577e-05
+2025-11-12 18:01:29,001 - INFO - 
+--- Época 195/300 ---
+2025-11-12 18:02:03,002 - INFO - Entrenamiento | Pérdida: 0.1648, Accuracy: 0.9426, Tiempo: 34.00s
+2025-11-12 18:02:10,036 - INFO - Validación    | Pérdida: 0.8134, Accuracy: 0.6750
+2025-11-12 18:02:10,036 - INFO - Tasa de aprendizaje reducida de 9.999827757084577e-05 a 9.999818598586779e-05
+2025-11-12 18:02:10,036 - INFO - 
+--- Época 196/300 ---
+2025-11-12 18:02:44,942 - INFO - Entrenamiento | Pérdida: 0.1587, Accuracy: 0.9436, Tiempo: 34.91s
+2025-11-12 18:02:52,129 - INFO - Validación    | Pérdida: 0.6861, Accuracy: 0.7500
+2025-11-12 18:02:52,129 - INFO - 
+--- Época 197/300 ---
+2025-11-12 18:03:26,954 - INFO - Entrenamiento | Pérdida: 0.1655, Accuracy: 0.9444, Tiempo: 34.82s
+2025-11-12 18:03:33,901 - INFO - Validación    | Pérdida: 0.7746, Accuracy: 0.7083
+2025-11-12 18:03:33,903 - INFO - Tasa de aprendizaje reducida de 9.999870929842943e-05 a 9.99983552473009e-05
+2025-11-12 18:03:33,904 - INFO - 
+--- Época 198/300 ---
+2025-11-12 18:04:08,238 - INFO - Entrenamiento | Pérdida: 0.1582, Accuracy: 0.9469, Tiempo: 34.33s
+2025-11-12 18:04:15,022 - INFO - Validación    | Pérdida: 0.8971, Accuracy: 0.7083
+2025-11-12 18:04:15,022 - INFO - Tasa de aprendizaje reducida de 9.99983552473009e-05 a 9.99977935531194e-05
+2025-11-12 18:04:15,030 - INFO - 
+--- Época 199/300 ---
+2025-11-12 18:04:49,439 - INFO - Entrenamiento | Pérdida: 0.1509, Accuracy: 0.9471, Tiempo: 34.41s
+2025-11-12 18:04:56,182 - INFO - Validación    | Pérdida: 0.8206, Accuracy: 0.7083
+2025-11-12 18:04:56,182 - INFO - 
+--- Época 200/300 ---
+2025-11-12 18:05:30,523 - INFO - Entrenamiento | Pérdida: 0.1619, Accuracy: 0.9483, Tiempo: 34.34s
+2025-11-12 18:05:37,561 - INFO - Validación    | Pérdida: 0.9440, Accuracy: 0.6917
+2025-11-12 18:05:37,573 - INFO - Tasa de aprendizaje reducida de 9.999815381148159e-05 a 9.999755697156979e-05
+2025-11-12 18:05:37,573 - INFO - 
+--- Época 201/300 ---
+2025-11-12 18:06:12,474 - INFO - Entrenamiento | Pérdida: 0.1688, Accuracy: 0.9388, Tiempo: 34.90s
+2025-11-12 18:06:19,314 - INFO - Validación    | Pérdida: 0.8319, Accuracy: 0.6917
+2025-11-12 18:06:19,314 - INFO - 
+--- Época 202/300 ---
+2025-11-12 18:06:54,797 - INFO - Entrenamiento | Pérdida: 0.1590, Accuracy: 0.9496, Tiempo: 35.47s
+2025-11-12 18:07:01,942 - INFO - Validación    | Pérdida: 0.7908, Accuracy: 0.6917
+2025-11-12 18:07:01,943 - INFO - 
+--- Época 203/300 ---
+2025-11-12 18:07:37,834 - INFO - Entrenamiento | Pérdida: 0.1699, Accuracy: 0.9399, Tiempo: 35.89s
+2025-11-12 18:07:44,720 - INFO - Validación    | Pérdida: 0.7564, Accuracy: 0.6833
+2025-11-12 18:07:44,722 - INFO - 
+--- Época 204/300 ---
+2025-11-12 18:08:19,142 - INFO - Entrenamiento | Pérdida: 0.1725, Accuracy: 0.9380, Tiempo: 34.42s
+2025-11-12 18:08:25,910 - INFO - Validación    | Pérdida: 0.9935, Accuracy: 0.6583
+2025-11-12 18:08:25,910 - INFO - Tasa de aprendizaje reducida de 9.999843140477891e-05 a 9.999729398873559e-05
+2025-11-12 18:08:25,910 - INFO - 
+--- Época 205/300 ---
+2025-11-12 18:09:01,310 - INFO - Entrenamiento | Pérdida: 0.1675, Accuracy: 0.9424, Tiempo: 35.40s
+2025-11-12 18:09:08,945 - INFO - Validación    | Pérdida: 0.8587, Accuracy: 0.6917
+2025-11-12 18:09:08,947 - INFO - 
+--- Época 206/300 ---
+2025-11-12 18:09:44,345 - INFO - Entrenamiento | Pérdida: 0.1629, Accuracy: 0.9463, Tiempo: 35.40s
+2025-11-12 18:09:51,552 - INFO - Validación    | Pérdida: 0.8203, Accuracy: 0.7000
+2025-11-12 18:09:51,553 - INFO - 
+--- Época 207/300 ---
+2025-11-12 18:10:26,712 - INFO - Entrenamiento | Pérdida: 0.1606, Accuracy: 0.9442, Tiempo: 35.16s
+2025-11-12 18:10:34,138 - INFO - Validación    | Pérdida: 0.7984, Accuracy: 0.6917
+2025-11-12 18:10:34,138 - INFO - 
+--- Época 208/300 ---
+2025-11-12 18:11:10,303 - INFO - Entrenamiento | Pérdida: 0.1656, Accuracy: 0.9436, Tiempo: 36.16s
+2025-11-12 18:11:17,985 - INFO - Validación    | Pérdida: 0.8736, Accuracy: 0.7000
+2025-11-12 18:11:17,988 - INFO - Tasa de aprendizaje reducida de 9.99982525830646e-05 a 9.999790752451615e-05
+2025-11-12 18:11:17,989 - INFO - 
+--- Época 209/300 ---
+2025-11-12 18:11:52,681 - INFO - Entrenamiento | Pérdida: 0.1643, Accuracy: 0.9432, Tiempo: 34.69s
+2025-11-12 18:11:59,905 - INFO - Validación    | Pérdida: 0.8917, Accuracy: 0.6833
+2025-11-12 18:11:59,906 - INFO - Tasa de aprendizaje reducida de 9.999790752451615e-05 a 9.999782032604563e-05
+2025-11-12 18:11:59,907 - INFO - 
+--- Época 210/300 ---
+2025-11-12 18:12:34,132 - INFO - Entrenamiento | Pérdida: 0.1665, Accuracy: 0.9428, Tiempo: 34.22s
+2025-11-12 18:12:42,315 - INFO - Validación    | Pérdida: 0.8343, Accuracy: 0.7000
+2025-11-12 18:12:42,330 - INFO - 
+--- Época 211/300 ---
+2025-11-12 18:13:16,933 - INFO - Entrenamiento | Pérdida: 0.1558, Accuracy: 0.9465, Tiempo: 34.60s
+2025-11-12 18:13:23,385 - INFO - Validación    | Pérdida: 0.8589, Accuracy: 0.6750
+2025-11-12 18:13:23,387 - INFO - Tasa de aprendizaje reducida de 9.999809181657733e-05 a 9.999797740012458e-05
+2025-11-12 18:13:23,388 - INFO - 
+--- Época 212/300 ---
+2025-11-12 18:13:55,358 - INFO - Entrenamiento | Pérdida: 0.1659, Accuracy: 0.9422, Tiempo: 31.97s
+2025-11-12 18:14:02,434 - INFO - Validación    | Pérdida: 0.9578, Accuracy: 0.6583
+2025-11-12 18:14:02,434 - INFO - Tasa de aprendizaje reducida de 9.999797740012458e-05 a 9.99974847832625e-05
+2025-11-12 18:14:02,434 - INFO - 
+--- Época 213/300 ---
+2025-11-12 18:14:35,895 - INFO - Entrenamiento | Pérdida: 0.1578, Accuracy: 0.9471, Tiempo: 33.44s
+2025-11-12 18:14:42,885 - INFO - Validación    | Pérdida: 0.8605, Accuracy: 0.6833
+2025-11-12 18:14:42,887 - INFO - 
+--- Época 214/300 ---
+2025-11-12 18:15:17,918 - INFO - Entrenamiento | Pérdida: 0.1618, Accuracy: 0.9452, Tiempo: 35.03s
+2025-11-12 18:15:24,870 - INFO - Validación    | Pérdida: 0.8849, Accuracy: 0.6750
+2025-11-12 18:15:24,871 - INFO - Tasa de aprendizaje reducida de 9.999796996271347e-05 a 9.999785322011546e-05
+2025-11-12 18:15:24,872 - INFO - 
+--- Época 215/300 ---
+2025-11-12 18:15:58,854 - INFO - Entrenamiento | Pérdida: 0.1587, Accuracy: 0.9459, Tiempo: 33.98s
+2025-11-12 18:16:05,834 - INFO - Validación    | Pérdida: 0.7863, Accuracy: 0.6917
+2025-11-12 18:16:05,836 - INFO - 
+--- Época 216/300 ---
+2025-11-12 18:16:40,356 - INFO - Entrenamiento | Pérdida: 0.1534, Accuracy: 0.9521, Tiempo: 34.52s
+2025-11-12 18:16:47,058 - INFO - Validación    | Pérdida: 0.7998, Accuracy: 0.7083
+2025-11-12 18:16:47,058 - INFO - Tasa de aprendizaje reducida de 9.999830493850676e-05 a 9.999824628591553e-05
+2025-11-12 18:16:47,058 - INFO - 
+--- Época 217/300 ---
+2025-11-12 18:17:21,180 - INFO - Entrenamiento | Pérdida: 0.1710, Accuracy: 0.9415, Tiempo: 34.12s
+2025-11-12 18:17:28,136 - INFO - Validación    | Pérdida: 0.7710, Accuracy: 0.7000
+2025-11-12 18:17:28,138 - INFO - 
+--- Época 218/300 ---
+2025-11-12 18:18:02,581 - INFO - Entrenamiento | Pérdida: 0.1550, Accuracy: 0.9467, Tiempo: 34.44s
+2025-11-12 18:18:09,322 - INFO - Validación    | Pérdida: 0.8650, Accuracy: 0.7000
+2025-11-12 18:18:09,322 - INFO - Tasa de aprendizaje reducida de 9.999837020559089e-05 a 9.999794891457494e-05
+2025-11-12 18:18:09,322 - INFO - 
+--- Época 219/300 ---
+2025-11-12 18:18:43,505 - INFO - Entrenamiento | Pérdida: 0.1535, Accuracy: 0.9465, Tiempo: 34.18s
+2025-11-12 18:18:50,206 - INFO - Validación    | Pérdida: 0.9781, Accuracy: 0.6833
+2025-11-12 18:18:50,206 - INFO - Tasa de aprendizaje reducida de 9.999794891457494e-05 a 9.999737731628713e-05
+2025-11-12 18:18:50,206 - INFO - 
+--- Época 220/300 ---
+2025-11-12 18:19:24,387 - INFO - Entrenamiento | Pérdida: 0.1645, Accuracy: 0.9442, Tiempo: 34.18s
+2025-11-12 18:19:30,858 - INFO - Validación    | Pérdida: 0.8209, Accuracy: 0.6917
+2025-11-12 18:19:30,858 - INFO - 
+--- Época 221/300 ---
+2025-11-12 18:20:05,741 - INFO - Entrenamiento | Pérdida: 0.1706, Accuracy: 0.9374, Tiempo: 34.88s
+2025-11-12 18:20:12,514 - INFO - Validación    | Pérdida: 0.7974, Accuracy: 0.7083
+2025-11-12 18:20:12,524 - INFO - 
+--- Época 222/300 ---
+2025-11-12 18:20:46,565 - INFO - Entrenamiento | Pérdida: 0.1579, Accuracy: 0.9488, Tiempo: 34.04s
+2025-11-12 18:20:53,614 - INFO - Validación    | Pérdida: 0.8138, Accuracy: 0.7000
+2025-11-12 18:20:53,616 - INFO - Tasa de aprendizaje reducida de 9.999825668116882e-05 a 9.999818421059539e-05
+2025-11-12 18:20:53,618 - INFO - 
+--- Época 223/300 ---
+2025-11-12 18:21:28,043 - INFO - Entrenamiento | Pérdida: 0.1651, Accuracy: 0.9405, Tiempo: 34.42s
+2025-11-12 18:21:34,826 - INFO - Validación    | Pérdida: 0.8589, Accuracy: 0.6750
+2025-11-12 18:21:34,826 - INFO - Tasa de aprendizaje reducida de 9.999818421059539e-05 a 9.999797760168871e-05
+2025-11-12 18:21:34,826 - INFO - 
+--- Época 224/300 ---
+2025-11-12 18:22:08,865 - INFO - Entrenamiento | Pérdida: 0.1457, Accuracy: 0.9529, Tiempo: 34.04s
+2025-11-12 18:22:15,728 - INFO - Validación    | Pérdida: 0.8189, Accuracy: 0.7167
+2025-11-12 18:22:15,728 - INFO - 
+--- Época 225/300 ---
+2025-11-12 18:22:49,878 - INFO - Entrenamiento | Pérdida: 0.1461, Accuracy: 0.9484, Tiempo: 34.15s
+2025-11-12 18:22:56,728 - INFO - Validación    | Pérdida: 0.8799, Accuracy: 0.6833
+2025-11-12 18:22:56,728 - INFO - Tasa de aprendizaje reducida de 9.999816133279565e-05 a 9.999787736591062e-05
+2025-11-12 18:22:56,728 - INFO - 
+--- Época 226/300 ---
+2025-11-12 18:23:31,511 - INFO - Entrenamiento | Pérdida: 0.1507, Accuracy: 0.9498, Tiempo: 34.77s
+2025-11-12 18:23:38,529 - INFO - Validación    | Pérdida: 0.8895, Accuracy: 0.6667
+2025-11-12 18:23:38,529 - INFO - Tasa de aprendizaje reducida de 9.999787736591062e-05 a 9.999783107077428e-05
+2025-11-12 18:23:38,529 - INFO - 
+--- Época 227/300 ---
+2025-11-12 18:24:13,450 - INFO - Entrenamiento | Pérdida: 0.1634, Accuracy: 0.9411, Tiempo: 34.92s
+2025-11-12 18:24:20,546 - INFO - Validación    | Pérdida: 0.7933, Accuracy: 0.6917
+2025-11-12 18:24:20,546 - INFO - 
+--- Época 228/300 ---
+2025-11-12 18:24:55,080 - INFO - Entrenamiento | Pérdida: 0.1526, Accuracy: 0.9467, Tiempo: 34.53s
+2025-11-12 18:25:01,891 - INFO - Validación    | Pérdida: 0.6947, Accuracy: 0.7083
+2025-11-12 18:25:01,893 - INFO - 
+--- Época 229/300 ---
+2025-11-12 18:25:36,247 - INFO - Entrenamiento | Pérdida: 0.1606, Accuracy: 0.9444, Tiempo: 34.35s
+2025-11-12 18:25:43,146 - INFO - Validación    | Pérdida: 0.8130, Accuracy: 0.6833
+2025-11-12 18:25:43,148 - INFO - Tasa de aprendizaje reducida de 9.999867686550974e-05 a 9.999818792837577e-05
+2025-11-12 18:25:43,148 - INFO - 
+--- Época 230/300 ---
+2025-11-12 18:26:17,621 - INFO - Entrenamiento | Pérdida: 0.1656, Accuracy: 0.9419, Tiempo: 34.47s
+2025-11-12 18:26:24,452 - INFO - Validación    | Pérdida: 0.7724, Accuracy: 0.6833
+2025-11-12 18:26:24,452 - INFO - 
+--- Época 231/300 ---
+2025-11-12 18:26:58,649 - INFO - Entrenamiento | Pérdida: 0.1512, Accuracy: 0.9490, Tiempo: 34.20s
+2025-11-12 18:27:05,505 - INFO - Validación    | Pérdida: 0.8769, Accuracy: 0.6750
+2025-11-12 18:27:05,506 - INFO - Tasa de aprendizaje reducida de 9.999836449933379e-05 a 9.99978918872141e-05
+2025-11-12 18:27:05,506 - INFO - 
+--- Época 232/300 ---
+2025-11-12 18:27:39,869 - INFO - Entrenamiento | Pérdida: 0.1584, Accuracy: 0.9455, Tiempo: 34.36s
+2025-11-12 18:27:46,572 - INFO - Validación    | Pérdida: 0.8990, Accuracy: 0.6833
+2025-11-12 18:27:46,575 - INFO - Tasa de aprendizaje reducida de 9.99978918872141e-05 a 9.999778415498079e-05
+2025-11-12 18:27:46,576 - INFO - 
+--- Época 233/300 ---
+2025-11-12 18:28:21,068 - INFO - Entrenamiento | Pérdida: 0.1564, Accuracy: 0.9475, Tiempo: 34.49s
+2025-11-12 18:28:28,051 - INFO - Validación    | Pérdida: 0.8846, Accuracy: 0.6750
+2025-11-12 18:28:28,051 - INFO - 
+--- Época 234/300 ---
+2025-11-12 18:29:02,528 - INFO - Entrenamiento | Pérdida: 0.1561, Accuracy: 0.9473, Tiempo: 34.48s
+2025-11-12 18:29:09,202 - INFO - Validación    | Pérdida: 0.9086, Accuracy: 0.6750
+2025-11-12 18:29:09,202 - INFO - Tasa de aprendizaje reducida de 9.999785462375764e-05 a 9.999773685169831e-05
+2025-11-12 18:29:09,202 - INFO - 
+--- Época 235/300 ---
+2025-11-12 18:29:43,452 - INFO - Entrenamiento | Pérdida: 0.1481, Accuracy: 0.9481, Tiempo: 34.25s
+2025-11-12 18:29:50,303 - INFO - Validación    | Pérdida: 0.7543, Accuracy: 0.6917
+2025-11-12 18:29:50,303 - INFO - 
+--- Época 236/300 ---
+2025-11-12 18:30:24,324 - INFO - Entrenamiento | Pérdida: 0.1493, Accuracy: 0.9479, Tiempo: 34.01s
+2025-11-12 18:30:31,104 - INFO - Validación    | Pérdida: 0.9139, Accuracy: 0.6833
+2025-11-12 18:30:31,120 - INFO - Tasa de aprendizaje reducida de 9.999844005971987e-05 a 9.999771028125659e-05
+2025-11-12 18:30:31,120 - INFO - 
+--- Época 237/300 ---
+2025-11-12 18:31:05,071 - INFO - Entrenamiento | Pérdida: 0.1565, Accuracy: 0.9453, Tiempo: 33.95s
+2025-11-12 18:31:11,538 - INFO - Validación    | Pérdida: 0.8392, Accuracy: 0.6750
+2025-11-12 18:31:11,552 - INFO - 
+--- Época 238/300 ---
+2025-11-12 18:31:45,272 - INFO - Entrenamiento | Pérdida: 0.1447, Accuracy: 0.9512, Tiempo: 33.72s
+2025-11-12 18:31:52,315 - INFO - Validación    | Pérdida: 0.8277, Accuracy: 0.7250
+2025-11-12 18:31:52,316 - INFO - 
+--- Época 239/300 ---
+2025-11-12 18:32:27,032 - INFO - Entrenamiento | Pérdida: 0.1541, Accuracy: 0.9494, Tiempo: 34.72s
+2025-11-12 18:32:33,888 - INFO - Validación    | Pérdida: 0.8536, Accuracy: 0.6750
+2025-11-12 18:32:33,889 - INFO - Tasa de aprendizaje reducida de 9.99981219213652e-05 a 9.999800263881418e-05
+2025-11-12 18:32:33,890 - INFO - 
+--- Época 240/300 ---
+2025-11-12 18:33:08,273 - INFO - Entrenamiento | Pérdida: 0.1508, Accuracy: 0.9471, Tiempo: 34.38s
+2025-11-12 18:33:14,957 - INFO - Validación    | Pérdida: 0.8063, Accuracy: 0.6833
+2025-11-12 18:33:14,957 - INFO - 
+--- Época 241/300 ---
+2025-11-12 18:33:49,691 - INFO - Entrenamiento | Pérdida: 0.1557, Accuracy: 0.9483, Tiempo: 34.73s
+2025-11-12 18:33:56,447 - INFO - Validación    | Pérdida: 0.8450, Accuracy: 0.6667
+2025-11-12 18:33:56,447 - INFO - Tasa de aprendizaje reducida de 9.99982176838785e-05 a 9.999804239310136e-05
+2025-11-12 18:33:56,447 - INFO - 
+--- Época 242/300 ---
+2025-11-12 18:34:30,724 - INFO - Entrenamiento | Pérdida: 0.1643, Accuracy: 0.9463, Tiempo: 34.27s
+2025-11-12 18:34:37,535 - INFO - Validación    | Pérdida: 0.8006, Accuracy: 0.6750
+2025-11-12 18:34:37,540 - INFO - 
+--- Época 243/300 ---
+2025-11-12 18:35:12,442 - INFO - Entrenamiento | Pérdida: 0.1488, Accuracy: 0.9510, Tiempo: 34.90s
+2025-11-12 18:35:19,313 - INFO - Validación    | Pérdida: 0.9341, Accuracy: 0.6750
+2025-11-12 18:35:19,315 - INFO - Tasa de aprendizaje reducida de 9.999824299385578e-05 a 9.999760803848425e-05
+2025-11-12 18:35:19,316 - INFO - 
+--- Época 244/300 ---
+2025-11-12 18:35:54,361 - INFO - Entrenamiento | Pérdida: 0.1470, Accuracy: 0.9517, Tiempo: 35.04s
+2025-11-12 18:36:01,362 - INFO - Validación    | Pérdida: 0.8886, Accuracy: 0.7000
+2025-11-12 18:36:01,364 - INFO - 
+--- Época 245/300 ---
+2025-11-12 18:36:35,444 - INFO - Entrenamiento | Pérdida: 0.1476, Accuracy: 0.9494, Tiempo: 34.08s
+2025-11-12 18:36:42,211 - INFO - Validación    | Pérdida: 0.8931, Accuracy: 0.6917
+2025-11-12 18:36:42,211 - INFO - Tasa de aprendizaje reducida de 9.99978351851146e-05 a 9.999781344513171e-05
+2025-11-12 18:36:42,211 - INFO - 
+--- Época 246/300 ---
+2025-11-12 18:37:17,178 - INFO - Entrenamiento | Pérdida: 0.1393, Accuracy: 0.9545, Tiempo: 34.97s
+2025-11-12 18:37:23,978 - INFO - Validación    | Pérdida: 0.8342, Accuracy: 0.6750
+2025-11-12 18:37:23,978 - INFO - 
+--- Época 247/300 ---
+2025-11-12 18:37:58,039 - INFO - Entrenamiento | Pérdida: 0.1394, Accuracy: 0.9535, Tiempo: 34.06s
+2025-11-12 18:38:04,846 - INFO - Validación    | Pérdida: 0.6984, Accuracy: 0.7250
+2025-11-12 18:38:04,846 - INFO - 
+--- Época 248/300 ---
+2025-11-12 18:38:39,597 - INFO - Entrenamiento | Pérdida: 0.1468, Accuracy: 0.9484, Tiempo: 34.75s
+2025-11-12 18:38:46,764 - INFO - Validación    | Pérdida: 0.8730, Accuracy: 0.6833
+2025-11-12 18:38:46,766 - INFO - Tasa de aprendizaje reducida de 9.999866278285067e-05 a 9.999791047189464e-05
+2025-11-12 18:38:46,768 - INFO - 
+--- Época 249/300 ---
+2025-11-12 18:39:20,583 - INFO - Entrenamiento | Pérdida: 0.1538, Accuracy: 0.9486, Tiempo: 33.81s
+2025-11-12 18:39:27,481 - INFO - Validación    | Pérdida: 0.7352, Accuracy: 0.6750
+2025-11-12 18:39:27,481 - INFO - 
+--- Época 250/300 ---
+2025-11-12 18:40:02,149 - INFO - Entrenamiento | Pérdida: 0.1407, Accuracy: 0.9529, Tiempo: 34.67s
+2025-11-12 18:40:09,165 - INFO - Validación    | Pérdida: 1.0063, Accuracy: 0.6500
+2025-11-12 18:40:09,165 - INFO - Tasa de aprendizaje reducida de 9.999851821829515e-05 a 9.99972236254273e-05
+2025-11-12 18:40:09,165 - INFO - 
+--- Época 251/300 ---
+2025-11-12 18:40:43,853 - INFO - Entrenamiento | Pérdida: 0.1493, Accuracy: 0.9506, Tiempo: 34.69s
+2025-11-12 18:40:50,683 - INFO - Validación    | Pérdida: 0.9433, Accuracy: 0.6583
+2025-11-12 18:40:50,683 - INFO - 
+--- Época 252/300 ---
+2025-11-12 18:41:24,900 - INFO - Entrenamiento | Pérdida: 0.1454, Accuracy: 0.9490, Tiempo: 34.22s
+2025-11-12 18:41:31,767 - INFO - Validación    | Pérdida: 0.8833, Accuracy: 0.6583
+2025-11-12 18:41:31,768 - INFO - 
+--- Época 253/300 ---
+2025-11-12 18:42:06,788 - INFO - Entrenamiento | Pérdida: 0.1412, Accuracy: 0.9475, Tiempo: 35.02s
+2025-11-12 18:42:13,855 - INFO - Validación    | Pérdida: 0.7338, Accuracy: 0.7333
+2025-11-12 18:42:13,855 - INFO - 
+--- Época 254/300 ---
+2025-11-12 18:42:48,452 - INFO - Entrenamiento | Pérdida: 0.1427, Accuracy: 0.9519, Tiempo: 34.60s
+2025-11-12 18:42:55,085 - INFO - Validación    | Pérdida: 0.8727, Accuracy: 0.6750
+2025-11-12 18:42:55,101 - INFO - Tasa de aprendizaje reducida de 9.999852365740435e-05 a 9.999791194817047e-05
+2025-11-12 18:42:55,102 - INFO - 
+--- Época 255/300 ---
+2025-11-12 18:43:29,636 - INFO - Entrenamiento | Pérdida: 0.1396, Accuracy: 0.9525, Tiempo: 34.53s
+2025-11-12 18:43:36,396 - INFO - Validación    | Pérdida: 0.9906, Accuracy: 0.6500
+2025-11-12 18:43:36,397 - INFO - Tasa de aprendizaje reducida de 9.999791194817047e-05 a 9.999730951228239e-05
+2025-11-12 18:43:36,398 - INFO - 
+--- Época 256/300 ---
+2025-11-12 18:44:11,070 - INFO - Entrenamiento | Pérdida: 0.1458, Accuracy: 0.9486, Tiempo: 34.67s
+2025-11-12 18:44:17,919 - INFO - Validación    | Pérdida: 1.0632, Accuracy: 0.6667
+2025-11-12 18:44:17,920 - INFO - Tasa de aprendizaje reducida de 9.999730951228239e-05 a 9.999690102551313e-05
+2025-11-12 18:44:17,920 - INFO - 
+--- Época 257/300 ---
+2025-11-12 18:44:52,555 - INFO - Entrenamiento | Pérdida: 0.1464, Accuracy: 0.9523, Tiempo: 34.63s
+2025-11-12 18:44:59,431 - INFO - Validación    | Pérdida: 0.8288, Accuracy: 0.6750
+2025-11-12 18:44:59,437 - INFO - 
+--- Época 258/300 ---
+2025-11-12 18:45:34,258 - INFO - Entrenamiento | Pérdida: 0.1563, Accuracy: 0.9479, Tiempo: 34.82s
+2025-11-12 18:45:41,287 - INFO - Validación    | Pérdida: 0.8529, Accuracy: 0.6583
+2025-11-12 18:45:41,289 - INFO - Tasa de aprendizaje reducida de 9.999811685109895e-05 a 9.999800562865852e-05
+2025-11-12 18:45:41,290 - INFO - 
+--- Época 259/300 ---
+2025-11-12 18:46:15,188 - INFO - Entrenamiento | Pérdida: 0.1460, Accuracy: 0.9531, Tiempo: 33.89s
+2025-11-12 18:46:21,946 - INFO - Validación    | Pérdida: 0.7830, Accuracy: 0.6750
+2025-11-12 18:46:21,956 - INFO - 
+--- Época 260/300 ---
+2025-11-12 18:46:55,933 - INFO - Entrenamiento | Pérdida: 0.1483, Accuracy: 0.9506, Tiempo: 33.98s
+2025-11-12 18:47:02,746 - INFO - Validación    | Pérdida: 0.8638, Accuracy: 0.6917
+2025-11-12 18:47:02,746 - INFO - Tasa de aprendizaje reducida de 9.999831912379377e-05 a 9.999795438941923e-05
+2025-11-12 18:47:02,757 - INFO - 
+--- Época 261/300 ---
+2025-11-12 18:47:37,441 - INFO - Entrenamiento | Pérdida: 0.1387, Accuracy: 0.9527, Tiempo: 34.68s
+2025-11-12 18:47:44,258 - INFO - Validación    | Pérdida: 0.9053, Accuracy: 0.6750
+2025-11-12 18:47:44,258 - INFO - Tasa de aprendizaje reducida de 9.999795438941923e-05 a 9.999775292704321e-05
+2025-11-12 18:47:44,258 - INFO - 
+--- Época 262/300 ---
+2025-11-12 18:48:18,598 - INFO - Entrenamiento | Pérdida: 0.1417, Accuracy: 0.9473, Tiempo: 34.34s
+2025-11-12 18:48:25,459 - INFO - Validación    | Pérdida: 0.7754, Accuracy: 0.6917
+2025-11-12 18:48:25,459 - INFO - 
+--- Época 263/300 ---
+2025-11-12 18:48:59,759 - INFO - Entrenamiento | Pérdida: 0.1348, Accuracy: 0.9568, Tiempo: 34.30s
+2025-11-12 18:49:06,493 - INFO - Validación    | Pérdida: 0.8558, Accuracy: 0.6917
+2025-11-12 18:49:06,493 - INFO - Tasa de aprendizaje reducida de 9.999835166397051e-05 a 9.999799190051486e-05
+2025-11-12 18:49:06,493 - INFO - 
+--- Época 264/300 ---
+2025-11-12 18:49:40,671 - INFO - Entrenamiento | Pérdida: 0.1398, Accuracy: 0.9548, Tiempo: 34.16s
+2025-11-12 18:49:47,536 - INFO - Validación    | Pérdida: 0.8157, Accuracy: 0.7000
+2025-11-12 18:49:47,536 - INFO - 
+--- Época 265/300 ---
+2025-11-12 18:50:21,756 - INFO - Entrenamiento | Pérdida: 0.1438, Accuracy: 0.9488, Tiempo: 34.21s
+2025-11-12 18:50:28,376 - INFO - Validación    | Pérdida: 0.7695, Accuracy: 0.6750
+2025-11-12 18:50:28,378 - INFO - 
+--- Época 266/300 ---
+2025-11-12 18:51:02,562 - INFO - Entrenamiento | Pérdida: 0.1433, Accuracy: 0.9537, Tiempo: 34.18s
+2025-11-12 18:51:09,329 - INFO - Validación    | Pérdida: 0.8859, Accuracy: 0.7000
+2025-11-12 18:51:09,329 - INFO - Tasa de aprendizaje reducida de 9.999837659304134e-05 a 9.999784820146073e-05
+2025-11-12 18:51:09,329 - INFO - 
+--- Época 267/300 ---
+2025-11-12 18:51:43,439 - INFO - Entrenamiento | Pérdida: 0.1485, Accuracy: 0.9500, Tiempo: 34.11s
+2025-11-12 18:51:50,419 - INFO - Validación    | Pérdida: 0.8285, Accuracy: 0.7000
+2025-11-12 18:51:50,419 - INFO - 
+--- Época 268/300 ---
+2025-11-12 18:52:25,280 - INFO - Entrenamiento | Pérdida: 0.1469, Accuracy: 0.9510, Tiempo: 34.86s
+2025-11-12 18:52:32,267 - INFO - Validación    | Pérdida: 0.8097, Accuracy: 0.6833
+2025-11-12 18:52:32,267 - INFO - 
+--- Época 269/300 ---
+2025-11-12 18:53:06,298 - INFO - Entrenamiento | Pérdida: 0.1358, Accuracy: 0.9547, Tiempo: 34.02s
+2025-11-12 18:53:13,016 - INFO - Validación    | Pérdida: 0.8393, Accuracy: 0.7083
+2025-11-12 18:53:13,016 - INFO - Tasa de aprendizaje reducida de 9.9998202435348e-05 a 9.999806873715761e-05
+2025-11-12 18:53:13,016 - INFO - 
+--- Época 270/300 ---
+2025-11-12 18:53:46,982 - INFO - Entrenamiento | Pérdida: 0.1456, Accuracy: 0.9552, Tiempo: 33.97s
+2025-11-12 18:53:53,691 - INFO - Validación    | Pérdida: 0.8517, Accuracy: 0.7083
+2025-11-12 18:53:53,691 - INFO - Tasa de aprendizaje reducida de 9.999806873715761e-05 a 9.999801129460346e-05
+2025-11-12 18:53:53,691 - INFO - 
+--- Época 271/300 ---
+2025-11-12 18:54:27,583 - INFO - Entrenamiento | Pérdida: 0.1413, Accuracy: 0.9539, Tiempo: 33.89s
+2025-11-12 18:54:34,480 - INFO - Validación    | Pérdida: 0.9106, Accuracy: 0.6833
+2025-11-12 18:54:34,483 - INFO - Tasa de aprendizaje reducida de 9.999801129460346e-05 a 9.999772663470126e-05
+2025-11-12 18:54:34,485 - INFO - 
+--- Época 272/300 ---
+2025-11-12 18:55:08,617 - INFO - Entrenamiento | Pérdida: 0.1411, Accuracy: 0.9525, Tiempo: 34.13s
+2025-11-12 18:55:15,467 - INFO - Validación    | Pérdida: 0.8692, Accuracy: 0.6833
+2025-11-12 18:55:15,468 - INFO - 
+--- Época 273/300 ---
+2025-11-12 18:55:49,353 - INFO - Entrenamiento | Pérdida: 0.1417, Accuracy: 0.9535, Tiempo: 33.88s
+2025-11-12 18:55:56,052 - INFO - Validación    | Pérdida: 0.7968, Accuracy: 0.6917
+2025-11-12 18:55:56,054 - INFO - 
+--- Época 274/300 ---
+2025-11-12 18:56:29,942 - INFO - Entrenamiento | Pérdida: 0.1450, Accuracy: 0.9512, Tiempo: 33.89s
+2025-11-12 18:56:36,752 - INFO - Validación    | Pérdida: 0.8647, Accuracy: 0.6917
+2025-11-12 18:56:36,752 - INFO - Tasa de aprendizaje reducida de 9.999825926729802e-05 a 9.999795014314735e-05
+2025-11-12 18:56:36,752 - INFO - 
+--- Época 275/300 ---
+2025-11-12 18:57:10,635 - INFO - Entrenamiento | Pérdida: 0.1307, Accuracy: 0.9587, Tiempo: 33.88s
+2025-11-12 18:57:17,536 - INFO - Validación    | Pérdida: 0.9524, Accuracy: 0.6833
+2025-11-12 18:57:17,536 - INFO - Tasa de aprendizaje reducida de 9.999795014314735e-05 a 9.999751299574492e-05
+2025-11-12 18:57:17,536 - INFO - 
+--- Época 276/300 ---
+2025-11-12 18:57:52,103 - INFO - Entrenamiento | Pérdida: 0.1265, Accuracy: 0.9558, Tiempo: 34.57s
+2025-11-12 18:57:58,923 - INFO - Validación    | Pérdida: 0.8825, Accuracy: 0.6750
+2025-11-12 18:57:58,923 - INFO - 
+--- Época 277/300 ---
+2025-11-12 18:58:32,936 - INFO - Entrenamiento | Pérdida: 0.1364, Accuracy: 0.9537, Tiempo: 34.01s
+2025-11-12 18:58:39,537 - INFO - Validación    | Pérdida: 0.9622, Accuracy: 0.6750
+2025-11-12 18:58:39,537 - INFO - Tasa de aprendizaje reducida de 9.999786481601327e-05 a 9.999746201401048e-05
+2025-11-12 18:58:39,537 - INFO - 
+--- Época 278/300 ---
+2025-11-12 18:59:13,255 - INFO - Entrenamiento | Pérdida: 0.1364, Accuracy: 0.9517, Tiempo: 33.72s
+2025-11-12 18:59:20,183 - INFO - Validación    | Pérdida: 0.8798, Accuracy: 0.6583
+2025-11-12 18:59:20,185 - INFO - 
+--- Época 279/300 ---
+2025-11-12 18:59:52,997 - INFO - Entrenamiento | Pérdida: 0.1407, Accuracy: 0.9461, Tiempo: 32.81s
+2025-11-12 18:59:59,531 - INFO - Validación    | Pérdida: 0.9290, Accuracy: 0.6917
+2025-11-12 18:59:59,533 - INFO - Tasa de aprendizaje reducida de 9.999787780226417e-05 a 9.99976338291851e-05
+2025-11-12 18:59:59,535 - INFO - 
+--- Época 280/300 ---
+2025-11-12 19:00:32,462 - INFO - Entrenamiento | Pérdida: 0.1323, Accuracy: 0.9558, Tiempo: 32.93s
+2025-11-12 19:00:38,962 - INFO - Validación    | Pérdida: 0.8123, Accuracy: 0.7000
+2025-11-12 19:00:38,964 - INFO - 
+--- Época 281/300 ---
+2025-11-12 19:01:12,267 - INFO - Entrenamiento | Pérdida: 0.1454, Accuracy: 0.9523, Tiempo: 33.30s
+2025-11-12 19:01:19,026 - INFO - Validación    | Pérdida: 0.7753, Accuracy: 0.7250
+2025-11-12 19:01:19,028 - INFO - 
+--- Época 282/300 ---
+2025-11-12 19:01:50,461 - INFO - Entrenamiento | Pérdida: 0.1271, Accuracy: 0.9574, Tiempo: 31.43s
+2025-11-12 19:01:57,225 - INFO - Validación    | Pérdida: 1.0176, Accuracy: 0.6833
+2025-11-12 19:01:57,226 - INFO - Tasa de aprendizaje reducida de 9.999835197818703e-05 a 9.999716103549848e-05
+2025-11-12 19:01:57,227 - INFO - 
+--- Época 283/300 ---
+2025-11-12 19:02:28,003 - INFO - Entrenamiento | Pérdida: 0.1309, Accuracy: 0.9543, Tiempo: 30.77s
+2025-11-12 19:02:34,950 - INFO - Validación    | Pérdida: 0.9864, Accuracy: 0.6917
+2025-11-12 19:02:34,951 - INFO - 
+--- Época 284/300 ---
+2025-11-12 19:03:07,155 - INFO - Entrenamiento | Pérdida: 0.1374, Accuracy: 0.9533, Tiempo: 32.20s
+2025-11-12 19:03:13,951 - INFO - Validación    | Pérdida: 0.8864, Accuracy: 0.6917
+2025-11-12 19:03:13,952 - INFO - 
+--- Época 285/300 ---
+2025-11-12 19:03:45,097 - INFO - Entrenamiento | Pérdida: 0.1250, Accuracy: 0.9564, Tiempo: 31.14s
+2025-11-12 19:03:51,636 - INFO - Validación    | Pérdida: 1.0340, Accuracy: 0.6917
+2025-11-12 19:03:51,637 - INFO - Tasa de aprendizaje reducida de 9.999784579955965e-05 a 9.999706902855734e-05
+2025-11-12 19:03:51,639 - INFO - 
+--- Época 286/300 ---
+2025-11-12 19:04:24,824 - INFO - Entrenamiento | Pérdida: 0.1298, Accuracy: 0.9547, Tiempo: 33.19s
+2025-11-12 19:04:31,451 - INFO - Validación    | Pérdida: 0.8221, Accuracy: 0.7000
+2025-11-12 19:04:31,452 - INFO - 
+--- Época 287/300 ---
+2025-11-12 19:05:04,322 - INFO - Entrenamiento | Pérdida: 0.1314, Accuracy: 0.9560, Tiempo: 32.87s
+2025-11-12 19:05:11,017 - INFO - Validación    | Pérdida: 0.8221, Accuracy: 0.7167
+2025-11-12 19:05:11,019 - INFO - Tasa de aprendizaje reducida de 9.999814725339065e-05 a 9.999814705082886e-05
+2025-11-12 19:05:11,020 - INFO - 
+--- Época 288/300 ---
+2025-11-12 19:05:44,359 - INFO - Entrenamiento | Pérdida: 0.1379, Accuracy: 0.9554, Tiempo: 33.34s
+2025-11-12 19:05:51,077 - INFO - Validación    | Pérdida: 0.9435, Accuracy: 0.6917
+2025-11-12 19:05:51,078 - INFO - Tasa de aprendizaje reducida de 9.999814705082886e-05 a 9.999755944787755e-05
+2025-11-12 19:05:51,079 - INFO - 
+--- Época 289/300 ---
+2025-11-12 19:06:24,889 - INFO - Entrenamiento | Pérdida: 0.1382, Accuracy: 0.9558, Tiempo: 33.81s
+2025-11-12 19:06:31,729 - INFO - Validación    | Pérdida: 0.9884, Accuracy: 0.6750
+2025-11-12 19:06:31,731 - INFO - Tasa de aprendizaje reducida de 9.999755944787755e-05 a 9.999732170235552e-05
+2025-11-12 19:06:31,733 - INFO - 
+--- Época 290/300 ---
+2025-11-12 19:07:04,363 - INFO - Entrenamiento | Pérdida: 0.1258, Accuracy: 0.9574, Tiempo: 32.63s
+2025-11-12 19:07:10,855 - INFO - Validación    | Pérdida: 1.1378, Accuracy: 0.6917
+2025-11-12 19:07:10,856 - INFO - Tasa de aprendizaje reducida de 9.999732170235552e-05 a 9.999645071250842e-05
+2025-11-12 19:07:10,856 - INFO - 
+--- Época 291/300 ---
+2025-11-12 19:07:42,827 - INFO - Entrenamiento | Pérdida: 0.1287, Accuracy: 0.9535, Tiempo: 31.97s
+2025-11-12 19:07:49,400 - INFO - Validación    | Pérdida: 0.9342, Accuracy: 0.6583
+2025-11-12 19:07:49,402 - INFO - 
+--- Época 292/300 ---
+2025-11-12 19:08:23,510 - INFO - Entrenamiento | Pérdida: 0.1246, Accuracy: 0.9581, Tiempo: 34.11s
+2025-11-12 19:08:30,040 - INFO - Validación    | Pérdida: 0.9267, Accuracy: 0.6917
+2025-11-12 19:08:30,041 - INFO - 
+--- Época 293/300 ---
+2025-11-12 19:09:02,635 - INFO - Entrenamiento | Pérdida: 0.1418, Accuracy: 0.9527, Tiempo: 32.59s
+2025-11-12 19:09:09,358 - INFO - Validación    | Pérdida: 0.8235, Accuracy: 0.6833
+2025-11-12 19:09:09,360 - INFO - 
+--- Época 294/300 ---
+2025-11-12 19:09:42,034 - INFO - Entrenamiento | Pérdida: 0.1460, Accuracy: 0.9527, Tiempo: 32.67s
+2025-11-12 19:09:48,625 - INFO - Validación    | Pérdida: 0.8171, Accuracy: 0.6833
+2025-11-12 19:09:48,626 - INFO - 
+--- Época 295/300 ---
+2025-11-12 19:10:21,602 - INFO - Entrenamiento | Pérdida: 0.1230, Accuracy: 0.9568, Tiempo: 32.97s
+2025-11-12 19:10:28,369 - INFO - Validación    | Pérdida: 0.9600, Accuracy: 0.6750
+2025-11-12 19:10:28,379 - INFO - Tasa de aprendizaje reducida de 9.999816968918312e-05 a 9.999747331981632e-05
+2025-11-12 19:10:28,379 - INFO - 
+--- Época 296/300 ---
+2025-11-12 19:11:03,404 - INFO - Entrenamiento | Pérdida: 0.1333, Accuracy: 0.9541, Tiempo: 35.02s
+2025-11-12 19:11:10,395 - INFO - Validación    | Pérdida: 0.9549, Accuracy: 0.6750
+2025-11-12 19:11:10,397 - INFO - 
+--- Época 297/300 ---
+2025-11-12 19:11:44,466 - INFO - Entrenamiento | Pérdida: 0.1382, Accuracy: 0.9548, Tiempo: 34.07s
+2025-11-12 19:11:51,301 - INFO - Validación    | Pérdida: 1.0571, Accuracy: 0.6750
+2025-11-12 19:11:51,302 - INFO - Tasa de aprendizaje reducida de 9.999750015176524e-05 a 9.999693621940083e-05
+2025-11-12 19:11:51,303 - INFO - 
+--- Época 298/300 ---
+2025-11-12 19:12:27,379 - INFO - Entrenamiento | Pérdida: 0.1303, Accuracy: 0.9570, Tiempo: 36.07s
+2025-11-12 19:12:34,019 - INFO - Validación    | Pérdida: 1.0388, Accuracy: 0.6583
+2025-11-12 19:12:34,020 - INFO - 
+--- Época 299/300 ---
+2025-11-12 19:13:07,946 - INFO - Entrenamiento | Pérdida: 0.1350, Accuracy: 0.9516, Tiempo: 33.92s
+2025-11-12 19:13:15,091 - INFO - Validación    | Pérdida: 0.8322, Accuracy: 0.6750
+2025-11-12 19:13:15,092 - INFO - 
+--- Época 300/300 ---
+2025-11-12 19:13:49,516 - INFO - Entrenamiento | Pérdida: 0.1335, Accuracy: 0.9562, Tiempo: 34.42s
+2025-11-12 19:13:56,558 - INFO - Validación    | Pérdida: 0.9161, Accuracy: 0.6833
+2025-11-12 19:13:56,560 - INFO - Tasa de aprendizaje reducida de 9.999810122192487e-05 a 9.999769918066496e-05
+2025-11-12 19:13:56,561 - INFO - 
+--- ENTRENAMIENTO FINALIZADO ---
+2025-11-12 19:13:56,563 - INFO - La mejor pérdida en validación fue: 0.5882
+2025-11-12 19:13:56,564 - INFO - Los mejores pesos están guardados en: 'models/sbtaylor_kan_cotton\run_20251112_154804\sbtaylor_kan.best_weights.pth'
+2025-11-12 19:17:09,776 - INFO - Gráficos de aprendizaje guardados en 'learning_curves.png'
+2025-11-12 19:28:42,783 - INFO - Cargando el mejor modelo para la evaluación...
+2025-11-12 19:29:06,415 - INFO - Cargando el mejor modelo para la evaluación...
+2025-11-12 19:29:31,983 - INFO - 
+--- INICIANDO EVALUACIÓN EN EL CONJUNTO DE PRUEBA ---
+2025-11-12 19:29:39,615 - INFO - Calculando métricas de rendimiento...
+2025-11-12 19:29:39,627 - INFO - Generando matriz de confusión...
+2025-11-12 19:29:39,838 - INFO - Matriz de confusión guardada en: models/sbtaylor_kan_cotton\run_20251112_154804\confusion_matrix.png
+2025-11-12 19:29:39,839 - INFO - Generando informe de métricas...
+2025-11-12 19:29:39,862 - INFO - Informe de métricas guardado en: models/sbtaylor_kan_cotton\run_20251112_154804\test_metrics_report.txt
+2025-11-12 19:29:39,865 - INFO - 
+--- EVALUACIÓN FINALIZADA ---
+2025-11-12 20:06:20,383 - INFO - Gráficos de aprendizaje guardados en 'learning_curves.png'
+2025-11-12 20:06:37,697 - INFO - Gráficos de aprendizaje guardados en 'learning_curves.png'
+2025-11-12 20:08:12,914 - INFO - Gráficos de aprendizaje guardados en 'learning_curves.png'

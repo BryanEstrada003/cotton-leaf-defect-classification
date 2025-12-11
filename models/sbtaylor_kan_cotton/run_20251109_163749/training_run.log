@@ -1,0 +1,354 @@
+2025-11-09 16:37:51,336 - INFO - Modelo SBTAYLOR_KAN.Net importado correctamente.
+2025-11-09 16:37:51,338 - INFO - Los pesos del modelo se guardarán en: 'models/sbtaylor_kan_cotton\run_20251109_163749\sbtaylor_kan.best_weights.pth'
+2025-11-09 16:37:51,340 - INFO - El registro de entrenamiento se guardará en: 'models/sbtaylor_kan_cotton\run_20251109_163749\training_run.log'
+2025-11-09 16:37:52,531 - INFO - Versión de PyTorch: 2.9.0+cu126
+2025-11-09 16:37:52,558 - INFO - ¿CUDA está disponible?: True
+2025-11-09 16:37:52,561 - INFO - Versión de CUDA con la que PyTorch fue compilado: 12.6
+2025-11-09 16:37:52,563 - INFO - Número de GPUs disponibles: 1
+2025-11-09 16:37:52,570 - INFO - Nombre de la GPU actual: NVIDIA GeForce RTX 4090
+2025-11-09 16:37:53,299 - INFO - --- Hyperparámetros de Entrenamiento ---
+2025-11-09 16:37:53,300 - INFO - Batch Size: 32
+2025-11-09 16:37:53,302 - INFO - Num Epochs: 300
+2025-11-09 16:37:53,304 - INFO - Learning Rate: 0.0001
+2025-11-09 16:37:53,306 - INFO - Num Classes: 4
+2025-11-09 16:37:53,307 - INFO - Num Workers: 4
+2025-11-09 16:37:54,386 - INFO - 
+Cargando dataset de ./data...
+2025-11-09 16:37:54,447 - INFO - Dataset cargado exitosamente.
+2025-11-09 16:37:54,448 - INFO -   - 5212 imágenes de entrenamiento.
+2025-11-09 16:37:54,449 - INFO -   - 240 imágenes de validación.
+2025-11-09 16:37:55,882 - INFO - 
+Usando dispositivo: cuda
+2025-11-09 16:57:45,983 - INFO - Aplicando pesos de clase a la función de pérdida CrossEntropyLoss.
+2025-11-09 16:57:46,033 - INFO - 
+--- INICIANDO ENTRENAMIENTO ---
+2025-11-09 16:57:46,034 - INFO - 
+--- Época 1/300 ---
+2025-11-09 16:59:39,164 - INFO - Entrenamiento | Pérdida: 1.9555, Accuracy: 0.2922, Tiempo: 113.13s
+2025-11-09 16:59:55,866 - INFO - Validación    | Pérdida: 1.2941, Accuracy: 0.3583
+2025-11-09 16:59:56,564 - INFO - [+] Mejora en val_loss. Guardando el mejor modelo en 'models/sbtaylor_kan_cotton\run_20251109_163749\sbtaylor_kan.best_weights.pth'
+2025-11-09 16:59:56,566 - INFO - 
+--- Época 2/300 ---
+2025-11-09 17:01:19,766 - INFO - Entrenamiento | Pérdida: 1.4937, Accuracy: 0.2786, Tiempo: 83.20s
+2025-11-09 17:01:27,391 - INFO - Validación    | Pérdida: 1.3430, Accuracy: 0.3417
+2025-11-09 17:01:27,393 - INFO - 
+--- Época 3/300 ---
+2025-11-09 17:02:21,701 - INFO - Entrenamiento | Pérdida: 1.3991, Accuracy: 0.3156, Tiempo: 54.31s
+2025-11-09 17:02:29,125 - INFO - Validación    | Pérdida: 1.2391, Accuracy: 0.3833
+2025-11-09 17:02:29,476 - INFO - [+] Mejora en val_loss. Guardando el mejor modelo en 'models/sbtaylor_kan_cotton\run_20251109_163749\sbtaylor_kan.best_weights.pth'
+2025-11-09 17:02:29,478 - INFO - 
+--- Época 4/300 ---
+2025-11-09 17:03:25,280 - INFO - Entrenamiento | Pérdida: 1.3729, Accuracy: 0.3041, Tiempo: 55.80s
+2025-11-09 17:03:32,960 - INFO - Validación    | Pérdida: 1.3139, Accuracy: 0.2625
+2025-11-09 17:03:32,962 - INFO - 
+--- Época 5/300 ---
+2025-11-09 17:04:27,940 - INFO - Entrenamiento | Pérdida: 1.3536, Accuracy: 0.3183, Tiempo: 54.98s
+2025-11-09 17:04:35,595 - INFO - Validación    | Pérdida: 1.1810, Accuracy: 0.4583
+2025-11-09 17:04:35,969 - INFO - [+] Mejora en val_loss. Guardando el mejor modelo en 'models/sbtaylor_kan_cotton\run_20251109_163749\sbtaylor_kan.best_weights.pth'
+2025-11-09 17:04:35,970 - INFO - 
+--- Época 6/300 ---
+2025-11-09 17:05:30,254 - INFO - Entrenamiento | Pérdida: 1.2861, Accuracy: 0.3818, Tiempo: 54.28s
+2025-11-09 17:05:37,787 - INFO - Validación    | Pérdida: 1.0597, Accuracy: 0.4750
+2025-11-09 17:05:38,168 - INFO - [+] Mejora en val_loss. Guardando el mejor modelo en 'models/sbtaylor_kan_cotton\run_20251109_163749\sbtaylor_kan.best_weights.pth'
+2025-11-09 17:05:38,170 - INFO - 
+--- Época 7/300 ---
+2025-11-09 17:07:24,450 - INFO - Entrenamiento | Pérdida: 1.2872, Accuracy: 0.3757, Tiempo: 106.28s
+2025-11-09 17:07:45,025 - INFO - Validación    | Pérdida: 1.1213, Accuracy: 0.4875
+2025-11-09 17:07:45,027 - INFO - 
+--- Época 8/300 ---
+2025-11-09 17:09:34,712 - INFO - Entrenamiento | Pérdida: 1.2169, Accuracy: 0.3964, Tiempo: 109.68s
+2025-11-09 17:09:54,440 - INFO - Validación    | Pérdida: 1.0832, Accuracy: 0.4708
+2025-11-09 17:09:54,444 - INFO - 
+--- Época 9/300 ---
+2025-11-09 17:11:46,292 - INFO - Entrenamiento | Pérdida: 1.2132, Accuracy: 0.3998, Tiempo: 111.85s
+2025-11-09 17:12:04,570 - INFO - Validación    | Pérdida: 1.0995, Accuracy: 0.4000
+2025-11-09 17:12:04,579 - INFO - 
+--- Época 10/300 ---
+2025-11-09 17:13:51,706 - INFO - Entrenamiento | Pérdida: 1.1947, Accuracy: 0.4240, Tiempo: 107.13s
+2025-11-09 17:14:09,184 - INFO - Validación    | Pérdida: 1.1145, Accuracy: 0.4333
+2025-11-09 17:14:09,186 - INFO - Tasa de aprendizaje reducida de 0.0001 a 1e-05
+2025-11-09 17:14:09,187 - INFO - 
+--- Época 11/300 ---
+2025-11-09 17:15:50,423 - INFO - Entrenamiento | Pérdida: 1.1537, Accuracy: 0.4294, Tiempo: 101.24s
+2025-11-09 17:16:08,379 - INFO - Validación    | Pérdida: 1.1147, Accuracy: 0.4125
+2025-11-09 17:16:08,380 - INFO - 
+--- Época 12/300 ---
+2025-11-09 17:17:50,788 - INFO - Entrenamiento | Pérdida: 1.1457, Accuracy: 0.4284, Tiempo: 102.41s
+2025-11-09 17:18:08,594 - INFO - Validación    | Pérdida: 1.0890, Accuracy: 0.4333
+2025-11-09 17:18:08,596 - INFO - 
+--- Época 13/300 ---
+2025-11-09 17:20:01,665 - INFO - Entrenamiento | Pérdida: 1.1458, Accuracy: 0.4434, Tiempo: 113.07s
+2025-11-09 17:20:17,587 - INFO - Validación    | Pérdida: 1.1010, Accuracy: 0.4250
+2025-11-09 17:20:17,587 - INFO - 
+--- Época 14/300 ---
+2025-11-09 17:22:11,897 - INFO - Entrenamiento | Pérdida: 1.1310, Accuracy: 0.4361, Tiempo: 114.30s
+2025-11-09 17:22:32,617 - INFO - Validación    | Pérdida: 1.0789, Accuracy: 0.4875
+2025-11-09 17:22:32,617 - INFO - Tasa de aprendizaje reducida de 1e-05 a 1.0000000000000002e-06
+2025-11-09 17:22:32,617 - INFO - 
+--- Época 15/300 ---
+2025-11-09 17:24:30,219 - INFO - Entrenamiento | Pérdida: 1.1412, Accuracy: 0.4305, Tiempo: 117.60s
+2025-11-09 17:24:45,843 - INFO - Validación    | Pérdida: 1.0761, Accuracy: 0.4875
+2025-11-09 17:24:45,852 - INFO - 
+--- Época 16/300 ---
+2025-11-09 17:25:43,826 - INFO - Entrenamiento | Pérdida: 1.1556, Accuracy: 0.4234, Tiempo: 57.97s
+2025-11-09 17:25:51,471 - INFO - Validación    | Pérdida: 1.0793, Accuracy: 0.4958
+2025-11-09 17:25:51,474 - INFO - 
+--- Época 17/300 ---
+2025-11-09 17:27:01,417 - INFO - Entrenamiento | Pérdida: 1.1337, Accuracy: 0.4319, Tiempo: 69.94s
+2025-11-09 17:27:12,820 - INFO - Validación    | Pérdida: 1.0766, Accuracy: 0.4750
+2025-11-09 17:27:12,821 - INFO - 
+--- Época 18/300 ---
+2025-11-09 17:28:20,107 - INFO - Entrenamiento | Pérdida: 1.1401, Accuracy: 0.4375, Tiempo: 67.28s
+2025-11-09 17:28:30,524 - INFO - Validación    | Pérdida: 1.0720, Accuracy: 0.5083
+2025-11-09 17:28:30,524 - INFO - Tasa de aprendizaje reducida de 1.0000000000000002e-06 a 1.0000000000000002e-07
+2025-11-09 17:28:30,524 - INFO - 
+--- Época 19/300 ---
+2025-11-09 17:29:36,659 - INFO - Entrenamiento | Pérdida: 1.1415, Accuracy: 0.4361, Tiempo: 66.13s
+2025-11-09 17:29:46,812 - INFO - Validación    | Pérdida: 1.0858, Accuracy: 0.4667
+2025-11-09 17:29:46,812 - INFO - 
+--- Época 20/300 ---
+2025-11-09 17:30:52,444 - INFO - Entrenamiento | Pérdida: 1.1444, Accuracy: 0.4273, Tiempo: 65.63s
+2025-11-09 17:31:02,578 - INFO - Validación    | Pérdida: 1.0777, Accuracy: 0.4875
+2025-11-09 17:31:02,580 - INFO - 
+--- Época 21/300 ---
+2025-11-09 17:32:09,412 - INFO - Entrenamiento | Pérdida: 1.1479, Accuracy: 0.4344, Tiempo: 66.83s
+2025-11-09 17:32:19,665 - INFO - Validación    | Pérdida: 1.0755, Accuracy: 0.4917
+2025-11-09 17:32:19,667 - INFO - 
+--- Época 22/300 ---
+2025-11-09 17:33:27,989 - INFO - Entrenamiento | Pérdida: 1.1419, Accuracy: 0.4330, Tiempo: 68.32s
+2025-11-09 17:33:38,911 - INFO - Validación    | Pérdida: 1.0839, Accuracy: 0.4833
+2025-11-09 17:33:38,913 - INFO - Tasa de aprendizaje reducida de 1.0000000000000002e-07 a 1.0000000000000004e-08
+2025-11-09 17:33:38,914 - INFO - 
+--- Época 23/300 ---
+2025-11-09 17:34:50,823 - INFO - Entrenamiento | Pérdida: 1.1412, Accuracy: 0.4277, Tiempo: 71.91s
+2025-11-09 17:35:01,945 - INFO - Validación    | Pérdida: 1.0788, Accuracy: 0.5000
+2025-11-09 17:35:01,946 - INFO - 
+--- Época 24/300 ---
+2025-11-09 17:36:12,800 - INFO - Entrenamiento | Pérdida: 1.1283, Accuracy: 0.4396, Tiempo: 70.85s
+2025-11-09 17:36:23,889 - INFO - Validación    | Pérdida: 1.0723, Accuracy: 0.5042
+2025-11-09 17:36:23,891 - INFO - 
+--- Época 25/300 ---
+2025-11-09 17:37:33,028 - INFO - Entrenamiento | Pérdida: 1.1503, Accuracy: 0.4213, Tiempo: 69.14s
+2025-11-09 17:37:40,751 - INFO - Validación    | Pérdida: 1.0771, Accuracy: 0.4833
+2025-11-09 17:37:40,754 - INFO - 
+--- Época 26/300 ---
+2025-11-09 17:38:33,045 - INFO - Entrenamiento | Pérdida: 1.1345, Accuracy: 0.4403, Tiempo: 52.29s
+2025-11-09 17:38:40,445 - INFO - Validación    | Pérdida: 1.0764, Accuracy: 0.4917
+2025-11-09 17:38:40,447 - INFO - 
+--- Época 27/300 ---
+2025-11-09 17:39:35,864 - INFO - Entrenamiento | Pérdida: 1.1318, Accuracy: 0.4353, Tiempo: 55.42s
+2025-11-09 17:39:43,442 - INFO - Validación    | Pérdida: 1.0877, Accuracy: 0.4500
+2025-11-09 17:39:43,444 - INFO - 
+--- Época 28/300 ---
+2025-11-09 17:40:38,392 - INFO - Entrenamiento | Pérdida: 1.1505, Accuracy: 0.4363, Tiempo: 54.95s
+2025-11-09 17:40:45,852 - INFO - Validación    | Pérdida: 1.0764, Accuracy: 0.4917
+2025-11-09 17:40:45,854 - INFO - 
+--- Época 29/300 ---
+2025-11-09 17:41:40,466 - INFO - Entrenamiento | Pérdida: 1.1401, Accuracy: 0.4323, Tiempo: 54.61s
+2025-11-09 17:41:48,025 - INFO - Validación    | Pérdida: 1.0787, Accuracy: 0.4708
+2025-11-09 17:41:48,026 - INFO - 
+--- Época 30/300 ---
+2025-11-09 17:42:42,191 - INFO - Entrenamiento | Pérdida: 1.1380, Accuracy: 0.4355, Tiempo: 54.16s
+2025-11-09 17:42:49,795 - INFO - Validación    | Pérdida: 1.0731, Accuracy: 0.5042
+2025-11-09 17:42:49,797 - INFO - 
+--- Época 31/300 ---
+2025-11-09 17:43:45,310 - INFO - Entrenamiento | Pérdida: 1.1390, Accuracy: 0.4380, Tiempo: 55.51s
+2025-11-09 17:43:52,952 - INFO - Validación    | Pérdida: 1.0783, Accuracy: 0.4792
+2025-11-09 17:43:52,953 - INFO - 
+--- Época 32/300 ---
+2025-11-09 17:44:47,071 - INFO - Entrenamiento | Pérdida: 1.1564, Accuracy: 0.4234, Tiempo: 54.12s
+2025-11-09 17:44:54,792 - INFO - Validación    | Pérdida: 1.0738, Accuracy: 0.4833
+2025-11-09 17:44:54,794 - INFO - 
+--- Época 33/300 ---
+2025-11-09 17:45:50,042 - INFO - Entrenamiento | Pérdida: 1.1306, Accuracy: 0.4367, Tiempo: 55.25s
+2025-11-09 17:45:57,496 - INFO - Validación    | Pérdida: 1.0765, Accuracy: 0.5000
+2025-11-09 17:45:57,497 - INFO - 
+--- Época 34/300 ---
+2025-11-09 17:46:57,347 - INFO - Entrenamiento | Pérdida: 1.1352, Accuracy: 0.4388, Tiempo: 59.85s
+2025-11-09 17:47:09,511 - INFO - Validación    | Pérdida: 1.0836, Accuracy: 0.4750
+2025-11-09 17:47:09,512 - INFO - 
+--- Época 35/300 ---
+2025-11-09 17:48:29,233 - INFO - Entrenamiento | Pérdida: 1.1458, Accuracy: 0.4248, Tiempo: 79.72s
+2025-11-09 17:48:41,694 - INFO - Validación    | Pérdida: 1.0795, Accuracy: 0.4833
+2025-11-09 17:48:41,696 - INFO - 
+--- Época 36/300 ---
+2025-11-09 17:49:36,706 - INFO - Entrenamiento | Pérdida: 1.1429, Accuracy: 0.4317, Tiempo: 55.01s
+2025-11-09 17:49:44,126 - INFO - Validación    | Pérdida: 1.0893, Accuracy: 0.4542
+2025-11-09 17:49:44,128 - INFO - 
+--- Época 37/300 ---
+2025-11-09 17:50:38,341 - INFO - Entrenamiento | Pérdida: 1.1430, Accuracy: 0.4263, Tiempo: 54.21s
+2025-11-09 17:50:45,872 - INFO - Validación    | Pérdida: 1.0742, Accuracy: 0.5083
+2025-11-09 17:50:45,873 - INFO - 
+--- Época 38/300 ---
+2025-11-09 17:51:37,904 - INFO - Entrenamiento | Pérdida: 1.1464, Accuracy: 0.4371, Tiempo: 52.03s
+2025-11-09 17:51:45,495 - INFO - Validación    | Pérdida: 1.0775, Accuracy: 0.4958
+2025-11-09 17:51:45,496 - INFO - 
+--- Época 39/300 ---
+2025-11-09 17:52:44,365 - INFO - Entrenamiento | Pérdida: 1.1356, Accuracy: 0.4346, Tiempo: 58.87s
+2025-11-09 17:52:51,860 - INFO - Validación    | Pérdida: 1.0776, Accuracy: 0.4875
+2025-11-09 17:52:51,862 - INFO - 
+--- Época 40/300 ---
+2025-11-09 17:53:44,563 - INFO - Entrenamiento | Pérdida: 1.1347, Accuracy: 0.4313, Tiempo: 52.70s
+2025-11-09 17:53:51,830 - INFO - Validación    | Pérdida: 1.0789, Accuracy: 0.4958
+2025-11-09 17:53:51,832 - INFO - 
+--- Época 41/300 ---
+2025-11-09 17:54:47,083 - INFO - Entrenamiento | Pérdida: 1.1494, Accuracy: 0.4256, Tiempo: 55.25s
+2025-11-09 17:54:54,553 - INFO - Validación    | Pérdida: 1.0797, Accuracy: 0.4792
+2025-11-09 17:54:54,554 - INFO - 
+--- Época 42/300 ---
+2025-11-09 17:55:47,535 - INFO - Entrenamiento | Pérdida: 1.1384, Accuracy: 0.4332, Tiempo: 52.98s
+2025-11-09 17:55:54,873 - INFO - Validación    | Pérdida: 1.0818, Accuracy: 0.4917
+2025-11-09 17:55:54,875 - INFO - 
+--- Época 43/300 ---
+2025-11-09 17:56:48,757 - INFO - Entrenamiento | Pérdida: 1.1383, Accuracy: 0.4338, Tiempo: 53.88s
+2025-11-09 17:56:56,161 - INFO - Validación    | Pérdida: 1.0789, Accuracy: 0.4958
+2025-11-09 17:56:56,162 - INFO - 
+--- Época 44/300 ---
+2025-11-09 17:57:49,550 - INFO - Entrenamiento | Pérdida: 1.1229, Accuracy: 0.4478, Tiempo: 53.39s
+2025-11-09 17:57:57,174 - INFO - Validación    | Pérdida: 1.0766, Accuracy: 0.5083
+2025-11-09 17:57:57,176 - INFO - 
+--- Época 45/300 ---
+2025-11-09 17:58:51,567 - INFO - Entrenamiento | Pérdida: 1.1287, Accuracy: 0.4459, Tiempo: 54.39s
+2025-11-09 17:58:59,371 - INFO - Validación    | Pérdida: 1.0750, Accuracy: 0.4958
+2025-11-09 17:58:59,373 - INFO - 
+--- Época 46/300 ---
+2025-11-09 17:59:53,675 - INFO - Entrenamiento | Pérdida: 1.1389, Accuracy: 0.4269, Tiempo: 54.30s
+2025-11-09 18:00:01,333 - INFO - Validación    | Pérdida: 1.0777, Accuracy: 0.4792
+2025-11-09 18:00:01,335 - INFO - 
+--- Época 47/300 ---
+2025-11-09 18:00:55,538 - INFO - Entrenamiento | Pérdida: 1.1290, Accuracy: 0.4409, Tiempo: 54.20s
+2025-11-09 18:01:03,032 - INFO - Validación    | Pérdida: 1.0774, Accuracy: 0.4792
+2025-11-09 18:01:03,034 - INFO - 
+--- Época 48/300 ---
+2025-11-09 18:01:58,566 - INFO - Entrenamiento | Pérdida: 1.1567, Accuracy: 0.4231, Tiempo: 55.53s
+2025-11-09 18:02:09,943 - INFO - Validación    | Pérdida: 1.0771, Accuracy: 0.4833
+2025-11-09 18:02:09,945 - INFO - 
+--- Época 49/300 ---
+2025-11-09 18:03:07,591 - INFO - Entrenamiento | Pérdida: 1.1382, Accuracy: 0.4399, Tiempo: 57.64s
+2025-11-09 18:03:14,921 - INFO - Validación    | Pérdida: 1.0792, Accuracy: 0.4792
+2025-11-09 18:03:14,922 - INFO - 
+--- Época 50/300 ---
+2025-11-09 18:04:27,393 - INFO - Entrenamiento | Pérdida: 1.1429, Accuracy: 0.4348, Tiempo: 72.47s
+2025-11-09 18:04:38,829 - INFO - Validación    | Pérdida: 1.0798, Accuracy: 0.4833
+2025-11-09 18:04:38,831 - INFO - 
+--- Época 51/300 ---
+2025-11-09 18:05:38,768 - INFO - Entrenamiento | Pérdida: 1.1499, Accuracy: 0.4202, Tiempo: 59.93s
+2025-11-09 18:05:46,194 - INFO - Validación    | Pérdida: 1.0833, Accuracy: 0.4833
+2025-11-09 18:05:46,196 - INFO - 
+--- Época 52/300 ---
+2025-11-09 18:06:39,559 - INFO - Entrenamiento | Pérdida: 1.1446, Accuracy: 0.4396, Tiempo: 53.36s
+2025-11-09 18:06:46,996 - INFO - Validación    | Pérdida: 1.0759, Accuracy: 0.5125
+2025-11-09 18:06:46,998 - INFO - 
+--- Época 53/300 ---
+2025-11-09 18:07:43,051 - INFO - Entrenamiento | Pérdida: 1.1405, Accuracy: 0.4340, Tiempo: 56.05s
+2025-11-09 18:07:50,828 - INFO - Validación    | Pérdida: 1.0764, Accuracy: 0.4875
+2025-11-09 18:07:50,829 - INFO - 
+--- Época 54/300 ---
+2025-11-09 18:08:43,133 - INFO - Entrenamiento | Pérdida: 1.1420, Accuracy: 0.4336, Tiempo: 52.30s
+2025-11-09 18:08:50,703 - INFO - Validación    | Pérdida: 1.0752, Accuracy: 0.4958
+2025-11-09 18:08:50,705 - INFO - 
+--- Época 55/300 ---
+2025-11-09 18:09:44,116 - INFO - Entrenamiento | Pérdida: 1.1415, Accuracy: 0.4336, Tiempo: 53.41s
+2025-11-09 18:09:51,711 - INFO - Validación    | Pérdida: 1.0774, Accuracy: 0.4917
+2025-11-09 18:09:51,712 - INFO - 
+--- Época 56/300 ---
+2025-11-09 18:10:46,868 - INFO - Entrenamiento | Pérdida: 1.1521, Accuracy: 0.4281, Tiempo: 55.15s
+2025-11-09 18:10:54,435 - INFO - Validación    | Pérdida: 1.0848, Accuracy: 0.5000
+2025-11-09 18:10:54,436 - INFO - 
+--- Época 57/300 ---
+2025-11-09 18:11:48,276 - INFO - Entrenamiento | Pérdida: 1.1434, Accuracy: 0.4332, Tiempo: 53.84s
+2025-11-09 18:11:55,911 - INFO - Validación    | Pérdida: 1.0777, Accuracy: 0.4958
+2025-11-09 18:11:55,912 - INFO - 
+--- Época 58/300 ---
+2025-11-09 18:12:49,336 - INFO - Entrenamiento | Pérdida: 1.1443, Accuracy: 0.4225, Tiempo: 53.42s
+2025-11-09 18:12:57,003 - INFO - Validación    | Pérdida: 1.0768, Accuracy: 0.5000
+2025-11-09 18:12:57,006 - INFO - 
+--- Época 59/300 ---
+2025-11-09 18:13:51,494 - INFO - Entrenamiento | Pérdida: 1.1463, Accuracy: 0.4319, Tiempo: 54.48s
+2025-11-09 18:13:59,122 - INFO - Validación    | Pérdida: 1.0780, Accuracy: 0.4917
+2025-11-09 18:13:59,123 - INFO - 
+--- Época 60/300 ---
+2025-11-09 18:14:54,897 - INFO - Entrenamiento | Pérdida: 1.1415, Accuracy: 0.4254, Tiempo: 55.77s
+2025-11-09 18:15:02,534 - INFO - Validación    | Pérdida: 1.0880, Accuracy: 0.4583
+2025-11-09 18:15:02,535 - INFO - 
+--- Época 61/300 ---
+2025-11-09 18:15:55,971 - INFO - Entrenamiento | Pérdida: 1.1413, Accuracy: 0.4273, Tiempo: 53.44s
+2025-11-09 18:16:03,191 - INFO - Validación    | Pérdida: 1.0840, Accuracy: 0.4625
+2025-11-09 18:16:03,193 - INFO - 
+--- Época 62/300 ---
+2025-11-09 18:16:57,212 - INFO - Entrenamiento | Pérdida: 1.1444, Accuracy: 0.4269, Tiempo: 54.02s
+2025-11-09 18:17:04,540 - INFO - Validación    | Pérdida: 1.0784, Accuracy: 0.4958
+2025-11-09 18:17:04,541 - INFO - 
+--- Época 63/300 ---
+2025-11-09 18:17:56,217 - INFO - Entrenamiento | Pérdida: 1.1309, Accuracy: 0.4211, Tiempo: 51.67s
+2025-11-09 18:18:03,542 - INFO - Validación    | Pérdida: 1.0725, Accuracy: 0.5042
+2025-11-09 18:18:03,543 - INFO - 
+--- Época 64/300 ---
+2025-11-09 18:18:58,747 - INFO - Entrenamiento | Pérdida: 1.1407, Accuracy: 0.4363, Tiempo: 55.20s
+2025-11-09 18:19:06,272 - INFO - Validación    | Pérdida: 1.0817, Accuracy: 0.4750
+2025-11-09 18:19:06,274 - INFO - 
+--- Época 65/300 ---
+2025-11-09 18:20:01,271 - INFO - Entrenamiento | Pérdida: 1.1315, Accuracy: 0.4378, Tiempo: 54.99s
+2025-11-09 18:20:09,005 - INFO - Validación    | Pérdida: 1.0863, Accuracy: 0.4542
+2025-11-09 18:20:09,007 - INFO - 
+--- Época 66/300 ---
+2025-11-09 18:21:04,375 - INFO - Entrenamiento | Pérdida: 1.1255, Accuracy: 0.4334, Tiempo: 55.37s
+2025-11-09 18:21:12,082 - INFO - Validación    | Pérdida: 1.0842, Accuracy: 0.4708
+2025-11-09 18:21:12,084 - INFO - 
+--- Época 67/300 ---
+2025-11-09 18:22:06,424 - INFO - Entrenamiento | Pérdida: 1.1457, Accuracy: 0.4304, Tiempo: 54.34s
+2025-11-09 18:22:14,136 - INFO - Validación    | Pérdida: 1.0723, Accuracy: 0.4917
+2025-11-09 18:22:14,139 - INFO - 
+--- Época 68/300 ---
+2025-11-09 18:23:08,294 - INFO - Entrenamiento | Pérdida: 1.1388, Accuracy: 0.4342, Tiempo: 54.15s
+2025-11-09 18:23:15,890 - INFO - Validación    | Pérdida: 1.0750, Accuracy: 0.4542
+2025-11-09 18:23:15,892 - INFO - 
+--- Época 69/300 ---
+2025-11-09 18:24:10,820 - INFO - Entrenamiento | Pérdida: 1.1455, Accuracy: 0.4363, Tiempo: 54.93s
+2025-11-09 18:24:18,404 - INFO - Validación    | Pérdida: 1.0757, Accuracy: 0.4917
+2025-11-09 18:24:18,406 - INFO - 
+--- Época 70/300 ---
+2025-11-09 18:25:12,746 - INFO - Entrenamiento | Pérdida: 1.1396, Accuracy: 0.4392, Tiempo: 54.34s
+2025-11-09 18:25:20,292 - INFO - Validación    | Pérdida: 1.0716, Accuracy: 0.5000
+2025-11-09 18:25:20,293 - INFO - 
+--- Época 71/300 ---
+2025-11-09 18:26:14,483 - INFO - Entrenamiento | Pérdida: 1.1443, Accuracy: 0.4336, Tiempo: 54.19s
+2025-11-09 18:26:22,143 - INFO - Validación    | Pérdida: 1.0757, Accuracy: 0.5000
+2025-11-09 18:26:22,145 - INFO - 
+--- Época 72/300 ---
+2025-11-09 18:27:19,943 - INFO - Entrenamiento | Pérdida: 1.1440, Accuracy: 0.4340, Tiempo: 57.80s
+2025-11-09 18:27:30,790 - INFO - Validación    | Pérdida: 1.0741, Accuracy: 0.5000
+2025-11-09 18:27:30,793 - INFO - 
+--- Época 73/300 ---
+2025-11-09 18:28:34,787 - INFO - Entrenamiento | Pérdida: 1.1352, Accuracy: 0.4348, Tiempo: 63.99s
+2025-11-09 18:28:42,588 - INFO - Validación    | Pérdida: 1.0797, Accuracy: 0.4958
+2025-11-09 18:28:42,589 - INFO - 
+--- Época 74/300 ---
+2025-11-09 18:29:37,201 - INFO - Entrenamiento | Pérdida: 1.1489, Accuracy: 0.4332, Tiempo: 54.61s
+2025-11-09 18:29:44,615 - INFO - Validación    | Pérdida: 1.0839, Accuracy: 0.4792
+2025-11-09 18:29:44,617 - INFO - 
+--- Época 75/300 ---
+2025-11-09 18:30:36,603 - INFO - Entrenamiento | Pérdida: 1.1399, Accuracy: 0.4398, Tiempo: 51.98s
+2025-11-09 18:30:44,064 - INFO - Validación    | Pérdida: 1.0779, Accuracy: 0.4917
+2025-11-09 18:30:44,066 - INFO - 
+--- Época 76/300 ---
+2025-11-09 18:31:34,389 - INFO - Entrenamiento | Pérdida: 1.1381, Accuracy: 0.4398, Tiempo: 50.32s
+2025-11-09 18:31:52,975 - INFO - Validación    | Pérdida: 1.0823, Accuracy: 0.4833
+2025-11-09 18:31:52,977 - INFO - 
+--- Época 77/300 ---
+2025-11-09 18:32:45,810 - INFO - Entrenamiento | Pérdida: 1.1478, Accuracy: 0.4361, Tiempo: 52.83s
+2025-11-09 18:32:53,124 - INFO - Validación    | Pérdida: 1.0832, Accuracy: 0.4542
+2025-11-09 18:32:53,126 - INFO - 
+--- Época 78/300 ---
+2025-11-09 18:33:46,550 - INFO - Entrenamiento | Pérdida: 1.1471, Accuracy: 0.4300, Tiempo: 53.42s
+2025-11-09 18:33:54,091 - INFO - Validación    | Pérdida: 1.0749, Accuracy: 0.5042
+2025-11-09 18:33:54,093 - INFO - 
+--- Época 79/300 ---
+2025-11-09 18:35:03,245 - INFO - Entrenamiento | Pérdida: 1.1385, Accuracy: 0.4390, Tiempo: 69.15s
+2025-11-09 18:35:14,027 - INFO - Validación    | Pérdida: 1.0749, Accuracy: 0.4875
+2025-11-09 18:35:14,030 - INFO - 
+--- Época 80/300 ---
+2025-11-09 18:36:26,648 - INFO - Entrenamiento | Pérdida: 1.1302, Accuracy: 0.4369, Tiempo: 72.61s
+2025-11-09 18:36:38,569 - INFO - Validación    | Pérdida: 1.0855, Accuracy: 0.4583
+2025-11-09 18:36:38,570 - INFO - 
+--- Época 81/300 ---

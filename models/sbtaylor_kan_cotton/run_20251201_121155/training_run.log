@@ -1,0 +1,22 @@
+2025-12-01 12:11:55,927 - INFO - Modelo SBTAYLOR_KAN.Net importado correctamente.
+2025-12-01 12:11:55,929 - INFO - Los pesos del modelo se guardarán en: 'models/sbtaylor_kan_cotton\run_20251201_121155\sbtaylor_kan.best_weights.pth'
+2025-12-01 12:11:55,931 - INFO - El registro de entrenamiento se guardará en: 'models/sbtaylor_kan_cotton\run_20251201_121155\training_run.log'
+2025-12-01 12:11:56,056 - INFO - Versión de PyTorch: 2.9.0+cu126
+2025-12-01 12:11:56,058 - INFO - ¿CUDA está disponible?: True
+2025-12-01 12:11:56,060 - INFO - Versión de CUDA con la que PyTorch fue compilado: 12.6
+2025-12-01 12:11:56,061 - INFO - Número de GPUs disponibles: 1
+2025-12-01 12:11:56,068 - INFO - Nombre de la GPU actual: NVIDIA GeForce RTX 4090
+2025-12-01 12:11:56,109 - INFO - --- Hyperparámetros de Entrenamiento ---
+2025-12-01 12:11:56,111 - INFO - Batch Size: 64
+2025-12-01 12:11:56,112 - INFO - Num Epochs: 150
+2025-12-01 12:11:56,113 - INFO - Learning Rate: 0.0001
+2025-12-01 12:11:56,114 - INFO - Num Classes: 4
+2025-12-01 12:11:56,114 - INFO - Num Workers: 4
+2025-12-01 12:11:56,160 - INFO - 
+Cargando dataset de ./data...
+2025-12-01 12:11:56,256 - INFO - Clases detectadas: ['Fresh_Leaf', 'Leaf_Reddening', 'Leaf_Spot_Bacterial_Blight', 'Yellowish_Leaf']
+2025-12-01 12:11:56,319 - INFO - 
+Usando dispositivo: cuda
+2025-12-01 12:15:26,162 - INFO - Iniciando entrenamiento por 150 épocas...
+2025-12-01 12:15:26,164 - INFO - Los modelos se guardarán en: models/sbtaylor_kan_cotton\run_20251201_121155
+2025-12-01 12:15:26,166 - INFO - --- Época 1/150 ---

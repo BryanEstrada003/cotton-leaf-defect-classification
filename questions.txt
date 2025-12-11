@@ -1,0 +1,45 @@
+nuestra idea es en base a un paper donde evaluan los modelos kan 
+(que por lo visto son mejores a cnn debido a que necesita menor cantidad de parametros)
+
+evaluar estos tipos de modelos en el campo de la agricultura, 
+en este caso evaluar las enfermedades de las hojas de la planta de algodon
+
+incovenientes:
+- podemos usar este dataset? ya que nos estaríamos centrando en uno de los sectores del Ecuador el cual es
+    la agricultura, el algodón es una de las plantas que se cultiva en el país.
+    - si no es un proyecto que le interese, que nos recomienda :v?, nos queremos enfocar en modelos 
+        clasificadores
+
+- por el momento tengo la arquitectura de 3 modelos kan (solo usare 1), pero no los pesos, 
+    a diferencia de vgg16 (el cual quiero comparar) el cual tiene los pesos de imagenet. ¿que me recomienda?
+    
+    estrategia pensada:
+    - generar imágenes sintéticas a partir de herramientas como Dall-e para entrenar el modelo kan y cnn 
+        y tener esos pesos previos, los dos modelos no tendrían pesos previos antes de ser entrenado 
+        con esta data (inspirado en la metodología realizada en el centro CIDIS)
+    - aplicar transfer learning para ahora entrenar con la data real y evaluar
+
+- una de las ideas que teniamos es evaluar en condiciones "reales", las imágenes tienen buena calidad
+    y fueron tomadas de manera que se aprecie los defectos, pero en condiciones reales la iluminación sea 
+    un factor clave para apreciar dichas enfermedades, por lo que pensamos hacer data augmentation 
+    donde variemos la iluminación de la imágen, para que el modelo aprenda y pueda clasificar a pesar de 
+    las condiciones de luminosidad.
+- La data inicialmente contiene para cada clase:
+    '''
+    CLASS 1 -> total: 786
+    CLASS 2 -> total: 225
+    CLASS 3 -> total: 1303
+    CLASS 4 -> total: 135
+    '''
+    Se aplicó un filtrado/limpieza de la información ya que habian resoluciones por debajo del 255x255, 
+    por lo que al final quedó filtrado de la siguiente manera:
+    '''
+    CLASS 1 -> total: 583
+    CLASS 2 -> total: 222
+    CLASS 3 -> total: 1290
+    CLASS 4 -> total: 97
+    '''
+    la clase 4 tiene menos muestras, pensamos aplicar data augmentation con la finalidad de variar la iluminación,
+    pero la cuestión aqui es que si aplicamos para balancear las muestras o que mantenga las proporciones pero que
+    las muestras por clase sean más que las que hay ahora.
+
