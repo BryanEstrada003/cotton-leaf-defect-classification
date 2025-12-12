@@ -1,0 +1,31 @@
+==================================================
+ REPORTE DE EVALUACIÓN: 2025-12-12 04:03
+==================================================
+
+Métricas Globales:
+- Accuracy:          0.7250 (72.50%)
+- Macro Precision:   0.7333
+- Macro Recall:      0.7250
+- Macro F1-Score:    0.7237
+
+------------------------------
+EFICIENCIA (Velocidad)
+------------------------------
+- Muestras totales:  120
+- Tiempo total:      0.3332 seg
+- Tiempo por imagen: 2.7765 ms
+
+------------------------------
+DETALLE POR CLASE
+------------------------------
+                     Clase  Precision  Recall  F1-Score
+                Fresh_Leaf     0.6410  0.8333    0.7246
+            Leaf_Reddening     0.8000  0.8000    0.8000
+Leaf_Spot_Bacterial_Blight     0.8000  0.6667    0.7273
+            Yellowish_Leaf     0.6923  0.6000    0.6429
+
+Matriz de Confusión (Texto):
+[[25,  0,  0,  5],
+ [ 1, 24,  4,  1],
+ [ 2,  6, 20,  2],
+ [11,  0,  1, 18]]
