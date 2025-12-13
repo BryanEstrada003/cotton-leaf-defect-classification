@@ -218,7 +218,7 @@ class Net(nn.Module):
         self.fc1 = KANLinear(self._to_linear, 256)
         self.dropout = nn.Dropout(0.5)  # Vital para evitar overfitting
         self.fc2 = KANLinear(256, 128)
-        self.dropout2 = nn.Dropout(0.3)  # Añadido otro dropout para capas intermedias
+        self.dropout2 = nn.Dropout(0.4)  # Añadido otro dropout para capas intermedias
         self.fc3 = KANLinear(128, num_classes)
 
     def _get_conv_output(self, input_shape):

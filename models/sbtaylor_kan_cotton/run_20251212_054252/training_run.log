@@ -1,0 +1,446 @@
+2025-12-12 05:42:52,635 - INFO - Modelo SBTAYLOR_KAN.Net importado correctamente.
+2025-12-12 05:42:52,636 - INFO - Los pesos del modelo se guardarán en: 'models/sbtaylor_kan_cotton\run_20251212_054252\sbtaylor_kan.best_weights.pth'
+2025-12-12 05:42:52,638 - INFO - El registro de entrenamiento se guardará en: 'models/sbtaylor_kan_cotton\run_20251212_054252\training_run.log'
+2025-12-12 05:42:52,664 - INFO - Versión de PyTorch: 2.9.0+cu126
+2025-12-12 05:42:52,665 - INFO - ¿CUDA está disponible?: True
+2025-12-12 05:42:52,667 - INFO - Versión de CUDA con la que PyTorch fue compilado: 12.6
+2025-12-12 05:42:52,669 - INFO - Número de GPUs disponibles: 1
+2025-12-12 05:42:52,673 - INFO - Nombre de la GPU actual: NVIDIA GeForce RTX 4090
+2025-12-12 05:42:52,699 - INFO - --- Hyperparámetros de Entrenamiento ---
+2025-12-12 05:42:52,701 - INFO - Batch Size: 64
+2025-12-12 05:42:52,702 - INFO - Num Epochs: 150
+2025-12-12 05:42:52,704 - INFO - Learning Rate: 0.0001
+2025-12-12 05:42:52,705 - INFO - Num Classes: 4
+2025-12-12 05:42:52,707 - INFO - Num Workers: 4
+2025-12-12 05:42:52,732 - INFO - 
+Cargando dataset de ./data...
+2025-12-12 05:42:52,767 - INFO - Clases detectadas: ['Fresh_Leaf', 'Leaf_Reddening', 'Leaf_Spot_Bacterial_Blight', 'Yellowish_Leaf']
+2025-12-12 05:42:52,788 - INFO - 
+Usando dispositivo: cuda
+2025-12-12 05:43:42,740 - INFO - Iniciando entrenamiento por 150 épocas...
+2025-12-12 05:43:42,743 - INFO - Paciencia configurada: 10 épocas.
+2025-12-12 05:43:42,744 - INFO - --- Época 1/150 ---
+2025-12-12 05:44:20,208 - INFO - Train Loss: 1.2070 Acc: 0.4054
+2025-12-12 05:44:26,686 - INFO -   [LR] Tasa de aprendizaje actual: 0.000100
+2025-12-12 05:44:26,687 - INFO -   [Mejora Loss] inf -> 0.9831. Reseteando paciencia.
+2025-12-12 05:44:26,688 - INFO - Val Loss: 0.9831 Acc: 0.5083
+2025-12-12 05:44:27,164 - INFO -   [Nuevo Récord Acc] Guardado en: models/sbtaylor_kan_cotton\run_20251212_054252\best_model.pth
+2025-12-12 05:44:27,165 - INFO - --- Época 2/150 ---
+2025-12-12 05:45:06,136 - INFO - Train Loss: 1.0668 Acc: 0.4787
+2025-12-12 05:45:13,119 - INFO -   [LR] Tasa de aprendizaje actual: 0.000100
+2025-12-12 05:45:13,120 - INFO -   [Mejora Loss] 0.9831 -> 0.9557. Reseteando paciencia.
+2025-12-12 05:45:13,124 - INFO - Val Loss: 0.9557 Acc: 0.5333
+2025-12-12 05:45:13,612 - INFO -   [Nuevo Récord Acc] Guardado en: models/sbtaylor_kan_cotton\run_20251212_054252\best_model.pth
+2025-12-12 05:45:13,613 - INFO - --- Época 3/150 ---
+2025-12-12 05:45:53,605 - INFO - Train Loss: 1.0314 Acc: 0.4899
+2025-12-12 05:46:00,694 - INFO -   [LR] Tasa de aprendizaje actual: 0.000100
+2025-12-12 05:46:00,695 - INFO -   [Sin mejora Loss] Paciencia: 1/10
+2025-12-12 05:46:00,697 - INFO - Val Loss: 0.9762 Acc: 0.5667
+2025-12-12 05:46:01,166 - INFO -   [Nuevo Récord Acc] Guardado en: models/sbtaylor_kan_cotton\run_20251212_054252\best_model.pth
+2025-12-12 05:46:01,167 - INFO - --- Época 4/150 ---
+2025-12-12 05:46:40,761 - INFO - Train Loss: 0.9840 Acc: 0.5037
+2025-12-12 05:46:47,856 - INFO -   [LR] Tasa de aprendizaje actual: 0.000100
+2025-12-12 05:46:47,858 - INFO -   [Mejora Loss] 0.9557 -> 0.9342. Reseteando paciencia.
+2025-12-12 05:46:47,860 - INFO - Val Loss: 0.9342 Acc: 0.5333
+2025-12-12 05:46:47,862 - INFO - --- Época 5/150 ---
+2025-12-12 05:47:27,016 - INFO - Train Loss: 0.9664 Acc: 0.5314
+2025-12-12 05:47:33,901 - INFO -   [LR] Tasa de aprendizaje actual: 0.000100
+2025-12-12 05:47:33,903 - INFO -   [Mejora Loss] 0.9342 -> 0.9154. Reseteando paciencia.
+2025-12-12 05:47:33,904 - INFO - Val Loss: 0.9154 Acc: 0.5250
+2025-12-12 05:47:33,907 - INFO - --- Época 6/150 ---
+2025-12-12 05:48:13,770 - INFO - Train Loss: 0.9500 Acc: 0.5200
+2025-12-12 05:48:20,782 - INFO -   [LR] Tasa de aprendizaje actual: 0.000100
+2025-12-12 05:48:20,783 - INFO -   [Mejora Loss] 0.9154 -> 0.9031. Reseteando paciencia.
+2025-12-12 05:48:20,786 - INFO - Val Loss: 0.9031 Acc: 0.5833
+2025-12-12 05:48:21,247 - INFO -   [Nuevo Récord Acc] Guardado en: models/sbtaylor_kan_cotton\run_20251212_054252\best_model.pth
+2025-12-12 05:48:21,248 - INFO - --- Época 7/150 ---
+2025-12-12 05:49:00,733 - INFO - Train Loss: 0.9245 Acc: 0.5438
+2025-12-12 05:49:07,607 - INFO -   [LR] Tasa de aprendizaje actual: 0.000100
+2025-12-12 05:49:07,608 - INFO -   [Sin mejora Loss] Paciencia: 1/10
+2025-12-12 05:49:07,611 - INFO - Val Loss: 0.9238 Acc: 0.5333
+2025-12-12 05:49:07,613 - INFO - --- Época 8/150 ---
+2025-12-12 05:49:48,215 - INFO - Train Loss: 0.9114 Acc: 0.5490
+2025-12-12 05:49:55,205 - INFO -   [LR] Tasa de aprendizaje actual: 0.000100
+2025-12-12 05:49:55,207 - INFO -   [Mejora Loss] 0.9031 -> 0.8644. Reseteando paciencia.
+2025-12-12 05:49:55,209 - INFO - Val Loss: 0.8644 Acc: 0.5500
+2025-12-12 05:49:55,212 - INFO - --- Época 9/150 ---
+2025-12-12 05:50:35,819 - INFO - Train Loss: 0.9037 Acc: 0.5593
+2025-12-12 05:50:42,986 - INFO -   [LR] Tasa de aprendizaje actual: 0.000100
+2025-12-12 05:50:42,988 - INFO -   [Sin mejora Loss] Paciencia: 1/10
+2025-12-12 05:50:42,989 - INFO - Val Loss: 0.8899 Acc: 0.5833
+2025-12-12 05:50:42,991 - INFO - --- Época 10/150 ---
+2025-12-12 05:51:23,450 - INFO - Train Loss: 0.8652 Acc: 0.5785
+2025-12-12 05:51:30,388 - INFO -   [LR] Tasa de aprendizaje actual: 0.000100
+2025-12-12 05:51:30,390 - INFO -   [Mejora Loss] 0.8644 -> 0.8150. Reseteando paciencia.
+2025-12-12 05:51:30,391 - INFO - Val Loss: 0.8150 Acc: 0.5833
+2025-12-12 05:51:30,393 - INFO - --- Época 11/150 ---
+2025-12-12 05:52:10,603 - INFO - Train Loss: 0.8376 Acc: 0.5940
+2025-12-12 05:52:17,581 - INFO -   [LR] Tasa de aprendizaje actual: 0.000100
+2025-12-12 05:52:17,583 - INFO -   [Mejora Loss] 0.8150 -> 0.8095. Reseteando paciencia.
+2025-12-12 05:52:17,585 - INFO - Val Loss: 0.8095 Acc: 0.5583
+2025-12-12 05:52:17,587 - INFO - --- Época 12/150 ---
+2025-12-12 05:52:57,964 - INFO - Train Loss: 0.8400 Acc: 0.5862
+2025-12-12 05:53:04,973 - INFO -   [LR] Tasa de aprendizaje actual: 0.000100
+2025-12-12 05:53:04,975 - INFO -   [Sin mejora Loss] Paciencia: 1/10
+2025-12-12 05:53:04,977 - INFO - Val Loss: 0.8233 Acc: 0.5250
+2025-12-12 05:53:04,979 - INFO - --- Época 13/150 ---
+2025-12-12 05:53:45,146 - INFO - Train Loss: 0.8264 Acc: 0.5880
+2025-12-12 05:53:52,327 - INFO -   [LR] Tasa de aprendizaje actual: 0.000100
+2025-12-12 05:53:52,328 - INFO -   [Mejora Loss] 0.8095 -> 0.8070. Reseteando paciencia.
+2025-12-12 05:53:52,330 - INFO - Val Loss: 0.8070 Acc: 0.5083
+2025-12-12 05:53:52,332 - INFO - --- Época 14/150 ---
+2025-12-12 05:54:32,113 - INFO - Train Loss: 0.8193 Acc: 0.5988
+2025-12-12 05:54:39,139 - INFO -   [LR] Tasa de aprendizaje actual: 0.000100
+2025-12-12 05:54:39,141 - INFO -   [Sin mejora Loss] Paciencia: 1/10
+2025-12-12 05:54:39,142 - INFO - Val Loss: 0.8329 Acc: 0.5583
+2025-12-12 05:54:39,143 - INFO - --- Época 15/150 ---
+2025-12-12 05:55:19,377 - INFO - Train Loss: 0.7981 Acc: 0.6101
+2025-12-12 05:55:26,293 - INFO -   [LR] Tasa de aprendizaje actual: 0.000100
+2025-12-12 05:55:26,295 - INFO -   [Mejora Loss] 0.8070 -> 0.7695. Reseteando paciencia.
+2025-12-12 05:55:26,296 - INFO - Val Loss: 0.7695 Acc: 0.6167
+2025-12-12 05:55:26,762 - INFO -   [Nuevo Récord Acc] Guardado en: models/sbtaylor_kan_cotton\run_20251212_054252\best_model.pth
+2025-12-12 05:55:26,764 - INFO - --- Época 16/150 ---
+2025-12-12 05:56:06,713 - INFO - Train Loss: 0.7836 Acc: 0.6141
+2025-12-12 05:56:13,743 - INFO -   [LR] Tasa de aprendizaje actual: 0.000100
+2025-12-12 05:56:13,744 - INFO -   [Sin mejora Loss] Paciencia: 1/10
+2025-12-12 05:56:13,747 - INFO - Val Loss: 0.7757 Acc: 0.5417
+2025-12-12 05:56:13,749 - INFO - --- Época 17/150 ---
+2025-12-12 05:56:54,117 - INFO - Train Loss: 0.7726 Acc: 0.6215
+2025-12-12 05:57:01,164 - INFO -   [LR] Tasa de aprendizaje actual: 0.000100
+2025-12-12 05:57:01,165 - INFO -   [Sin mejora Loss] Paciencia: 2/10
+2025-12-12 05:57:01,167 - INFO - Val Loss: 0.8044 Acc: 0.5250
+2025-12-12 05:57:01,169 - INFO - --- Época 18/150 ---
+2025-12-12 05:57:40,999 - INFO - Train Loss: 0.7600 Acc: 0.6252
+2025-12-12 05:57:47,937 - INFO -   [LR] Tasa de aprendizaje actual: 0.000100
+2025-12-12 05:57:47,939 - INFO -   [Mejora Loss] 0.7695 -> 0.7679. Reseteando paciencia.
+2025-12-12 05:57:47,942 - INFO - Val Loss: 0.7679 Acc: 0.5500
+2025-12-12 05:57:47,945 - INFO - --- Época 19/150 ---
+2025-12-12 05:58:28,293 - INFO - Train Loss: 0.7615 Acc: 0.6180
+2025-12-12 05:58:35,262 - INFO -   [LR] Tasa de aprendizaje actual: 0.000100
+2025-12-12 05:58:35,264 - INFO -   [Mejora Loss] 0.7679 -> 0.7305. Reseteando paciencia.
+2025-12-12 05:58:35,267 - INFO - Val Loss: 0.7305 Acc: 0.6000
+2025-12-12 05:58:35,269 - INFO - --- Época 20/150 ---
+2025-12-12 05:59:15,598 - INFO - Train Loss: 0.7414 Acc: 0.6415
+2025-12-12 05:59:22,550 - INFO -   [LR] Tasa de aprendizaje actual: 0.000100
+2025-12-12 05:59:22,551 - INFO -   [Sin mejora Loss] Paciencia: 1/10
+2025-12-12 05:59:22,553 - INFO - Val Loss: 0.7452 Acc: 0.6167
+2025-12-12 05:59:22,554 - INFO - --- Época 21/150 ---
+2025-12-12 06:00:03,007 - INFO - Train Loss: 0.7566 Acc: 0.6370
+2025-12-12 06:00:10,036 - INFO -   [LR] Tasa de aprendizaje actual: 0.000100
+2025-12-12 06:00:10,038 - INFO -   [Sin mejora Loss] Paciencia: 2/10
+2025-12-12 06:00:10,039 - INFO - Val Loss: 0.7515 Acc: 0.5833
+2025-12-12 06:00:10,042 - INFO - --- Época 22/150 ---
+2025-12-12 06:00:49,188 - INFO - Train Loss: 0.7249 Acc: 0.6475
+2025-12-12 06:00:56,288 - INFO -   [LR] Tasa de aprendizaje actual: 0.000100
+2025-12-12 06:00:56,289 - INFO -   [Sin mejora Loss] Paciencia: 3/10
+2025-12-12 06:00:56,292 - INFO - Val Loss: 0.7575 Acc: 0.5750
+2025-12-12 06:00:56,295 - INFO - --- Época 23/150 ---
+2025-12-12 06:01:36,594 - INFO - Train Loss: 0.7189 Acc: 0.6519
+2025-12-12 06:01:43,619 - INFO -   [LR] Tasa de aprendizaje actual: 0.000100
+2025-12-12 06:01:43,621 - INFO -   [Mejora Loss] 0.7305 -> 0.7180. Reseteando paciencia.
+2025-12-12 06:01:43,623 - INFO - Val Loss: 0.7180 Acc: 0.6417
+2025-12-12 06:01:44,060 - INFO -   [Nuevo Récord Acc] Guardado en: models/sbtaylor_kan_cotton\run_20251212_054252\best_model.pth
+2025-12-12 06:01:44,061 - INFO - --- Época 24/150 ---
+2025-12-12 06:02:24,025 - INFO - Train Loss: 0.7149 Acc: 0.6618
+2025-12-12 06:02:31,172 - INFO -   [LR] Tasa de aprendizaje actual: 0.000100
+2025-12-12 06:02:31,173 - INFO -   [Mejora Loss] 0.7180 -> 0.7107. Reseteando paciencia.
+2025-12-12 06:02:31,174 - INFO - Val Loss: 0.7107 Acc: 0.6083
+2025-12-12 06:02:31,176 - INFO - --- Época 25/150 ---
+2025-12-12 06:03:12,500 - INFO - Train Loss: 0.7070 Acc: 0.6636
+2025-12-12 06:03:19,553 - INFO -   [LR] Tasa de aprendizaje actual: 0.000100
+2025-12-12 06:03:19,554 - INFO -   [Mejora Loss] 0.7107 -> 0.6668. Reseteando paciencia.
+2025-12-12 06:03:19,556 - INFO - Val Loss: 0.6668 Acc: 0.6500
+2025-12-12 06:03:20,029 - INFO -   [Nuevo Récord Acc] Guardado en: models/sbtaylor_kan_cotton\run_20251212_054252\best_model.pth
+2025-12-12 06:03:20,031 - INFO - --- Época 26/150 ---
+2025-12-12 06:03:59,998 - INFO - Train Loss: 0.7097 Acc: 0.6570
+2025-12-12 06:04:07,517 - INFO -   [LR] Tasa de aprendizaje actual: 0.000100
+2025-12-12 06:04:07,519 - INFO -   [Sin mejora Loss] Paciencia: 1/10
+2025-12-12 06:04:07,520 - INFO - Val Loss: 0.7177 Acc: 0.6583
+2025-12-12 06:04:08,136 - INFO -   [Nuevo Récord Acc] Guardado en: models/sbtaylor_kan_cotton\run_20251212_054252\best_model.pth
+2025-12-12 06:04:08,138 - INFO - --- Época 27/150 ---
+2025-12-12 06:04:49,000 - INFO - Train Loss: 0.7007 Acc: 0.6589
+2025-12-12 06:04:55,979 - INFO -   [LR] Tasa de aprendizaje actual: 0.000100
+2025-12-12 06:04:55,981 - INFO -   [Sin mejora Loss] Paciencia: 2/10
+2025-12-12 06:04:55,984 - INFO - Val Loss: 0.6807 Acc: 0.6583
+2025-12-12 06:04:55,987 - INFO - --- Época 28/150 ---
+2025-12-12 06:05:36,034 - INFO - Train Loss: 0.6873 Acc: 0.6638
+2025-12-12 06:05:42,936 - INFO -   [LR] Tasa de aprendizaje actual: 0.000100
+2025-12-12 06:05:42,937 - INFO -   [Sin mejora Loss] Paciencia: 3/10
+2025-12-12 06:05:42,940 - INFO - Val Loss: 0.7137 Acc: 0.6500
+2025-12-12 06:05:42,942 - INFO - --- Época 29/150 ---
+2025-12-12 06:06:23,374 - INFO - Train Loss: 0.6827 Acc: 0.6684
+2025-12-12 06:06:30,300 - INFO -   [LR] Tasa de aprendizaje actual: 0.000100
+2025-12-12 06:06:30,302 - INFO -   [Sin mejora Loss] Paciencia: 4/10
+2025-12-12 06:06:30,303 - INFO - Val Loss: 0.7037 Acc: 0.6500
+2025-12-12 06:06:30,306 - INFO - --- Época 30/150 ---
+2025-12-12 06:07:10,450 - INFO - Train Loss: 0.6701 Acc: 0.6787
+2025-12-12 06:07:17,500 - INFO -   [LR] Tasa de aprendizaje actual: 0.000100
+2025-12-12 06:07:17,502 - INFO -   [Sin mejora Loss] Paciencia: 5/10
+2025-12-12 06:07:17,505 - INFO - Val Loss: 0.7165 Acc: 0.6833
+2025-12-12 06:07:17,995 - INFO -   [Nuevo Récord Acc] Guardado en: models/sbtaylor_kan_cotton\run_20251212_054252\best_model.pth
+2025-12-12 06:07:17,997 - INFO - --- Época 31/150 ---
+2025-12-12 06:07:58,369 - INFO - Train Loss: 0.6751 Acc: 0.6804
+2025-12-12 06:08:05,486 - INFO -   [LR] Tasa de aprendizaje actual: 0.000050
+2025-12-12 06:08:05,487 - INFO -   [Sin mejora Loss] Paciencia: 6/10
+2025-12-12 06:08:05,488 - INFO - Val Loss: 0.7067 Acc: 0.6500
+2025-12-12 06:08:05,490 - INFO - --- Época 32/150 ---
+2025-12-12 06:08:45,795 - INFO - Train Loss: 0.6387 Acc: 0.6990
+2025-12-12 06:08:52,862 - INFO -   [LR] Tasa de aprendizaje actual: 0.000050
+2025-12-12 06:08:52,863 - INFO -   [Mejora Loss] 0.6668 -> 0.6668. Reseteando paciencia.
+2025-12-12 06:08:52,866 - INFO - Val Loss: 0.6668 Acc: 0.6833
+2025-12-12 06:08:52,869 - INFO - --- Época 33/150 ---
+2025-12-12 06:09:32,597 - INFO - Train Loss: 0.6235 Acc: 0.7107
+2025-12-12 06:09:39,457 - INFO -   [LR] Tasa de aprendizaje actual: 0.000050
+2025-12-12 06:09:39,459 - INFO -   [Sin mejora Loss] Paciencia: 1/10
+2025-12-12 06:09:39,461 - INFO - Val Loss: 0.6812 Acc: 0.6750
+2025-12-12 06:09:39,464 - INFO - --- Época 34/150 ---
+2025-12-12 06:10:20,289 - INFO - Train Loss: 0.6310 Acc: 0.6981
+2025-12-12 06:10:27,237 - INFO -   [LR] Tasa de aprendizaje actual: 0.000050
+2025-12-12 06:10:27,238 - INFO -   [Sin mejora Loss] Paciencia: 2/10
+2025-12-12 06:10:27,239 - INFO - Val Loss: 0.6992 Acc: 0.6750
+2025-12-12 06:10:27,240 - INFO - --- Época 35/150 ---
+2025-12-12 06:11:07,175 - INFO - Train Loss: 0.6347 Acc: 0.7074
+2025-12-12 06:11:14,244 - INFO -   [LR] Tasa de aprendizaje actual: 0.000050
+2025-12-12 06:11:14,246 - INFO -   [Mejora Loss] 0.6668 -> 0.6421. Reseteando paciencia.
+2025-12-12 06:11:14,248 - INFO - Val Loss: 0.6421 Acc: 0.6833
+2025-12-12 06:11:14,251 - INFO - --- Época 36/150 ---
+2025-12-12 06:11:54,638 - INFO - Train Loss: 0.6209 Acc: 0.7105
+2025-12-12 06:12:01,716 - INFO -   [LR] Tasa de aprendizaje actual: 0.000050
+2025-12-12 06:12:01,718 - INFO -   [Sin mejora Loss] Paciencia: 1/10
+2025-12-12 06:12:01,720 - INFO - Val Loss: 0.6880 Acc: 0.6333
+2025-12-12 06:12:01,722 - INFO - --- Época 37/150 ---
+2025-12-12 06:12:41,226 - INFO - Train Loss: 0.6102 Acc: 0.7198
+2025-12-12 06:12:48,255 - INFO -   [LR] Tasa de aprendizaje actual: 0.000050
+2025-12-12 06:12:48,256 - INFO -   [Sin mejora Loss] Paciencia: 2/10
+2025-12-12 06:12:48,258 - INFO - Val Loss: 0.6426 Acc: 0.6750
+2025-12-12 06:12:48,260 - INFO - --- Época 38/150 ---
+2025-12-12 06:13:28,295 - INFO - Train Loss: 0.6258 Acc: 0.7002
+2025-12-12 06:13:35,376 - INFO -   [LR] Tasa de aprendizaje actual: 0.000050
+2025-12-12 06:13:35,378 - INFO -   [Sin mejora Loss] Paciencia: 3/10
+2025-12-12 06:13:35,379 - INFO - Val Loss: 0.6753 Acc: 0.6583
+2025-12-12 06:13:35,380 - INFO - --- Época 39/150 ---
+2025-12-12 06:14:16,076 - INFO - Train Loss: 0.5992 Acc: 0.7213
+2025-12-12 06:14:23,023 - INFO -   [LR] Tasa de aprendizaje actual: 0.000050
+2025-12-12 06:14:23,025 - INFO -   [Sin mejora Loss] Paciencia: 4/10
+2025-12-12 06:14:23,027 - INFO - Val Loss: 0.6543 Acc: 0.6833
+2025-12-12 06:14:23,028 - INFO - --- Época 40/150 ---
+2025-12-12 06:15:03,098 - INFO - Train Loss: 0.6188 Acc: 0.7157
+2025-12-12 06:15:10,154 - INFO -   [LR] Tasa de aprendizaje actual: 0.000050
+2025-12-12 06:15:10,154 - INFO -   [Sin mejora Loss] Paciencia: 5/10
+2025-12-12 06:15:10,156 - INFO - Val Loss: 0.6507 Acc: 0.7167
+2025-12-12 06:15:10,602 - INFO -   [Nuevo Récord Acc] Guardado en: models/sbtaylor_kan_cotton\run_20251212_054252\best_model.pth
+2025-12-12 06:15:10,603 - INFO - --- Época 41/150 ---
+2025-12-12 06:15:50,816 - INFO - Train Loss: 0.6120 Acc: 0.7176
+2025-12-12 06:15:57,696 - INFO -   [LR] Tasa de aprendizaje actual: 0.000025
+2025-12-12 06:15:57,698 - INFO -   [Sin mejora Loss] Paciencia: 6/10
+2025-12-12 06:15:57,700 - INFO - Val Loss: 0.6580 Acc: 0.6833
+2025-12-12 06:15:57,703 - INFO - --- Época 42/150 ---
+2025-12-12 06:16:37,810 - INFO - Train Loss: 0.5883 Acc: 0.7277
+2025-12-12 06:16:44,952 - INFO -   [LR] Tasa de aprendizaje actual: 0.000025
+2025-12-12 06:16:44,954 - INFO -   [Mejora Loss] 0.6421 -> 0.6273. Reseteando paciencia.
+2025-12-12 06:16:44,956 - INFO - Val Loss: 0.6273 Acc: 0.6917
+2025-12-12 06:16:44,959 - INFO - --- Época 43/150 ---
+2025-12-12 06:17:25,694 - INFO - Train Loss: 0.5798 Acc: 0.7347
+2025-12-12 06:17:32,849 - INFO -   [LR] Tasa de aprendizaje actual: 0.000025
+2025-12-12 06:17:32,852 - INFO -   [Sin mejora Loss] Paciencia: 1/10
+2025-12-12 06:17:32,854 - INFO - Val Loss: 0.6326 Acc: 0.7333
+2025-12-12 06:17:33,375 - INFO -   [Nuevo Récord Acc] Guardado en: models/sbtaylor_kan_cotton\run_20251212_054252\best_model.pth
+2025-12-12 06:17:33,377 - INFO - --- Época 44/150 ---
+2025-12-12 06:18:14,202 - INFO - Train Loss: 0.5807 Acc: 0.7273
+2025-12-12 06:18:21,088 - INFO -   [LR] Tasa de aprendizaje actual: 0.000025
+2025-12-12 06:18:21,090 - INFO -   [Sin mejora Loss] Paciencia: 2/10
+2025-12-12 06:18:21,092 - INFO - Val Loss: 0.6425 Acc: 0.6917
+2025-12-12 06:18:21,094 - INFO - --- Época 45/150 ---
+2025-12-12 06:19:01,741 - INFO - Train Loss: 0.5796 Acc: 0.7254
+2025-12-12 06:19:08,703 - INFO -   [LR] Tasa de aprendizaje actual: 0.000025
+2025-12-12 06:19:08,705 - INFO -   [Sin mejora Loss] Paciencia: 3/10
+2025-12-12 06:19:08,707 - INFO - Val Loss: 0.6311 Acc: 0.6667
+2025-12-12 06:19:08,710 - INFO - --- Época 46/150 ---
+2025-12-12 06:19:49,193 - INFO - Train Loss: 0.5765 Acc: 0.7419
+2025-12-12 06:19:56,083 - INFO -   [LR] Tasa de aprendizaje actual: 0.000025
+2025-12-12 06:19:56,084 - INFO -   [Sin mejora Loss] Paciencia: 4/10
+2025-12-12 06:19:56,085 - INFO - Val Loss: 0.6361 Acc: 0.6917
+2025-12-12 06:19:56,087 - INFO - --- Época 47/150 ---
+2025-12-12 06:20:36,622 - INFO - Train Loss: 0.5693 Acc: 0.7405
+2025-12-12 06:20:43,599 - INFO -   [LR] Tasa de aprendizaje actual: 0.000025
+2025-12-12 06:20:43,601 - INFO -   [Sin mejora Loss] Paciencia: 5/10
+2025-12-12 06:20:43,603 - INFO - Val Loss: 0.6396 Acc: 0.6417
+2025-12-12 06:20:43,606 - INFO - --- Época 48/150 ---
+2025-12-12 06:21:23,890 - INFO - Train Loss: 0.5748 Acc: 0.7376
+2025-12-12 06:21:31,106 - INFO -   [LR] Tasa de aprendizaje actual: 0.000013
+2025-12-12 06:21:31,107 - INFO -   [Sin mejora Loss] Paciencia: 6/10
+2025-12-12 06:21:31,110 - INFO - Val Loss: 0.6319 Acc: 0.7250
+2025-12-12 06:21:31,112 - INFO - --- Época 49/150 ---
+2025-12-12 06:22:11,492 - INFO - Train Loss: 0.5660 Acc: 0.7374
+2025-12-12 06:22:18,668 - INFO -   [LR] Tasa de aprendizaje actual: 0.000013
+2025-12-12 06:22:18,670 - INFO -   [Mejora Loss] 0.6273 -> 0.6141. Reseteando paciencia.
+2025-12-12 06:22:18,672 - INFO - Val Loss: 0.6141 Acc: 0.6833
+2025-12-12 06:22:18,675 - INFO - --- Época 50/150 ---
+2025-12-12 06:22:58,443 - INFO - Train Loss: 0.5508 Acc: 0.7465
+2025-12-12 06:23:05,604 - INFO -   [LR] Tasa de aprendizaje actual: 0.000013
+2025-12-12 06:23:05,606 - INFO -   [Sin mejora Loss] Paciencia: 1/10
+2025-12-12 06:23:05,608 - INFO - Val Loss: 0.6262 Acc: 0.7000
+2025-12-12 06:23:05,610 - INFO - --- Época 51/150 ---
+2025-12-12 06:23:45,600 - INFO - Train Loss: 0.5498 Acc: 0.7467
+2025-12-12 06:23:52,601 - INFO -   [LR] Tasa de aprendizaje actual: 0.000013
+2025-12-12 06:23:52,603 - INFO -   [Sin mejora Loss] Paciencia: 2/10
+2025-12-12 06:23:52,605 - INFO - Val Loss: 0.6231 Acc: 0.6917
+2025-12-12 06:23:52,608 - INFO - --- Época 52/150 ---
+2025-12-12 06:24:32,594 - INFO - Train Loss: 0.5642 Acc: 0.7490
+2025-12-12 06:24:39,656 - INFO -   [LR] Tasa de aprendizaje actual: 0.000013
+2025-12-12 06:24:39,658 - INFO -   [Mejora Loss] 0.6141 -> 0.6140. Reseteando paciencia.
+2025-12-12 06:24:39,660 - INFO - Val Loss: 0.6140 Acc: 0.7167
+2025-12-12 06:24:39,663 - INFO - --- Época 53/150 ---
+2025-12-12 06:25:19,945 - INFO - Train Loss: 0.5525 Acc: 0.7519
+2025-12-12 06:25:27,032 - INFO -   [LR] Tasa de aprendizaje actual: 0.000013
+2025-12-12 06:25:27,034 - INFO -   [Mejora Loss] 0.6140 -> 0.6008. Reseteando paciencia.
+2025-12-12 06:25:27,037 - INFO - Val Loss: 0.6008 Acc: 0.6917
+2025-12-12 06:25:27,039 - INFO - --- Época 54/150 ---
+2025-12-12 06:26:07,372 - INFO - Train Loss: 0.5465 Acc: 0.7500
+2025-12-12 06:26:14,663 - INFO -   [LR] Tasa de aprendizaje actual: 0.000013
+2025-12-12 06:26:14,664 - INFO -   [Sin mejora Loss] Paciencia: 1/10
+2025-12-12 06:26:14,667 - INFO - Val Loss: 0.6248 Acc: 0.7250
+2025-12-12 06:26:14,669 - INFO - --- Época 55/150 ---
+2025-12-12 06:26:55,255 - INFO - Train Loss: 0.5501 Acc: 0.7463
+2025-12-12 06:27:02,257 - INFO -   [LR] Tasa de aprendizaje actual: 0.000013
+2025-12-12 06:27:02,258 - INFO -   [Mejora Loss] 0.6008 -> 0.5887. Reseteando paciencia.
+2025-12-12 06:27:02,261 - INFO - Val Loss: 0.5887 Acc: 0.7250
+2025-12-12 06:27:02,263 - INFO - --- Época 56/150 ---
+2025-12-12 06:27:42,317 - INFO - Train Loss: 0.5492 Acc: 0.7516
+2025-12-12 06:27:49,301 - INFO -   [LR] Tasa de aprendizaje actual: 0.000013
+2025-12-12 06:27:49,303 - INFO -   [Sin mejora Loss] Paciencia: 1/10
+2025-12-12 06:27:49,305 - INFO - Val Loss: 0.6017 Acc: 0.7167
+2025-12-12 06:27:49,308 - INFO - --- Época 57/150 ---
+2025-12-12 06:28:28,882 - INFO - Train Loss: 0.5424 Acc: 0.7548
+2025-12-12 06:28:36,000 - INFO -   [LR] Tasa de aprendizaje actual: 0.000013
+2025-12-12 06:28:36,002 - INFO -   [Sin mejora Loss] Paciencia: 2/10
+2025-12-12 06:28:36,004 - INFO - Val Loss: 0.6123 Acc: 0.6833
+2025-12-12 06:28:36,006 - INFO - --- Época 58/150 ---
+2025-12-12 06:29:15,848 - INFO - Train Loss: 0.5425 Acc: 0.7550
+2025-12-12 06:29:22,971 - INFO -   [LR] Tasa de aprendizaje actual: 0.000013
+2025-12-12 06:29:22,973 - INFO -   [Sin mejora Loss] Paciencia: 3/10
+2025-12-12 06:29:22,976 - INFO - Val Loss: 0.5963 Acc: 0.7167
+2025-12-12 06:29:22,978 - INFO - --- Época 59/150 ---
+2025-12-12 06:30:03,710 - INFO - Train Loss: 0.5488 Acc: 0.7529
+2025-12-12 06:30:10,711 - INFO -   [LR] Tasa de aprendizaje actual: 0.000013
+2025-12-12 06:30:10,713 - INFO -   [Sin mejora Loss] Paciencia: 4/10
+2025-12-12 06:30:10,715 - INFO - Val Loss: 0.5960 Acc: 0.7083
+2025-12-12 06:30:10,716 - INFO - --- Época 60/150 ---
+2025-12-12 06:30:50,359 - INFO - Train Loss: 0.5442 Acc: 0.7547
+2025-12-12 06:30:57,483 - INFO -   [LR] Tasa de aprendizaje actual: 0.000013
+2025-12-12 06:30:57,485 - INFO -   [Sin mejora Loss] Paciencia: 5/10
+2025-12-12 06:30:57,487 - INFO - Val Loss: 0.6100 Acc: 0.7167
+2025-12-12 06:30:57,489 - INFO - --- Época 61/150 ---
+2025-12-12 06:31:37,746 - INFO - Train Loss: 0.5529 Acc: 0.7521
+2025-12-12 06:31:44,652 - INFO -   [LR] Tasa de aprendizaje actual: 0.000006
+2025-12-12 06:31:44,653 - INFO -   [Sin mejora Loss] Paciencia: 6/10
+2025-12-12 06:31:44,655 - INFO - Val Loss: 0.6181 Acc: 0.6833
+2025-12-12 06:31:44,656 - INFO - --- Época 62/150 ---
+2025-12-12 06:32:25,495 - INFO - Train Loss: 0.5449 Acc: 0.7535
+2025-12-12 06:32:32,592 - INFO -   [LR] Tasa de aprendizaje actual: 0.000006
+2025-12-12 06:32:32,593 - INFO -   [Sin mejora Loss] Paciencia: 7/10
+2025-12-12 06:32:32,597 - INFO - Val Loss: 0.5907 Acc: 0.7083
+2025-12-12 06:32:32,599 - INFO - --- Época 63/150 ---
+2025-12-12 06:33:12,955 - INFO - Train Loss: 0.5266 Acc: 0.7624
+2025-12-12 06:33:20,013 - INFO -   [LR] Tasa de aprendizaje actual: 0.000006
+2025-12-12 06:33:20,015 - INFO -   [Sin mejora Loss] Paciencia: 8/10
+2025-12-12 06:33:20,018 - INFO - Val Loss: 0.5999 Acc: 0.7250
+2025-12-12 06:33:20,020 - INFO - --- Época 64/150 ---
+2025-12-12 06:34:00,740 - INFO - Train Loss: 0.5389 Acc: 0.7618
+2025-12-12 06:34:07,807 - INFO -   [LR] Tasa de aprendizaje actual: 0.000006
+2025-12-12 06:34:07,809 - INFO -   [Mejora Loss] 0.5887 -> 0.5887. Reseteando paciencia.
+2025-12-12 06:34:07,812 - INFO - Val Loss: 0.5887 Acc: 0.7167
+2025-12-12 06:34:07,814 - INFO - --- Época 65/150 ---
+2025-12-12 06:34:47,570 - INFO - Train Loss: 0.5358 Acc: 0.7548
+2025-12-12 06:34:54,601 - INFO -   [LR] Tasa de aprendizaje actual: 0.000006
+2025-12-12 06:34:54,602 - INFO -   [Mejora Loss] 0.5887 -> 0.5882. Reseteando paciencia.
+2025-12-12 06:34:54,603 - INFO - Val Loss: 0.5882 Acc: 0.7250
+2025-12-12 06:34:54,605 - INFO - --- Época 66/150 ---
+2025-12-12 06:35:34,957 - INFO - Train Loss: 0.5376 Acc: 0.7525
+2025-12-12 06:35:42,170 - INFO -   [LR] Tasa de aprendizaje actual: 0.000006
+2025-12-12 06:35:42,171 - INFO -   [Sin mejora Loss] Paciencia: 1/10
+2025-12-12 06:35:42,174 - INFO - Val Loss: 0.6014 Acc: 0.7250
+2025-12-12 06:35:42,176 - INFO - --- Época 67/150 ---
+2025-12-12 06:36:22,906 - INFO - Train Loss: 0.5180 Acc: 0.7671
+2025-12-12 06:36:29,970 - INFO -   [LR] Tasa de aprendizaje actual: 0.000006
+2025-12-12 06:36:29,972 - INFO -   [Mejora Loss] 0.5882 -> 0.5867. Reseteando paciencia.
+2025-12-12 06:36:29,974 - INFO - Val Loss: 0.5867 Acc: 0.7167
+2025-12-12 06:36:29,976 - INFO - --- Época 68/150 ---
+2025-12-12 06:37:10,225 - INFO - Train Loss: 0.5273 Acc: 0.7638
+2025-12-12 06:37:17,198 - INFO -   [LR] Tasa de aprendizaje actual: 0.000006
+2025-12-12 06:37:17,199 - INFO -   [Sin mejora Loss] Paciencia: 1/10
+2025-12-12 06:37:17,201 - INFO - Val Loss: 0.5874 Acc: 0.7167
+2025-12-12 06:37:17,203 - INFO - --- Época 69/150 ---
+2025-12-12 06:37:57,531 - INFO - Train Loss: 0.5357 Acc: 0.7587
+2025-12-12 06:38:04,581 - INFO -   [LR] Tasa de aprendizaje actual: 0.000006
+2025-12-12 06:38:04,583 - INFO -   [Sin mejora Loss] Paciencia: 2/10
+2025-12-12 06:38:04,585 - INFO - Val Loss: 0.5894 Acc: 0.7083
+2025-12-12 06:38:04,587 - INFO - --- Época 70/150 ---
+2025-12-12 06:38:44,765 - INFO - Train Loss: 0.5268 Acc: 0.7640
+2025-12-12 06:38:51,709 - INFO -   [LR] Tasa de aprendizaje actual: 0.000006
+2025-12-12 06:38:51,710 - INFO -   [Mejora Loss] 0.5867 -> 0.5751. Reseteando paciencia.
+2025-12-12 06:38:51,713 - INFO - Val Loss: 0.5751 Acc: 0.7167
+2025-12-12 06:38:51,715 - INFO - --- Época 71/150 ---
+2025-12-12 06:39:31,913 - INFO - Train Loss: 0.5281 Acc: 0.7607
+2025-12-12 06:39:38,965 - INFO -   [LR] Tasa de aprendizaje actual: 0.000006
+2025-12-12 06:39:38,967 - INFO -   [Sin mejora Loss] Paciencia: 1/10
+2025-12-12 06:39:38,969 - INFO - Val Loss: 0.5869 Acc: 0.7167
+2025-12-12 06:39:38,972 - INFO - --- Época 72/150 ---
+2025-12-12 06:40:19,282 - INFO - Train Loss: 0.5246 Acc: 0.7645
+2025-12-12 06:40:26,126 - INFO -   [LR] Tasa de aprendizaje actual: 0.000006
+2025-12-12 06:40:26,127 - INFO -   [Sin mejora Loss] Paciencia: 2/10
+2025-12-12 06:40:26,129 - INFO - Val Loss: 0.5915 Acc: 0.7167
+2025-12-12 06:40:26,130 - INFO - --- Época 73/150 ---
+2025-12-12 06:41:06,491 - INFO - Train Loss: 0.5237 Acc: 0.7570
+2025-12-12 06:41:13,419 - INFO -   [LR] Tasa de aprendizaje actual: 0.000006
+2025-12-12 06:41:13,420 - INFO -   [Sin mejora Loss] Paciencia: 3/10
+2025-12-12 06:41:13,422 - INFO - Val Loss: 0.5786 Acc: 0.7167
+2025-12-12 06:41:13,425 - INFO - --- Época 74/150 ---
+2025-12-12 06:41:53,177 - INFO - Train Loss: 0.5169 Acc: 0.7760
+2025-12-12 06:42:00,129 - INFO -   [LR] Tasa de aprendizaje actual: 0.000006
+2025-12-12 06:42:00,131 - INFO -   [Sin mejora Loss] Paciencia: 4/10
+2025-12-12 06:42:00,133 - INFO - Val Loss: 0.5866 Acc: 0.7167
+2025-12-12 06:42:00,135 - INFO - --- Época 75/150 ---
+2025-12-12 06:42:40,489 - INFO - Train Loss: 0.5352 Acc: 0.7585
+2025-12-12 06:42:47,641 - INFO -   [LR] Tasa de aprendizaje actual: 0.000006
+2025-12-12 06:42:47,642 - INFO -   [Sin mejora Loss] Paciencia: 5/10
+2025-12-12 06:42:47,644 - INFO - Val Loss: 0.5870 Acc: 0.7250
+2025-12-12 06:42:47,647 - INFO - --- Época 76/150 ---
+2025-12-12 06:43:28,248 - INFO - Train Loss: 0.5133 Acc: 0.7690
+2025-12-12 06:43:35,241 - INFO -   [LR] Tasa de aprendizaje actual: 0.000003
+2025-12-12 06:43:35,242 - INFO -   [Sin mejora Loss] Paciencia: 6/10
+2025-12-12 06:43:35,245 - INFO - Val Loss: 0.5836 Acc: 0.7083
+2025-12-12 06:43:35,247 - INFO - --- Época 77/150 ---
+2025-12-12 06:44:15,608 - INFO - Train Loss: 0.5216 Acc: 0.7645
+2025-12-12 06:44:22,622 - INFO -   [LR] Tasa de aprendizaje actual: 0.000003
+2025-12-12 06:44:22,624 - INFO -   [Sin mejora Loss] Paciencia: 7/10
+2025-12-12 06:44:22,626 - INFO - Val Loss: 0.5852 Acc: 0.7333
+2025-12-12 06:44:22,629 - INFO - --- Época 78/150 ---
+2025-12-12 06:45:03,093 - INFO - Train Loss: 0.5196 Acc: 0.7721
+2025-12-12 06:45:10,014 - INFO -   [LR] Tasa de aprendizaje actual: 0.000003
+2025-12-12 06:45:10,015 - INFO -   [Sin mejora Loss] Paciencia: 8/10
+2025-12-12 06:45:10,016 - INFO - Val Loss: 0.5801 Acc: 0.7250
+2025-12-12 06:45:10,018 - INFO - --- Época 79/150 ---
+2025-12-12 06:45:49,885 - INFO - Train Loss: 0.5186 Acc: 0.7583
+2025-12-12 06:45:56,996 - INFO -   [LR] Tasa de aprendizaje actual: 0.000003
+2025-12-12 06:45:56,998 - INFO -   [Sin mejora Loss] Paciencia: 9/10
+2025-12-12 06:45:57,001 - INFO - Val Loss: 0.5849 Acc: 0.7000
+2025-12-12 06:45:57,003 - INFO - --- Época 80/150 ---
+2025-12-12 06:46:37,236 - INFO - Train Loss: 0.5246 Acc: 0.7638
+2025-12-12 06:46:44,172 - INFO -   [LR] Tasa de aprendizaje actual: 0.000003
+2025-12-12 06:46:44,173 - INFO -   [Sin mejora Loss] Paciencia: 10/10
+2025-12-12 06:46:44,174 - INFO - ¡EARLY STOPPING ACTIVADO! El modelo ya no mejora su pérdida.
+2025-12-12 06:46:44,175 - INFO - Val Loss: 0.5824 Acc: 0.7000
+2025-12-12 06:46:44,177 - INFO - Entrenamiento finalizado en 63m 1s
+2025-12-12 06:46:44,177 - INFO - Mejor Val Acc lograda: 0.7333
+2025-12-12 06:46:49,725 - INFO - Cargando el mejor modelo para la evaluación...
+2025-12-12 06:46:50,761 - INFO - 
+========================================
+2025-12-12 06:46:50,762 - INFO - --- INICIANDO EVALUACIÓN EN TEST SET ---
+2025-12-12 06:46:50,764 - INFO - ========================================
+2025-12-12 06:46:57,841 - INFO - Calculando métricas estadísticas...
+2025-12-12 06:46:57,849 - INFO - Generando matriz de confusión...
+2025-12-12 06:46:58,076 - INFO - Gráfico guardado en: models/sbtaylor_kan_cotton\run_20251212_054252\confusion_matrix.png
+2025-12-12 06:46:58,077 - INFO - Escribiendo reporte final...
+2025-12-12 06:46:58,094 - INFO - Reporte de texto guardado en: models/sbtaylor_kan_cotton\run_20251212_054252\test_metrics_report.txt
+2025-12-12 06:46:58,096 - INFO - --- EVALUACIÓN FINALIZADA ---
