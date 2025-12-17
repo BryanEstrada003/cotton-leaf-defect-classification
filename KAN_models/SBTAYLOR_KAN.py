@@ -176,78 +176,67 @@ class Net(nn.Module):
     3. KANLinear fully connected layers
     """
 
-    def __init__(self, num_classes=2):
+    def __init__(self, num_classes=2, input_size=(3, 224, 224), dropout_1=0.5, dropout_2=0.5):
         super().__init__()
-        # Feature extractor
+        
+        # --- 1. FEATURE EXTRACTOR (Agrupado correctamente) ---
+        # Usamos nn.Sequential para que 'self.features' exista y sea iterable/llamable
+        self.features = nn.Sequential(
+            # Bloque 1
+            nn.Conv2d(3, 32, kernel_size=3, padding=1),
+            nn.BatchNorm2d(32),
+            nn.ReLU(inplace=True),
+            nn.MaxPool2d(2, 2), # 224 -> 112
 
-        # --- BLOQUE 1: Detecta bordes y colores simples ---
-        # De 3 canales (RGB) a 32 filtros
-        self.conv1 = nn.Conv2d(3, 32, kernel_size=3, padding=1)
-        self.bn1 = nn.BatchNorm2d(32)
+            # Bloque 2
+            nn.Conv2d(32, 64, kernel_size=3, padding=1),
+            nn.BatchNorm2d(64),
+            nn.ReLU(inplace=True),
+            nn.MaxPool2d(2, 2), # 112 -> 56
 
-        # --- BLOQUE 2: Detecta formas geométricas ---
-        # De 32 a 64 filtros
-        self.conv2 = nn.Conv2d(32, 64, kernel_size=3, padding=1)
-        self.bn2 = nn.BatchNorm2d(64)
+            # Bloque 3
+            nn.Conv2d(64, 128, kernel_size=3, padding=1),
+            nn.BatchNorm2d(128),
+            nn.ReLU(inplace=True),
+            nn.MaxPool2d(2, 2), # 56 -> 28
 
-        # --- BLOQUE 3: Detecta texturas complejas (Hongos/Manchas) ---
-        # De 64 a 128 filtros
-        self.conv3 = nn.Conv2d(64, 128, kernel_size=3, padding=1)
-        self.bn3 = nn.BatchNorm2d(128)
+            # Bloque 4
+            nn.Conv2d(128, 128, kernel_size=3, padding=1),
+            nn.BatchNorm2d(128),
+            nn.ReLU(inplace=True),
+            nn.MaxPool2d(2, 2), # 28 -> 14
+        )
 
-        # --- BLOQUE 4: Refinamiento ---
-        # Mantenemos 128 pero profundizamos
-        self.conv4 = nn.Conv2d(128, 128, kernel_size=3, padding=1)
-        self.bn4 = nn.BatchNorm2d(128)
-
-        # Capa de Pooling (reduce tamaño a la mitad)
-        self.pool = nn.MaxPool2d(2, 2)
-
-        # --- CÁLCULO AUTOMÁTICO DE DIMENSIONES ---
-        # Esto evita que tengas que calcular "16*53*53" a mano.
-        # Le pasamos una imagen falsa de 224x224 para ver cuánto mide al final.
-        self._to_linear = None
-        self._get_conv_output(
-            (3, 224, 224)
-        )  # <--- AJUSTA 224 AL TAMAÑO DE TUS IMÁGENES
-
-        # --- CABEZA KAN (El cerebro) ---
+        # --- CABEZA KAN ---
         self.taylor_approx = TaylorSeriesApproximation(n_terms=5)
 
-        # La entrada es self._to_linear (calculado automáticamente)
-        self.fc1 = KANLinear(self._to_linear, 256)
-        self.dropout = nn.Dropout(0.5)  # Vital para evitar overfitting
+        # --- CÁLCULO AUTOMÁTICO DE DIMENSIONES ---
+        with torch.no_grad():
+            dummy_input = torch.zeros(1, *input_size)
+            
+            # Ahora esto SÍ funcionará porque self.features ya está definido arriba
+            dummy_output = self.features(dummy_input)
+            
+            # Calculamos el tamaño aplanado
+            self.flatten_dim = dummy_output.view(1, -1).size(1)
+            print(f"Dimensiones calculadas automáticamente para FC1: {self.flatten_dim}")
+
+        # Definición de capas lineales usando la dimensión calculada
+        self.fc1 = KANLinear(self.flatten_dim, 256)
+        self.dropout = nn.Dropout(dropout_1)
         self.fc2 = KANLinear(256, 128)
-        self.dropout2 = nn.Dropout(0.4)  # Añadido otro dropout para capas intermedias
+        self.dropout2 = nn.Dropout(dropout_2)
         self.fc3 = KANLinear(128, num_classes)
 
-    def _get_conv_output(self, input_shape):
-        # Función auxiliar que corre una imagen vacía por las convs
-        # para saber el tamaño exacto antes de la capa lineal.
-        batch_size = 1
-        input = torch.autograd.Variable(torch.rand(batch_size, *input_shape))
-        output_feat = self._forward_features(input)
-        self._to_linear = output_feat.data.view(batch_size, -1).size(1)
-
-    def _forward_features(self, x):
-        # Separamos la parte convolucional para poder reusarla en _get_conv_output
-        x = self.pool(F.relu(self.bn1(self.conv1(x))))  # 224 -> 112
-        x = self.pool(F.relu(self.bn2(self.conv2(x))))  # 112 -> 56
-        x = self.pool(F.relu(self.bn3(self.conv3(x))))  # 56 -> 28
-        x = self.pool(F.relu(self.bn4(self.conv4(x))))  # 28 -> 14
-        return x
-
     def forward(self, x):
-        # 1. Extraer características (Convoluciones)
-        x = self._forward_features(x)
+        # 1. Extraer características (Ahora es una sola llamada limpia)
+        x = self.features(x)
 
         # 2. Aplanar
         x = torch.flatten(x, 1)
 
-        x = torch.tanh(x)  # Estabilizador para Taylor
-        # garantiza que el motor matemático de los polinomios no explote.
-
-        # 3. Transformación Taylor (Tu componente especial)
+        # 3. Estabilización y Taylor
+        x = torch.tanh(x) 
         x = self.taylor_approx(x)
 
         # 4. Clasificación KAN
@@ -255,4 +244,6 @@ class Net(nn.Module):
         x = self.dropout(x)
         x = F.relu(self.fc2(x))
         x = self.dropout2(x)
-        return self.fc3(x)
+        x = self.fc3(x) 
+        
+        return x
