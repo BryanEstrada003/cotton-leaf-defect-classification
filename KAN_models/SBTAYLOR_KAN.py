@@ -84,20 +84,26 @@ class KANLinear(nn.Module):
         self.reset_parameters()
 
     def reset_parameters(self):
+        # Inicialización de la parte lineal base (Kaiming es estándar)
         nn.init.kaiming_uniform_(self.base_weight, a=math.sqrt(5))
         nn.init.kaiming_uniform_(self.spline_scaler, a=math.sqrt(5))
 
         # Inicialización de los splines
         with torch.no_grad():
+            # El ruido debe tener la misma forma que self.spline_weight:
+            # (out_features, in_features, grid_size + spline_order)
             noise = (
                 (
-                    torch.rand(self.grid_size + 1, self.in_features, self.out_features)
+                    torch.rand(self.out_features, self.in_features, self.grid_size + self.spline_order) 
                     - 0.5
                 )
                 * self.scale_noise
                 / self.grid_size
             )
-            nn.init.normal_(self.spline_weight, mean=0.0, std=self.scale_noise)
+            
+            # 2. USO DE LA VARIABLE:
+            # Copiamos el 'noise' calculado dentro de los pesos del spline
+            self.spline_weight.data.copy_(noise)
 
     def b_splines(self, x: torch.Tensor):
         assert x.dim() == 2 and x.size(1) == self.in_features
