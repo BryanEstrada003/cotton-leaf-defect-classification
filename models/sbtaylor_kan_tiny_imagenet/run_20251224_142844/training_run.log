@@ -1,0 +1,17 @@
+2025-12-24 14:28:44,246 - INFO - Modelo SBTAYLOR_KAN.Net importado correctamente.
+2025-12-24 14:28:44,249 - INFO - Los pesos del modelo se guardarán en: 'models/sbtaylor_kan_tiny_imagenet\run_20251224_142844\sbtaylor_kan.best_weights.pth'
+2025-12-24 14:28:44,251 - INFO - El registro de entrenamiento se guardará en: 'models/sbtaylor_kan_tiny_imagenet\run_20251224_142844\training_run.log'
+2025-12-24 14:28:44,278 - INFO - Versión de PyTorch: 2.9.0+cu126
+2025-12-24 14:28:44,280 - INFO - ¿CUDA está disponible?: True
+2025-12-24 14:28:44,282 - INFO - Versión de CUDA con la que PyTorch fue compilado: 12.6
+2025-12-24 14:28:44,284 - INFO - Número de GPUs disponibles: 1
+2025-12-24 14:28:44,289 - INFO - Nombre de la GPU actual: NVIDIA GeForce RTX 4090
+2025-12-24 14:28:44,340 - INFO - --- Hyperparámetros de Entrenamiento ---
+2025-12-24 14:28:44,341 - INFO - Batch Size: 64
+2025-12-24 14:28:44,343 - INFO - Num Epochs: 250
+2025-12-24 14:28:44,344 - INFO - Num Workers: 4
+2025-12-24 14:30:06,023 - INFO - 
+Usando dispositivo: cuda
+2025-12-24 14:30:06,450 - INFO - Iniciando entrenamiento por 250 épocas...
+2025-12-24 14:30:06,451 - INFO - Paciencia configurada: 50 épocas.
+2025-12-24 14:30:06,451 - INFO - --- Época 1/250 ---
