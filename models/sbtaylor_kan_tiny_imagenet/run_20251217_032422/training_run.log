@@ -1,0 +1,205 @@
+2025-12-17 03:24:22,778 - INFO - Modelo SBTAYLOR_KAN.Net importado correctamente.
+2025-12-17 03:24:22,779 - INFO - Los pesos del modelo se guardarán en: 'models/sbtaylor_kan_tiny_imagenet\run_20251217_032422\sbtaylor_kan.best_weights.pth'
+2025-12-17 03:24:22,781 - INFO - El registro de entrenamiento se guardará en: 'models/sbtaylor_kan_tiny_imagenet\run_20251217_032422\training_run.log'
+2025-12-17 03:24:22,806 - INFO - Versión de PyTorch: 2.9.0+cu126
+2025-12-17 03:24:22,808 - INFO - ¿CUDA está disponible?: True
+2025-12-17 03:24:22,809 - INFO - Versión de CUDA con la que PyTorch fue compilado: 12.6
+2025-12-17 03:24:22,810 - INFO - Número de GPUs disponibles: 1
+2025-12-17 03:24:22,815 - INFO - Nombre de la GPU actual: NVIDIA GeForce RTX 4090
+2025-12-17 03:24:22,838 - INFO - --- Hyperparámetros de Entrenamiento ---
+2025-12-17 03:24:22,839 - INFO - Batch Size: 64
+2025-12-17 03:24:22,841 - INFO - Num Epochs: 150
+2025-12-17 03:24:22,842 - INFO - Learning Rate: 0.0001
+2025-12-17 03:24:22,842 - INFO - Num Workers: 4
+2025-12-17 03:25:11,624 - INFO - 
+Usando dispositivo: cuda
+2025-12-17 03:25:11,905 - INFO - Iniciando entrenamiento por 150 épocas...
+2025-12-17 03:25:11,907 - INFO - Paciencia configurada: 10 épocas.
+2025-12-17 03:25:11,908 - INFO - --- Época 1/150 ---
+2025-12-17 03:25:48,078 - INFO - Train Loss: 2.2607 Acc: 0.1530
+2025-12-17 03:26:18,648 - INFO -   [LR] Tasa de aprendizaje actual: 0.000100
+2025-12-17 03:26:18,651 - INFO -   [Mejora Loss] inf -> 2.1956. Reseteando paciencia.
+2025-12-17 03:26:18,652 - INFO - Val Loss: 2.1956 Acc: 0.2000
+2025-12-17 03:26:18,710 - INFO -   [Nuevo Récord Acc] Guardado en: models/sbtaylor_kan_tiny_imagenet\run_20251217_032422\best_model.pth
+2025-12-17 03:26:18,711 - INFO - --- Época 2/150 ---
+2025-12-17 03:26:52,176 - INFO - Train Loss: 2.1002 Acc: 0.2328
+2025-12-17 03:27:21,880 - INFO -   [LR] Tasa de aprendizaje actual: 0.000100
+2025-12-17 03:27:21,881 - INFO -   [Mejora Loss] 2.1956 -> 2.0304. Reseteando paciencia.
+2025-12-17 03:27:21,884 - INFO - Val Loss: 2.0304 Acc: 0.3100
+2025-12-17 03:27:21,924 - INFO -   [Nuevo Récord Acc] Guardado en: models/sbtaylor_kan_tiny_imagenet\run_20251217_032422\best_model.pth
+2025-12-17 03:27:21,926 - INFO - --- Época 3/150 ---
+2025-12-17 03:27:54,940 - INFO - Train Loss: 1.9558 Acc: 0.2945
+2025-12-17 03:28:24,514 - INFO -   [LR] Tasa de aprendizaje actual: 0.000100
+2025-12-17 03:28:24,516 - INFO -   [Mejora Loss] 2.0304 -> 1.8949. Reseteando paciencia.
+2025-12-17 03:28:24,518 - INFO - Val Loss: 1.8949 Acc: 0.3640
+2025-12-17 03:28:24,562 - INFO -   [Nuevo Récord Acc] Guardado en: models/sbtaylor_kan_tiny_imagenet\run_20251217_032422\best_model.pth
+2025-12-17 03:28:24,563 - INFO - --- Época 4/150 ---
+2025-12-17 03:28:57,145 - INFO - Train Loss: 1.8467 Acc: 0.3400
+2025-12-17 03:29:26,911 - INFO -   [LR] Tasa de aprendizaje actual: 0.000100
+2025-12-17 03:29:26,913 - INFO -   [Mejora Loss] 1.8949 -> 1.8070. Reseteando paciencia.
+2025-12-17 03:29:26,915 - INFO - Val Loss: 1.8070 Acc: 0.3950
+2025-12-17 03:29:26,962 - INFO -   [Nuevo Récord Acc] Guardado en: models/sbtaylor_kan_tiny_imagenet\run_20251217_032422\best_model.pth
+2025-12-17 03:29:26,963 - INFO - --- Época 5/150 ---
+2025-12-17 03:29:59,183 - INFO - Train Loss: 1.7621 Acc: 0.3660
+2025-12-17 03:30:28,674 - INFO -   [LR] Tasa de aprendizaje actual: 0.000100
+2025-12-17 03:30:28,676 - INFO -   [Mejora Loss] 1.8070 -> 1.7147. Reseteando paciencia.
+2025-12-17 03:30:28,679 - INFO - Val Loss: 1.7147 Acc: 0.4470
+2025-12-17 03:30:28,726 - INFO -   [Nuevo Récord Acc] Guardado en: models/sbtaylor_kan_tiny_imagenet\run_20251217_032422\best_model.pth
+2025-12-17 03:30:28,728 - INFO - --- Época 6/150 ---
+2025-12-17 03:31:01,474 - INFO - Train Loss: 1.6602 Acc: 0.4022
+2025-12-17 03:31:31,427 - INFO -   [LR] Tasa de aprendizaje actual: 0.000100
+2025-12-17 03:31:31,428 - INFO -   [Mejora Loss] 1.7147 -> 1.6664. Reseteando paciencia.
+2025-12-17 03:31:31,429 - INFO - Val Loss: 1.6664 Acc: 0.4410
+2025-12-17 03:31:31,430 - INFO - --- Época 7/150 ---
+2025-12-17 03:32:04,470 - INFO - Train Loss: 1.5853 Acc: 0.4473
+2025-12-17 03:32:33,626 - INFO -   [LR] Tasa de aprendizaje actual: 0.000100
+2025-12-17 03:32:33,627 - INFO -   [Mejora Loss] 1.6664 -> 1.6591. Reseteando paciencia.
+2025-12-17 03:32:33,629 - INFO - Val Loss: 1.6591 Acc: 0.4380
+2025-12-17 03:32:33,630 - INFO - --- Época 8/150 ---
+2025-12-17 03:33:06,294 - INFO - Train Loss: 1.5251 Acc: 0.4617
+2025-12-17 03:33:36,264 - INFO -   [LR] Tasa de aprendizaje actual: 0.000100
+2025-12-17 03:33:36,265 - INFO -   [Mejora Loss] 1.6591 -> 1.5360. Reseteando paciencia.
+2025-12-17 03:33:36,266 - INFO - Val Loss: 1.5360 Acc: 0.4750
+2025-12-17 03:33:36,301 - INFO -   [Nuevo Récord Acc] Guardado en: models/sbtaylor_kan_tiny_imagenet\run_20251217_032422\best_model.pth
+2025-12-17 03:33:36,303 - INFO - --- Época 9/150 ---
+2025-12-17 03:34:08,973 - INFO - Train Loss: 1.4568 Acc: 0.4865
+2025-12-17 03:34:38,175 - INFO -   [LR] Tasa de aprendizaje actual: 0.000100
+2025-12-17 03:34:38,176 - INFO -   [Mejora Loss] 1.5360 -> 1.5277. Reseteando paciencia.
+2025-12-17 03:34:38,178 - INFO - Val Loss: 1.5277 Acc: 0.4940
+2025-12-17 03:34:38,217 - INFO -   [Nuevo Récord Acc] Guardado en: models/sbtaylor_kan_tiny_imagenet\run_20251217_032422\best_model.pth
+2025-12-17 03:34:38,218 - INFO - --- Época 10/150 ---
+2025-12-17 03:35:10,801 - INFO - Train Loss: 1.3928 Acc: 0.5232
+2025-12-17 03:35:40,698 - INFO -   [LR] Tasa de aprendizaje actual: 0.000100
+2025-12-17 03:35:40,700 - INFO -   [Mejora Loss] 1.5277 -> 1.4529. Reseteando paciencia.
+2025-12-17 03:35:40,702 - INFO - Val Loss: 1.4529 Acc: 0.5070
+2025-12-17 03:35:40,750 - INFO -   [Nuevo Récord Acc] Guardado en: models/sbtaylor_kan_tiny_imagenet\run_20251217_032422\best_model.pth
+2025-12-17 03:35:40,751 - INFO - --- Época 11/150 ---
+2025-12-17 03:36:12,568 - INFO - Train Loss: 1.3337 Acc: 0.5275
+2025-12-17 03:36:41,648 - INFO -   [LR] Tasa de aprendizaje actual: 0.000100
+2025-12-17 03:36:41,650 - INFO -   [Mejora Loss] 1.4529 -> 1.3783. Reseteando paciencia.
+2025-12-17 03:36:41,652 - INFO - Val Loss: 1.3783 Acc: 0.5230
+2025-12-17 03:36:41,698 - INFO -   [Nuevo Récord Acc] Guardado en: models/sbtaylor_kan_tiny_imagenet\run_20251217_032422\best_model.pth
+2025-12-17 03:36:41,699 - INFO - --- Época 12/150 ---
+2025-12-17 03:37:13,704 - INFO - Train Loss: 1.2777 Acc: 0.5540
+2025-12-17 03:37:43,288 - INFO -   [LR] Tasa de aprendizaje actual: 0.000100
+2025-12-17 03:37:43,289 - INFO -   [Sin mejora Loss] Paciencia: 1/10
+2025-12-17 03:37:43,290 - INFO - Val Loss: 1.3874 Acc: 0.5260
+2025-12-17 03:37:43,337 - INFO -   [Nuevo Récord Acc] Guardado en: models/sbtaylor_kan_tiny_imagenet\run_20251217_032422\best_model.pth
+2025-12-17 03:37:43,338 - INFO - --- Época 13/150 ---
+2025-12-17 03:38:16,131 - INFO - Train Loss: 1.2289 Acc: 0.5757
+2025-12-17 03:38:45,744 - INFO -   [LR] Tasa de aprendizaje actual: 0.000100
+2025-12-17 03:38:45,746 - INFO -   [Sin mejora Loss] Paciencia: 2/10
+2025-12-17 03:38:45,749 - INFO - Val Loss: 1.3928 Acc: 0.5110
+2025-12-17 03:38:45,751 - INFO - --- Época 14/150 ---
+2025-12-17 03:39:17,772 - INFO - Train Loss: 1.1729 Acc: 0.5870
+2025-12-17 03:39:47,147 - INFO -   [LR] Tasa de aprendizaje actual: 0.000100
+2025-12-17 03:39:47,148 - INFO -   [Sin mejora Loss] Paciencia: 3/10
+2025-12-17 03:39:47,150 - INFO - Val Loss: 1.3855 Acc: 0.5160
+2025-12-17 03:39:47,151 - INFO - --- Época 15/150 ---
+2025-12-17 03:40:18,694 - INFO - Train Loss: 1.1046 Acc: 0.6228
+2025-12-17 03:40:47,136 - INFO -   [LR] Tasa de aprendizaje actual: 0.000100
+2025-12-17 03:40:47,138 - INFO -   [Sin mejora Loss] Paciencia: 4/10
+2025-12-17 03:40:47,139 - INFO - Val Loss: 1.4688 Acc: 0.4630
+2025-12-17 03:40:47,140 - INFO - --- Época 16/150 ---
+2025-12-17 03:41:19,341 - INFO - Train Loss: 1.0713 Acc: 0.6228
+2025-12-17 03:41:48,577 - INFO -   [LR] Tasa de aprendizaje actual: 0.000100
+2025-12-17 03:41:48,579 - INFO -   [Sin mejora Loss] Paciencia: 5/10
+2025-12-17 03:41:48,581 - INFO - Val Loss: 1.3881 Acc: 0.5250
+2025-12-17 03:41:48,582 - INFO - --- Época 17/150 ---
+2025-12-17 03:42:20,915 - INFO - Train Loss: 1.0137 Acc: 0.6472
+2025-12-17 03:42:49,823 - INFO -   [LR] Tasa de aprendizaje actual: 0.000100
+2025-12-17 03:42:49,825 - INFO -   [Mejora Loss] 1.3783 -> 1.3589. Reseteando paciencia.
+2025-12-17 03:42:49,827 - INFO - Val Loss: 1.3589 Acc: 0.5020
+2025-12-17 03:42:49,829 - INFO - --- Época 18/150 ---
+2025-12-17 03:43:21,230 - INFO - Train Loss: 0.9509 Acc: 0.6710
+2025-12-17 03:43:50,178 - INFO -   [LR] Tasa de aprendizaje actual: 0.000100
+2025-12-17 03:43:50,179 - INFO -   [Sin mejora Loss] Paciencia: 1/10
+2025-12-17 03:43:50,180 - INFO - Val Loss: 1.3938 Acc: 0.5000
+2025-12-17 03:43:50,181 - INFO - --- Época 19/150 ---
+2025-12-17 03:44:22,273 - INFO - Train Loss: 0.8964 Acc: 0.6803
+2025-12-17 03:44:51,455 - INFO -   [LR] Tasa de aprendizaje actual: 0.000100
+2025-12-17 03:44:51,456 - INFO -   [Sin mejora Loss] Paciencia: 2/10
+2025-12-17 03:44:51,458 - INFO - Val Loss: 1.4054 Acc: 0.5120
+2025-12-17 03:44:51,458 - INFO - --- Época 20/150 ---
+2025-12-17 03:45:23,933 - INFO - Train Loss: 0.8351 Acc: 0.7190
+2025-12-17 03:45:53,195 - INFO -   [LR] Tasa de aprendizaje actual: 0.000100
+2025-12-17 03:45:53,197 - INFO -   [Mejora Loss] 1.3589 -> 1.3141. Reseteando paciencia.
+2025-12-17 03:45:53,199 - INFO - Val Loss: 1.3141 Acc: 0.5670
+2025-12-17 03:45:53,247 - INFO -   [Nuevo Récord Acc] Guardado en: models/sbtaylor_kan_tiny_imagenet\run_20251217_032422\best_model.pth
+2025-12-17 03:45:53,249 - INFO - --- Época 21/150 ---
+2025-12-17 03:46:25,680 - INFO - Train Loss: 0.8069 Acc: 0.7198
+2025-12-17 03:46:54,317 - INFO -   [LR] Tasa de aprendizaje actual: 0.000100
+2025-12-17 03:46:54,318 - INFO -   [Mejora Loss] 1.3141 -> 1.2989. Reseteando paciencia.
+2025-12-17 03:46:54,320 - INFO - Val Loss: 1.2989 Acc: 0.5310
+2025-12-17 03:46:54,321 - INFO - --- Época 22/150 ---
+2025-12-17 03:47:26,329 - INFO - Train Loss: 0.7517 Acc: 0.7390
+2025-12-17 03:47:55,474 - INFO -   [LR] Tasa de aprendizaje actual: 0.000100
+2025-12-17 03:47:55,475 - INFO -   [Mejora Loss] 1.2989 -> 1.2598. Reseteando paciencia.
+2025-12-17 03:47:55,478 - INFO - Val Loss: 1.2598 Acc: 0.5460
+2025-12-17 03:47:55,480 - INFO - --- Época 23/150 ---
+2025-12-17 03:48:27,562 - INFO - Train Loss: 0.6745 Acc: 0.7675
+2025-12-17 03:48:57,181 - INFO -   [LR] Tasa de aprendizaje actual: 0.000100
+2025-12-17 03:48:57,183 - INFO -   [Sin mejora Loss] Paciencia: 1/10
+2025-12-17 03:48:57,185 - INFO - Val Loss: 1.3911 Acc: 0.5280
+2025-12-17 03:48:57,188 - INFO - --- Época 24/150 ---
+2025-12-17 03:49:30,105 - INFO - Train Loss: 0.6421 Acc: 0.7815
+2025-12-17 03:49:59,705 - INFO -   [LR] Tasa de aprendizaje actual: 0.000100
+2025-12-17 03:49:59,707 - INFO -   [Sin mejora Loss] Paciencia: 2/10
+2025-12-17 03:49:59,709 - INFO - Val Loss: 1.3210 Acc: 0.5360
+2025-12-17 03:49:59,712 - INFO - --- Época 25/150 ---
+2025-12-17 03:50:31,769 - INFO - Train Loss: 0.5964 Acc: 0.7945
+2025-12-17 03:51:01,170 - INFO -   [LR] Tasa de aprendizaje actual: 0.000100
+2025-12-17 03:51:01,171 - INFO -   [Sin mejora Loss] Paciencia: 3/10
+2025-12-17 03:51:01,173 - INFO - Val Loss: 1.2878 Acc: 0.5310
+2025-12-17 03:51:01,175 - INFO - --- Época 26/150 ---
+2025-12-17 03:51:33,230 - INFO - Train Loss: 0.5385 Acc: 0.8193
+2025-12-17 03:52:02,669 - INFO -   [LR] Tasa de aprendizaje actual: 0.000100
+2025-12-17 03:52:02,671 - INFO -   [Sin mejora Loss] Paciencia: 4/10
+2025-12-17 03:52:02,673 - INFO - Val Loss: 1.4146 Acc: 0.5300
+2025-12-17 03:52:02,674 - INFO - --- Época 27/150 ---
+2025-12-17 03:52:34,864 - INFO - Train Loss: 0.5328 Acc: 0.8175
+2025-12-17 03:53:04,366 - INFO -   [LR] Tasa de aprendizaje actual: 0.000100
+2025-12-17 03:53:04,368 - INFO -   [Sin mejora Loss] Paciencia: 5/10
+2025-12-17 03:53:04,370 - INFO - Val Loss: 1.3842 Acc: 0.5310
+2025-12-17 03:53:04,372 - INFO - --- Época 28/150 ---
+2025-12-17 03:53:36,332 - INFO - Train Loss: 0.4820 Acc: 0.8435
+2025-12-17 03:54:06,171 - INFO -   [LR] Tasa de aprendizaje actual: 0.000050
+2025-12-17 03:54:06,172 - INFO -   [Sin mejora Loss] Paciencia: 6/10
+2025-12-17 03:54:06,173 - INFO - Val Loss: 1.3843 Acc: 0.5420
+2025-12-17 03:54:06,174 - INFO - --- Época 29/150 ---
+2025-12-17 03:54:38,426 - INFO - Train Loss: 0.3743 Acc: 0.8888
+2025-12-17 03:55:08,161 - INFO -   [LR] Tasa de aprendizaje actual: 0.000050
+2025-12-17 03:55:08,162 - INFO -   [Sin mejora Loss] Paciencia: 7/10
+2025-12-17 03:55:08,163 - INFO - Val Loss: 1.3265 Acc: 0.5450
+2025-12-17 03:55:08,163 - INFO - --- Época 30/150 ---
+2025-12-17 03:55:39,486 - INFO - Train Loss: 0.3499 Acc: 0.8925
+2025-12-17 03:56:08,955 - INFO -   [LR] Tasa de aprendizaje actual: 0.000050
+2025-12-17 03:56:08,956 - INFO -   [Sin mejora Loss] Paciencia: 8/10
+2025-12-17 03:56:08,958 - INFO - Val Loss: 1.2807 Acc: 0.5700
+2025-12-17 03:56:08,995 - INFO -   [Nuevo Récord Acc] Guardado en: models/sbtaylor_kan_tiny_imagenet\run_20251217_032422\best_model.pth
+2025-12-17 03:56:08,997 - INFO - --- Época 31/150 ---
+2025-12-17 03:56:40,260 - INFO - Train Loss: 0.3126 Acc: 0.9138
+2025-12-17 03:57:09,741 - INFO -   [LR] Tasa de aprendizaje actual: 0.000050
+2025-12-17 03:57:09,742 - INFO -   [Sin mejora Loss] Paciencia: 9/10
+2025-12-17 03:57:09,744 - INFO - Val Loss: 1.2691 Acc: 0.5930
+2025-12-17 03:57:09,783 - INFO -   [Nuevo Récord Acc] Guardado en: models/sbtaylor_kan_tiny_imagenet\run_20251217_032422\best_model.pth
+2025-12-17 03:57:09,784 - INFO - --- Época 32/150 ---
+2025-12-17 03:57:41,984 - INFO - Train Loss: 0.3072 Acc: 0.9055
+2025-12-17 03:58:11,591 - INFO -   [LR] Tasa de aprendizaje actual: 0.000050
+2025-12-17 03:58:11,593 - INFO -   [Sin mejora Loss] Paciencia: 10/10
+2025-12-17 03:58:11,594 - INFO - ¡EARLY STOPPING ACTIVADO! El modelo ya no mejora su pérdida.
+2025-12-17 03:58:11,595 - INFO - Val Loss: 1.2736 Acc: 0.5810
+2025-12-17 03:58:11,596 - INFO - Entrenamiento finalizado en 32m 60s
+2025-12-17 03:58:11,597 - INFO - Mejor Val Acc lograda: 0.5930
+2025-12-17 03:59:30,166 - INFO - Cargando el mejor modelo para la evaluación...
+2025-12-17 04:00:04,630 - INFO - Cargando el mejor modelo para la evaluación...
+2025-12-17 04:00:29,219 - INFO - 
+========================================
+2025-12-17 04:00:29,223 - INFO - --- INICIANDO EVALUACIÓN EN TEST SET ---
+2025-12-17 04:00:29,226 - INFO - ========================================
+2025-12-17 04:00:58,511 - INFO - Calculando métricas estadísticas...
+2025-12-17 04:00:58,526 - INFO - Generando matriz de confusión...
+2025-12-17 04:00:58,938 - INFO - Gráfico guardado en: models/sbtaylor_kan_tiny_imagenet\run_20251217_032422\confusion_matrix.png
+2025-12-17 04:00:58,939 - INFO - Escribiendo reporte final...
+2025-12-17 04:00:58,956 - INFO - Reporte de texto guardado en: models/sbtaylor_kan_tiny_imagenet\run_20251217_032422\test_metrics_report.txt
+2025-12-17 04:00:58,958 - INFO - --- EVALUACIÓN FINALIZADA ---

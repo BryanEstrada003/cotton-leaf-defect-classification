@@ -1,0 +1,28 @@
+2025-12-19 03:09:04,586 - INFO - Modelo SBTAYLOR_KAN.Net importado correctamente.
+2025-12-19 03:09:04,588 - INFO - Los pesos del modelo se guardarán en: 'models/sbtaylor_kan_tiny_imagenet\run_20251219_030904\sbtaylor_kan.best_weights.pth'
+2025-12-19 03:09:04,589 - INFO - El registro de entrenamiento se guardará en: 'models/sbtaylor_kan_tiny_imagenet\run_20251219_030904\training_run.log'
+2025-12-19 03:09:04,618 - INFO - Versión de PyTorch: 2.9.0+cu126
+2025-12-19 03:09:04,620 - INFO - ¿CUDA está disponible?: True
+2025-12-19 03:09:04,622 - INFO - Versión de CUDA con la que PyTorch fue compilado: 12.6
+2025-12-19 03:09:04,623 - INFO - Número de GPUs disponibles: 1
+2025-12-19 03:09:04,628 - INFO - Nombre de la GPU actual: NVIDIA GeForce RTX 4090
+2025-12-19 03:09:04,651 - INFO - --- Hyperparámetros de Entrenamiento ---
+2025-12-19 03:09:04,653 - INFO - Batch Size: 64
+2025-12-19 03:09:04,655 - INFO - Num Epochs: 150
+2025-12-19 03:09:04,656 - INFO - Num Workers: 4
+2025-12-19 03:10:32,683 - INFO - 
+Usando dispositivo: cuda
+2025-12-19 03:10:33,768 - INFO - Iniciando entrenamiento por 150 épocas...
+2025-12-19 03:10:33,769 - INFO - Paciencia configurada: 20 épocas.
+2025-12-19 03:10:33,771 - INFO - --- Época 1/150 ---
+2025-12-19 03:11:12,230 - INFO - Train Loss: 2.3670 Acc: 0.1183
+2025-12-19 03:11:14,356 - INFO -   [LR] Tasa de aprendizaje actual: 0.000999
+2025-12-19 03:11:14,357 - INFO -   [Mejora Loss] inf -> 2.2857. Reseteando paciencia.
+2025-12-19 03:11:14,358 - INFO - Val Loss: 2.2857 Acc: 0.1260
+2025-12-19 03:11:14,858 - INFO -   [Nuevo Récord Acc] Guardado en: models/sbtaylor_kan_tiny_imagenet\run_20251219_030904\best_model.pth
+2025-12-19 03:11:14,860 - INFO - --- Época 2/150 ---
+2025-12-19 03:11:52,338 - INFO - Train Loss: 2.2909 Acc: 0.1072
+2025-12-19 03:11:54,450 - INFO -   [LR] Tasa de aprendizaje actual: 0.000999
+2025-12-19 03:11:54,451 - INFO -   [Sin mejora Loss] Paciencia: 1/20
+2025-12-19 03:11:54,453 - INFO - Val Loss: 2.2961 Acc: 0.1140
+2025-12-19 03:11:54,454 - INFO - --- Época 3/150 ---

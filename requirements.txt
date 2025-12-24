@@ -32,3 +32,4 @@ matplotlib
 tqdm
 bayesian-optimization
 kagglehub
+scikit-learn
