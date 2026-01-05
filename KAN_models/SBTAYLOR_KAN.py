@@ -94,13 +94,17 @@ class KANLinear(nn.Module):
             # (out_features, in_features, grid_size + spline_order)
             noise = (
                 (
-                    torch.rand(self.out_features, self.in_features, self.grid_size + self.spline_order) 
+                    torch.rand(
+                        self.out_features,
+                        self.in_features,
+                        self.grid_size + self.spline_order,
+                    )
                     - 0.5
                 )
                 * self.scale_noise
                 / self.grid_size
             )
-            
+
             # 2. USO DE LA VARIABLE:
             # Copiamos el 'noise' calculado dentro de los pesos del spline
             self.spline_weight.data.copy_(noise)
@@ -173,6 +177,8 @@ class TaylorSeriesApproximation(nn.Module):
 # =========================================================
 
 
+
+
 class Net(nn.Module):
     """
     Spline-based Taylor-KAN Model for Medical Imaging Classification.
@@ -181,53 +187,44 @@ class Net(nn.Module):
     2. Taylor series functional transformation
     3. KANLinear fully connected layers
     """
-
     def __init__(self, num_classes=2, input_size=(3, 224, 224), dropout_1=0.5, dropout_2=0.5):
         super().__init__()
         
-        # --- 1. FEATURE EXTRACTOR (Agrupado correctamente) ---
-        # Usamos nn.Sequential para que 'self.features' exista y sea iterable/llamable
+        # --- 1. FEATURE EXTRACTOR ---
         self.features = nn.Sequential(
-            # Bloque 1
             nn.Conv2d(3, 32, kernel_size=3, padding=1),
             nn.BatchNorm2d(32),
             nn.ReLU(inplace=True),
-            nn.MaxPool2d(2, 2), # 224 -> 112
-
-            # Bloque 2
+            nn.MaxPool2d(2, 2), 
             nn.Conv2d(32, 64, kernel_size=3, padding=1),
             nn.BatchNorm2d(64),
             nn.ReLU(inplace=True),
-            nn.MaxPool2d(2, 2), # 112 -> 56
-
-            # Bloque 3
+            nn.MaxPool2d(2, 2),
             nn.Conv2d(64, 128, kernel_size=3, padding=1),
             nn.BatchNorm2d(128),
             nn.ReLU(inplace=True),
-            nn.MaxPool2d(2, 2), # 56 -> 28
-
-            # Bloque 4
+            nn.MaxPool2d(2, 2),
             nn.Conv2d(128, 128, kernel_size=3, padding=1),
             nn.BatchNorm2d(128),
             nn.ReLU(inplace=True),
-            nn.MaxPool2d(2, 2), # 28 -> 14
+            nn.MaxPool2d(2, 2),
         )
 
         # --- CABEZA KAN ---
         self.taylor_approx = TaylorSeriesApproximation(n_terms=5)
+        self.gap = nn.AdaptiveAvgPool2d(1) 
 
-        # --- CÁLCULO AUTOMÁTICO DE DIMENSIONES ---
+        # --- CÁLCULO AUTOMÁTICO DE DIMENSIONES (CORREGIDO) ---
         with torch.no_grad():
             dummy_input = torch.zeros(1, *input_size)
-            
-            # Ahora esto SÍ funcionará porque self.features ya está definido arriba
+            # PASO CRÍTICO: Pasar el dummy por features Y por GAP
             dummy_output = self.features(dummy_input)
+            dummy_output = self.gap(dummy_output) # <--- Añade esta línea
             
-            # Calculamos el tamaño aplanado
             self.flatten_dim = dummy_output.view(1, -1).size(1)
-            print(f"Dimensiones calculadas automáticamente para FC1: {self.flatten_dim}")
+            print(f"Nueva dimensión para FC1 (con GAP): {self.flatten_dim}") # Debería imprimir 128
 
-        # Definición de capas lineales usando la dimensión calculada
+        # Ahora fc1 recibirá 128 y no 25088
         self.fc1 = KANLinear(self.flatten_dim, 256)
         self.dropout = nn.Dropout(dropout_1)
         self.fc2 = KANLinear(256, 128)
@@ -235,21 +232,16 @@ class Net(nn.Module):
         self.fc3 = KANLinear(128, num_classes)
 
     def forward(self, x):
-        # 1. Extraer características (Ahora es una sola llamada limpia)
         x = self.features(x)
-
-        # 2. Aplanar
+        x = self.gap(x)
         x = torch.flatten(x, 1)
 
-        # 3. Estabilización y Taylor
-        x = torch.tanh(x) 
+        x = torch.tanh(x)
         x = self.taylor_approx(x)
 
-        # 4. Clasificación KAN
         x = F.relu(self.fc1(x))
         x = self.dropout(x)
         x = F.relu(self.fc2(x))
         x = self.dropout2(x)
-        x = self.fc3(x) 
-        
+        x = self.fc3(x)
         return x
