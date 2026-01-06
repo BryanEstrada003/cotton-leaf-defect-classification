@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+
+# Virtual env
+venv/
+.env
+.env.local
+
+# FastAPI
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+
+# Static generated files (si luego generas Grad-CAM reales)
+generated/
+
+#Modelos
+models/
