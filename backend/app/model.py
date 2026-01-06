@@ -6,8 +6,7 @@ MODEL_PATH = "models/vgg16_model.h5"
 model = tf.keras.models.load_model(MODEL_PATH)
 print("Model output shape:", model.output_shape)
 
-CLASS_NAMES = ['Curl Virus', 'Fresh_Leaf', 'Leaf_Reddening', 'Leaf_Spot_Bacterial_Blight']
-
+CLASS_NAMES = ['Curl Virus', 'Healthy', 'Leaf Reddening', 'Leaf Spot Bacterial Blight']
 
 def predict(image_tensor: np.ndarray):
     preds = model.predict(image_tensor)[0]

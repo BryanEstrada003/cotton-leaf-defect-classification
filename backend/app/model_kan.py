@@ -8,7 +8,7 @@ MODEL_PATH = BASE_DIR / "models" / "kan_model.pth"
 
 DEVICE = torch.device("cpu")
 
-CLASS_NAMES = ['Curl Virus', 'Fresh_Leaf', 'Leaf_Reddening', 'Leaf_Spot_Bacterial_Blight']
+CLASS_NAMES = ['Curl Virus', 'Healthy', 'Leaf Reddening', 'Leaf Spot Bacterial Blight']
 
 model_kan = Net(num_classes=len(CLASS_NAMES))
 state_dict = torch.load(MODEL_PATH, map_location=DEVICE)

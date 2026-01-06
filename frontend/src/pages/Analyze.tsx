@@ -1,8 +1,12 @@
+// pages/Analyze.tsx
 import { Typography, Card, CardContent } from '@mui/material'
+import { useState } from 'react'
 import ImageUploader from '../components/ImageUploader'
 import ModelToggle from '../components/ModelToggle'
 
 export default function Analyze() {
+  const [model, setModel] = useState<'vgg16' | 'kan'>('vgg16')
+
   return (
     <>
       <Typography variant="h4" gutterBottom>
@@ -16,13 +20,15 @@ export default function Analyze() {
 
       <Card>
         <CardContent>
-          <ImageUploader />
           <ModelToggle
-            value="vgg16"
-            onChange={(model) =>
-              console.log('Modelo seleccionado:', model)
-            }
+            model={model}
+            onChange={(newModel) => {
+              setModel(newModel)
+              console.log('Modelo seleccionado:', newModel)
+            }}
           />
+
+          <ImageUploader model={model} />
         </CardContent>
       </Card>
     </>

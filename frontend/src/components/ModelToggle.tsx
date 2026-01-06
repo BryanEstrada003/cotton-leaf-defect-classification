@@ -1,20 +1,20 @@
-import { ToggleButton, ToggleButtonGroup } from "@mui/material"
+// components/ModelToggle.tsx
+import { ToggleButton, ToggleButtonGroup } from '@mui/material'
 
 interface Props {
-  value: "vgg16" | "kan"
-  onChange: (value: "vgg16" | "kan") => void
+  model: 'vgg16' | 'kan'
+  onChange: (model: 'vgg16' | 'kan') => void
 }
 
-export default function ModelToggle({ value, onChange }: Props) {
+export default function ModelToggle({ model, onChange }: Props) {
   return (
     <ToggleButtonGroup
+      value={model}
       exclusive
-      value={value}
-      onChange={(_, newValue) => {
-        if (newValue !== null) {
-          onChange(newValue)
-        }
+      onChange={(_, value) => {
+        if (value) onChange(value)
       }}
+      sx={{ mb: 3 }}
     >
       <ToggleButton value="vgg16">VGG16</ToggleButton>
       <ToggleButton value="kan">KAN</ToggleButton>

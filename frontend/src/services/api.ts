@@ -1,13 +1,16 @@
+// services/api.ts
 import axios from 'axios'
 import type { PredictionResult } from '../types/prediction'
 
 const API_URL = 'http://localhost:8000'
 
 export async function sendImage(
-  image: File
+  image: File,
+  model: 'vgg16' | 'kan'
 ): Promise<PredictionResult> {
   const formData = new FormData()
   formData.append('image', image)
+  formData.append('model', model) // 🔥 CLAVE
 
   const response = await axios.post(`${API_URL}/predict`, formData, {
     headers: {
@@ -15,7 +18,6 @@ export async function sendImage(
     },
   })
 
-  // Adaptamos el contrato del backend al frontend
   return {
     class: response.data.class_name,
     confidence: response.data.confidence,
@@ -26,5 +28,3 @@ export async function sendImage(
     recommendations: response.data.recommendations,
   }
 }
-
-
