@@ -1,4 +1,3 @@
-// components/ImageUploader.tsx
 import { Button, Box } from '@mui/material'
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
@@ -18,16 +17,15 @@ export default function ImageUploader({ model }: { model: 'vgg16' | 'kan' }) {
 
     reader.onload = async () => {
       const base64Image = reader.result as string
-
       const result = await sendImage(image, model)
 
       // Guardar resultado actual
       localStorage.setItem('prediction', JSON.stringify(result))
       localStorage.setItem('uploaded_image', base64Image)
 
-      // 🔥 Guardar en historial
-      const historyRaw = localStorage.getItem('history')
-      const history = historyRaw ? JSON.parse(historyRaw) : []
+      // Guardar historial
+      const raw = localStorage.getItem('history')
+      const history = raw ? JSON.parse(raw) : []
 
       history.unshift({
         id: uuidv4(),
@@ -35,10 +33,10 @@ export default function ImageUploader({ model }: { model: 'vgg16' | 'kan' }) {
         result,
         model_used: result.model_used,
         created_at: new Date().toISOString(),
+        review: undefined,
       })
 
       localStorage.setItem('history', JSON.stringify(history))
-
       navigate('/result')
     }
 
