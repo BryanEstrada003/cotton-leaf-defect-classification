@@ -1,0 +1,372 @@
+2026-01-04 17:14:27,603 - INFO - Modelo SBTAYLOR_KAN.Net importado correctamente.
+2026-01-04 17:14:27,605 - INFO - Los pesos del modelo se guardarán en: 'models/sbtaylor_kan_cotton\run_20260104_171427\sbtaylor_kan.best_weights.pth'
+2026-01-04 17:14:27,606 - INFO - El registro de entrenamiento se guardará en: 'models/sbtaylor_kan_cotton\run_20260104_171427\training_run.log'
+2026-01-04 17:14:27,635 - INFO - Versión de PyTorch: 2.9.0+cu126
+2026-01-04 17:14:27,637 - INFO - ¿CUDA está disponible?: True
+2026-01-04 17:14:27,639 - INFO - Versión de CUDA con la que PyTorch fue compilado: 12.6
+2026-01-04 17:14:27,641 - INFO - Número de GPUs disponibles: 1
+2026-01-04 17:14:27,646 - INFO - Nombre de la GPU actual: NVIDIA GeForce RTX 4090
+2026-01-04 17:14:27,668 - INFO - --- Hyperparámetros de Entrenamiento ---
+2026-01-04 17:14:27,670 - INFO - Batch Size: 64
+2026-01-04 17:14:27,671 - INFO - Num Epochs: 150
+2026-01-04 17:14:27,672 - INFO - Learning Rate: 0.0001
+2026-01-04 17:14:27,704 - INFO - 
+Cargando dataset de ./Preprocessed Ori...
+2026-01-04 17:14:27,720 - INFO - Clases detectadas: ['Bacterial Blight', 'Curl Virus', 'Healthy Leaf', 'Herbicide Growth Damage', 'Leaf Hopper Jassids', 'Leaf Redding']
+2026-01-04 17:14:27,745 - INFO - 
+Usando dispositivo: cuda
+2026-01-04 17:14:58,486 - INFO - Iniciando entrenamiento por 150 épocas...
+2026-01-04 17:14:58,488 - INFO - Regularización KAN: L1=0.001, Entropía=0.01
+2026-01-04 17:14:58,489 - INFO - --- Época 1/150 ---
+2026-01-04 17:15:29,435 - INFO - Train Loss: 1.8192 Acc: 0.1895
+2026-01-04 17:15:31,905 - INFO -   [LR] Tasa de aprendizaje actual: 0.000100
+2026-01-04 17:15:31,906 - INFO -   [Mejora Loss] inf -> 1.7658. Reseteando paciencia.
+2026-01-04 17:15:32,385 - INFO - Val Loss: 1.7658 Acc: 0.2500
+2026-01-04 17:15:32,386 - INFO - --- Época 2/150 ---
+2026-01-04 17:16:02,757 - INFO - Train Loss: 1.7599 Acc: 0.2446
+2026-01-04 17:16:05,301 - INFO -   [LR] Tasa de aprendizaje actual: 0.000100
+2026-01-04 17:16:05,302 - INFO -   [Mejora Loss] 1.7658 -> 1.7530. Reseteando paciencia.
+2026-01-04 17:16:05,888 - INFO - Val Loss: 1.7530 Acc: 0.3292
+2026-01-04 17:16:05,889 - INFO - --- Época 3/150 ---
+2026-01-04 17:16:34,937 - INFO - Train Loss: 1.7163 Acc: 0.3134
+2026-01-04 17:16:37,467 - INFO -   [LR] Tasa de aprendizaje actual: 0.000100
+2026-01-04 17:16:37,468 - INFO -   [Mejora Loss] 1.7530 -> 1.7372. Reseteando paciencia.
+2026-01-04 17:16:37,931 - INFO - Val Loss: 1.7372 Acc: 0.3000
+2026-01-04 17:16:37,932 - INFO - --- Época 4/150 ---
+2026-01-04 17:17:07,561 - INFO - Train Loss: 1.6491 Acc: 0.3653
+2026-01-04 17:17:10,024 - INFO -   [LR] Tasa de aprendizaje actual: 0.000100
+2026-01-04 17:17:10,025 - INFO -   [Mejora Loss] 1.7372 -> 1.7158. Reseteando paciencia.
+2026-01-04 17:17:10,516 - INFO - Val Loss: 1.7158 Acc: 0.3333
+2026-01-04 17:17:10,517 - INFO - --- Época 5/150 ---
+2026-01-04 17:17:40,521 - INFO - Train Loss: 1.5797 Acc: 0.4121
+2026-01-04 17:17:42,938 - INFO -   [LR] Tasa de aprendizaje actual: 0.000100
+2026-01-04 17:17:42,939 - INFO -   [Mejora Loss] 1.7158 -> 1.6790. Reseteando paciencia.
+2026-01-04 17:17:43,389 - INFO - Val Loss: 1.6790 Acc: 0.3417
+2026-01-04 17:17:43,391 - INFO - --- Época 6/150 ---
+2026-01-04 17:18:13,366 - INFO - Train Loss: 1.5051 Acc: 0.4374
+2026-01-04 17:18:20,128 - INFO -   [LR] Tasa de aprendizaje actual: 0.000100
+2026-01-04 17:18:20,130 - INFO -   [Mejora Loss] 1.6790 -> 1.6314. Reseteando paciencia.
+2026-01-04 17:18:20,969 - INFO - Val Loss: 1.6314 Acc: 0.3583
+2026-01-04 17:18:20,972 - INFO - --- Época 7/150 ---
+2026-01-04 17:19:34,668 - INFO - Train Loss: 1.4339 Acc: 0.4361
+2026-01-04 17:19:40,946 - INFO -   [LR] Tasa de aprendizaje actual: 0.000100
+2026-01-04 17:19:40,947 - INFO -   [Mejora Loss] 1.6314 -> 1.5440. Reseteando paciencia.
+2026-01-04 17:19:41,727 - INFO - Val Loss: 1.5440 Acc: 0.4042
+2026-01-04 17:19:41,729 - INFO - --- Época 8/150 ---
+2026-01-04 17:20:58,687 - INFO - Train Loss: 1.3997 Acc: 0.4640
+2026-01-04 17:21:05,482 - INFO -   [LR] Tasa de aprendizaje actual: 0.000100
+2026-01-04 17:21:05,483 - INFO -   [Mejora Loss] 1.5440 -> 1.5124. Reseteando paciencia.
+2026-01-04 17:21:05,971 - INFO - Val Loss: 1.5124 Acc: 0.3917
+2026-01-04 17:21:05,972 - INFO - --- Época 9/150 ---
+2026-01-04 17:21:35,696 - INFO - Train Loss: 1.3421 Acc: 0.5029
+2026-01-04 17:21:38,195 - INFO -   [LR] Tasa de aprendizaje actual: 0.000100
+2026-01-04 17:21:38,196 - INFO -   [Mejora Loss] 1.5124 -> 1.4274. Reseteando paciencia.
+2026-01-04 17:21:38,687 - INFO - Val Loss: 1.4274 Acc: 0.4583
+2026-01-04 17:21:38,689 - INFO - --- Época 10/150 ---
+2026-01-04 17:22:49,141 - INFO - Train Loss: 1.2593 Acc: 0.5146
+2026-01-04 17:22:55,698 - INFO -   [LR] Tasa de aprendizaje actual: 0.000100
+2026-01-04 17:22:55,699 - INFO -   [Mejora Loss] 1.4274 -> 1.3884. Reseteando paciencia.
+2026-01-04 17:22:56,209 - INFO - Val Loss: 1.3884 Acc: 0.4625
+2026-01-04 17:22:56,211 - INFO - --- Época 11/150 ---
+2026-01-04 17:24:11,958 - INFO - Train Loss: 1.2034 Acc: 0.5633
+2026-01-04 17:24:18,531 - INFO -   [LR] Tasa de aprendizaje actual: 0.000100
+2026-01-04 17:24:18,532 - INFO -   [Mejora Loss] 1.3884 -> 1.3428. Reseteando paciencia.
+2026-01-04 17:24:19,130 - INFO - Val Loss: 1.3428 Acc: 0.4667
+2026-01-04 17:24:19,156 - INFO - --- Época 12/150 ---
+2026-01-04 17:25:34,111 - INFO - Train Loss: 1.1887 Acc: 0.5730
+2026-01-04 17:25:43,811 - INFO -   [LR] Tasa de aprendizaje actual: 0.000100
+2026-01-04 17:25:43,812 - INFO -   [Mejora Loss] 1.3428 -> 1.3123. Reseteando paciencia.
+2026-01-04 17:25:44,307 - INFO - Val Loss: 1.3123 Acc: 0.5125
+2026-01-04 17:25:44,308 - INFO - --- Época 13/150 ---
+2026-01-04 17:26:22,756 - INFO - Train Loss: 1.1523 Acc: 0.5652
+2026-01-04 17:26:25,252 - INFO -   [LR] Tasa de aprendizaje actual: 0.000100
+2026-01-04 17:26:25,253 - INFO -   [Sin mejora Loss] Paciencia: 1/10
+2026-01-04 17:26:25,254 - INFO - Val Loss: 1.3150 Acc: 0.4583
+2026-01-04 17:26:25,255 - INFO - --- Época 14/150 ---
+2026-01-04 17:26:55,092 - INFO - Train Loss: 1.0944 Acc: 0.6003
+2026-01-04 17:26:57,545 - INFO -   [LR] Tasa de aprendizaje actual: 0.000100
+2026-01-04 17:26:57,546 - INFO -   [Mejora Loss] 1.3123 -> 1.2940. Reseteando paciencia.
+2026-01-04 17:26:58,025 - INFO - Val Loss: 1.2940 Acc: 0.5458
+2026-01-04 17:26:58,027 - INFO - --- Época 15/150 ---
+2026-01-04 17:27:27,998 - INFO - Train Loss: 1.0357 Acc: 0.6230
+2026-01-04 17:27:30,296 - INFO -   [LR] Tasa de aprendizaje actual: 0.000100
+2026-01-04 17:27:30,296 - INFO -   [Mejora Loss] 1.2940 -> 1.2484. Reseteando paciencia.
+2026-01-04 17:27:30,727 - INFO - Val Loss: 1.2484 Acc: 0.5208
+2026-01-04 17:27:30,728 - INFO - --- Época 16/150 ---
+2026-01-04 17:28:01,135 - INFO - Train Loss: 1.0349 Acc: 0.6327
+2026-01-04 17:28:03,603 - INFO -   [LR] Tasa de aprendizaje actual: 0.000100
+2026-01-04 17:28:03,604 - INFO -   [Sin mejora Loss] Paciencia: 1/10
+2026-01-04 17:28:03,605 - INFO - Val Loss: 1.2790 Acc: 0.4708
+2026-01-04 17:28:03,606 - INFO - --- Época 17/150 ---
+2026-01-04 17:28:33,284 - INFO - Train Loss: 1.0288 Acc: 0.6385
+2026-01-04 17:28:35,816 - INFO -   [LR] Tasa de aprendizaje actual: 0.000100
+2026-01-04 17:28:35,817 - INFO -   [Mejora Loss] 1.2484 -> 1.2478. Reseteando paciencia.
+2026-01-04 17:28:36,264 - INFO - Val Loss: 1.2478 Acc: 0.5292
+2026-01-04 17:28:36,265 - INFO - --- Época 18/150 ---
+2026-01-04 17:29:05,847 - INFO - Train Loss: 0.9966 Acc: 0.6548
+2026-01-04 17:29:08,236 - INFO -   [LR] Tasa de aprendizaje actual: 0.000100
+2026-01-04 17:29:08,237 - INFO -   [Mejora Loss] 1.2478 -> 1.2004. Reseteando paciencia.
+2026-01-04 17:29:08,685 - INFO - Val Loss: 1.2004 Acc: 0.5500
+2026-01-04 17:29:08,686 - INFO - --- Época 19/150 ---
+2026-01-04 17:29:37,798 - INFO - Train Loss: 0.9310 Acc: 0.6801
+2026-01-04 17:29:40,238 - INFO -   [LR] Tasa de aprendizaje actual: 0.000100
+2026-01-04 17:29:40,239 - INFO -   [Mejora Loss] 1.2004 -> 1.1269. Reseteando paciencia.
+2026-01-04 17:29:40,695 - INFO - Val Loss: 1.1269 Acc: 0.5708
+2026-01-04 17:29:40,696 - INFO - --- Época 20/150 ---
+2026-01-04 17:30:11,619 - INFO - Train Loss: 0.9570 Acc: 0.6729
+2026-01-04 17:30:18,658 - INFO -   [LR] Tasa de aprendizaje actual: 0.000100
+2026-01-04 17:30:18,660 - INFO -   [Sin mejora Loss] Paciencia: 1/10
+2026-01-04 17:30:18,661 - INFO - Val Loss: 1.2329 Acc: 0.5667
+2026-01-04 17:30:18,663 - INFO - --- Época 21/150 ---
+2026-01-04 17:31:30,740 - INFO - Train Loss: 0.9346 Acc: 0.6619
+2026-01-04 17:31:38,269 - INFO -   [LR] Tasa de aprendizaje actual: 0.000100
+2026-01-04 17:31:38,272 - INFO -   [Sin mejora Loss] Paciencia: 2/10
+2026-01-04 17:31:38,276 - INFO - Val Loss: 1.1483 Acc: 0.5542
+2026-01-04 17:31:38,279 - INFO - --- Época 22/150 ---
+2026-01-04 17:32:55,705 - INFO - Train Loss: 0.8758 Acc: 0.7047
+2026-01-04 17:33:02,371 - INFO -   [LR] Tasa de aprendizaje actual: 0.000100
+2026-01-04 17:33:02,372 - INFO -   [Sin mejora Loss] Paciencia: 3/10
+2026-01-04 17:33:02,373 - INFO - Val Loss: 1.1891 Acc: 0.5458
+2026-01-04 17:33:02,374 - INFO - --- Época 23/150 ---
+2026-01-04 17:34:17,814 - INFO - Train Loss: 0.8703 Acc: 0.7093
+2026-01-04 17:34:24,515 - INFO -   [LR] Tasa de aprendizaje actual: 0.000100
+2026-01-04 17:34:24,515 - INFO -   [Mejora Loss] 1.1269 -> 1.1246. Reseteando paciencia.
+2026-01-04 17:34:25,068 - INFO - Val Loss: 1.1246 Acc: 0.5750
+2026-01-04 17:34:25,085 - INFO - --- Época 24/150 ---
+2026-01-04 17:35:42,038 - INFO - Train Loss: 0.8739 Acc: 0.7080
+2026-01-04 17:35:48,848 - INFO -   [LR] Tasa de aprendizaje actual: 0.000100
+2026-01-04 17:35:48,849 - INFO -   [Sin mejora Loss] Paciencia: 1/10
+2026-01-04 17:35:48,850 - INFO - Val Loss: 1.1729 Acc: 0.5708
+2026-01-04 17:35:48,851 - INFO - --- Época 25/150 ---
+2026-01-04 17:37:04,691 - INFO - Train Loss: 0.8679 Acc: 0.7177
+2026-01-04 17:37:11,437 - INFO -   [LR] Tasa de aprendizaje actual: 0.000100
+2026-01-04 17:37:11,439 - INFO -   [Sin mejora Loss] Paciencia: 2/10
+2026-01-04 17:37:11,440 - INFO - Val Loss: 1.1376 Acc: 0.5583
+2026-01-04 17:37:11,441 - INFO - --- Época 26/150 ---
+2026-01-04 17:38:29,036 - INFO - Train Loss: 0.8428 Acc: 0.7067
+2026-01-04 17:38:35,671 - INFO -   [LR] Tasa de aprendizaje actual: 0.000100
+2026-01-04 17:38:35,673 - INFO -   [Mejora Loss] 1.1246 -> 1.1141. Reseteando paciencia.
+2026-01-04 17:38:36,501 - INFO - Val Loss: 1.1141 Acc: 0.5792
+2026-01-04 17:38:36,503 - INFO - --- Época 27/150 ---
+2026-01-04 17:39:51,730 - INFO - Train Loss: 0.8069 Acc: 0.7171
+2026-01-04 17:39:58,437 - INFO -   [LR] Tasa de aprendizaje actual: 0.000100
+2026-01-04 17:39:58,438 - INFO -   [Sin mejora Loss] Paciencia: 1/10
+2026-01-04 17:39:58,439 - INFO - Val Loss: 1.2174 Acc: 0.5042
+2026-01-04 17:39:58,440 - INFO - --- Época 28/150 ---
+2026-01-04 17:41:14,410 - INFO - Train Loss: 0.8233 Acc: 0.7313
+2026-01-04 17:41:24,527 - INFO -   [LR] Tasa de aprendizaje actual: 0.000100
+2026-01-04 17:41:24,528 - INFO -   [Mejora Loss] 1.1141 -> 1.0538. Reseteando paciencia.
+2026-01-04 17:41:25,011 - INFO - Val Loss: 1.0538 Acc: 0.5958
+2026-01-04 17:41:25,013 - INFO - --- Época 29/150 ---
+2026-01-04 17:42:40,427 - INFO - Train Loss: 0.7730 Acc: 0.7326
+2026-01-04 17:42:47,018 - INFO -   [LR] Tasa de aprendizaje actual: 0.000100
+2026-01-04 17:42:47,019 - INFO -   [Sin mejora Loss] Paciencia: 1/10
+2026-01-04 17:42:47,020 - INFO - Val Loss: 1.1403 Acc: 0.5750
+2026-01-04 17:42:47,021 - INFO - --- Época 30/150 ---
+2026-01-04 17:44:04,026 - INFO - Train Loss: 0.8151 Acc: 0.7171
+2026-01-04 17:44:10,502 - INFO -   [LR] Tasa de aprendizaje actual: 0.000100
+2026-01-04 17:44:10,503 - INFO -   [Sin mejora Loss] Paciencia: 2/10
+2026-01-04 17:44:10,504 - INFO - Val Loss: 1.1165 Acc: 0.5667
+2026-01-04 17:44:10,506 - INFO - --- Época 31/150 ---
+2026-01-04 17:45:25,709 - INFO - Train Loss: 0.7929 Acc: 0.7236
+2026-01-04 17:45:32,510 - INFO -   [LR] Tasa de aprendizaje actual: 0.000100
+2026-01-04 17:45:32,511 - INFO -   [Sin mejora Loss] Paciencia: 3/10
+2026-01-04 17:45:32,512 - INFO - Val Loss: 1.1688 Acc: 0.5750
+2026-01-04 17:45:32,513 - INFO - --- Época 32/150 ---
+2026-01-04 17:46:53,649 - INFO - Train Loss: 0.7351 Acc: 0.7528
+2026-01-04 17:47:01,882 - INFO -   [LR] Tasa de aprendizaje actual: 0.000100
+2026-01-04 17:47:01,883 - INFO -   [Mejora Loss] 1.0538 -> 1.0012. Reseteando paciencia.
+2026-01-04 17:47:02,478 - INFO - Val Loss: 1.0012 Acc: 0.6292
+2026-01-04 17:47:02,479 - INFO - --- Época 33/150 ---
+2026-01-04 17:48:23,739 - INFO - Train Loss: 0.7393 Acc: 0.7398
+2026-01-04 17:48:29,980 - INFO -   [LR] Tasa de aprendizaje actual: 0.000100
+2026-01-04 17:48:29,981 - INFO -   [Sin mejora Loss] Paciencia: 1/10
+2026-01-04 17:48:29,982 - INFO - Val Loss: 1.0940 Acc: 0.5750
+2026-01-04 17:48:29,984 - INFO - --- Época 34/150 ---
+2026-01-04 17:49:46,647 - INFO - Train Loss: 0.7662 Acc: 0.7437
+2026-01-04 17:49:54,105 - INFO -   [LR] Tasa de aprendizaje actual: 0.000100
+2026-01-04 17:49:54,107 - INFO -   [Sin mejora Loss] Paciencia: 2/10
+2026-01-04 17:49:54,110 - INFO - Val Loss: 1.0483 Acc: 0.5500
+2026-01-04 17:49:54,134 - INFO - --- Época 35/150 ---
+2026-01-04 17:51:08,596 - INFO - Train Loss: 0.7234 Acc: 0.7638
+2026-01-04 17:51:15,222 - INFO -   [LR] Tasa de aprendizaje actual: 0.000100
+2026-01-04 17:51:15,223 - INFO -   [Mejora Loss] 1.0012 -> 0.9985. Reseteando paciencia.
+2026-01-04 17:51:15,820 - INFO - Val Loss: 0.9985 Acc: 0.6167
+2026-01-04 17:51:15,821 - INFO - --- Época 36/150 ---
+2026-01-04 17:52:33,118 - INFO - Train Loss: 0.7658 Acc: 0.7560
+2026-01-04 17:52:39,727 - INFO -   [LR] Tasa de aprendizaje actual: 0.000100
+2026-01-04 17:52:39,729 - INFO -   [Sin mejora Loss] Paciencia: 1/10
+2026-01-04 17:52:39,731 - INFO - Val Loss: 1.0041 Acc: 0.6250
+2026-01-04 17:52:39,734 - INFO - --- Época 37/150 ---
+2026-01-04 17:53:56,752 - INFO - Train Loss: 0.7380 Acc: 0.7554
+2026-01-04 17:54:03,346 - INFO -   [LR] Tasa de aprendizaje actual: 0.000100
+2026-01-04 17:54:03,347 - INFO -   [Sin mejora Loss] Paciencia: 2/10
+2026-01-04 17:54:03,348 - INFO - Val Loss: 1.0519 Acc: 0.5833
+2026-01-04 17:54:03,349 - INFO - --- Época 38/150 ---
+2026-01-04 17:55:19,619 - INFO - Train Loss: 0.7236 Acc: 0.7625
+2026-01-04 17:55:28,338 - INFO -   [LR] Tasa de aprendizaje actual: 0.000100
+2026-01-04 17:55:28,339 - INFO -   [Sin mejora Loss] Paciencia: 3/10
+2026-01-04 17:55:28,341 - INFO - Val Loss: 1.1797 Acc: 0.5917
+2026-01-04 17:55:28,342 - INFO - --- Época 39/150 ---
+2026-01-04 17:56:43,141 - INFO - Train Loss: 0.7142 Acc: 0.7618
+2026-01-04 17:56:49,763 - INFO -   [LR] Tasa de aprendizaje actual: 0.000100
+2026-01-04 17:56:49,764 - INFO -   [Sin mejora Loss] Paciencia: 4/10
+2026-01-04 17:56:49,767 - INFO - Val Loss: 1.0391 Acc: 0.6042
+2026-01-04 17:56:49,768 - INFO - --- Época 40/150 ---
+2026-01-04 17:58:06,659 - INFO - Train Loss: 0.7370 Acc: 0.7502
+2026-01-04 17:58:12,560 - INFO -   [LR] Tasa de aprendizaje actual: 0.000100
+2026-01-04 17:58:12,561 - INFO -   [Sin mejora Loss] Paciencia: 5/10
+2026-01-04 17:58:12,563 - INFO - Val Loss: 1.0330 Acc: 0.6000
+2026-01-04 17:58:12,565 - INFO - --- Época 41/150 ---
+2026-01-04 17:59:30,123 - INFO - Train Loss: 0.6698 Acc: 0.7794
+2026-01-04 17:59:36,710 - INFO -   [LR] Tasa de aprendizaje actual: 0.000050
+2026-01-04 17:59:36,711 - INFO -   [Sin mejora Loss] Paciencia: 6/10
+2026-01-04 17:59:36,712 - INFO - Val Loss: 1.0914 Acc: 0.5667
+2026-01-04 17:59:36,713 - INFO - --- Época 42/150 ---
+2026-01-04 18:00:52,540 - INFO - Train Loss: 0.6957 Acc: 0.7781
+2026-01-04 18:00:59,247 - INFO -   [LR] Tasa de aprendizaje actual: 0.000050
+2026-01-04 18:00:59,248 - INFO -   [Mejora Loss] 0.9985 -> 0.9943. Reseteando paciencia.
+2026-01-04 18:00:59,730 - INFO - Val Loss: 0.9943 Acc: 0.6167
+2026-01-04 18:00:59,731 - INFO - --- Época 43/150 ---
+2026-01-04 18:02:14,974 - INFO - Train Loss: 0.6406 Acc: 0.7923
+2026-01-04 18:02:25,014 - INFO -   [LR] Tasa de aprendizaje actual: 0.000050
+2026-01-04 18:02:25,015 - INFO -   [Sin mejora Loss] Paciencia: 1/10
+2026-01-04 18:02:25,016 - INFO - Val Loss: 1.0945 Acc: 0.5750
+2026-01-04 18:02:25,017 - INFO - --- Época 44/150 ---
+2026-01-04 18:03:39,245 - INFO - Train Loss: 0.6520 Acc: 0.7716
+2026-01-04 18:03:45,753 - INFO -   [LR] Tasa de aprendizaje actual: 0.000050
+2026-01-04 18:03:45,754 - INFO -   [Mejora Loss] 0.9943 -> 0.9860. Reseteando paciencia.
+2026-01-04 18:03:46,219 - INFO - Val Loss: 0.9860 Acc: 0.6333
+2026-01-04 18:03:46,220 - INFO - --- Época 45/150 ---
+2026-01-04 18:05:00,868 - INFO - Train Loss: 0.6583 Acc: 0.7884
+2026-01-04 18:05:08,842 - INFO -   [LR] Tasa de aprendizaje actual: 0.000050
+2026-01-04 18:05:08,844 - INFO -   [Mejora Loss] 0.9860 -> 0.9371. Reseteando paciencia.
+2026-01-04 18:05:09,494 - INFO - Val Loss: 0.9371 Acc: 0.6500
+2026-01-04 18:05:09,495 - INFO - --- Época 46/150 ---
+2026-01-04 18:06:27,293 - INFO - Train Loss: 0.6244 Acc: 0.7982
+2026-01-04 18:06:34,905 - INFO -   [LR] Tasa de aprendizaje actual: 0.000050
+2026-01-04 18:06:34,906 - INFO -   [Sin mejora Loss] Paciencia: 1/10
+2026-01-04 18:06:34,909 - INFO - Val Loss: 0.9970 Acc: 0.6125
+2026-01-04 18:06:34,910 - INFO - --- Época 47/150 ---
+2026-01-04 18:07:51,323 - INFO - Train Loss: 0.6764 Acc: 0.7852
+2026-01-04 18:07:58,168 - INFO -   [LR] Tasa de aprendizaje actual: 0.000050
+2026-01-04 18:07:58,169 - INFO -   [Sin mejora Loss] Paciencia: 2/10
+2026-01-04 18:07:58,170 - INFO - Val Loss: 1.0020 Acc: 0.6458
+2026-01-04 18:07:58,171 - INFO - --- Época 48/150 ---
+2026-01-04 18:09:14,252 - INFO - Train Loss: 0.6562 Acc: 0.7943
+2026-01-04 18:09:23,129 - INFO -   [LR] Tasa de aprendizaje actual: 0.000050
+2026-01-04 18:09:23,130 - INFO -   [Sin mejora Loss] Paciencia: 3/10
+2026-01-04 18:09:23,132 - INFO - Val Loss: 0.9622 Acc: 0.6458
+2026-01-04 18:09:23,132 - INFO - --- Época 49/150 ---
+2026-01-04 18:10:38,838 - INFO - Train Loss: 0.6363 Acc: 0.7923
+2026-01-04 18:10:45,553 - INFO -   [LR] Tasa de aprendizaje actual: 0.000050
+2026-01-04 18:10:45,554 - INFO -   [Mejora Loss] 0.9371 -> 0.9363. Reseteando paciencia.
+2026-01-04 18:10:46,047 - INFO - Val Loss: 0.9363 Acc: 0.6292
+2026-01-04 18:10:46,049 - INFO - --- Época 50/150 ---
+2026-01-04 18:12:03,490 - INFO - Train Loss: 0.6305 Acc: 0.7917
+2026-01-04 18:12:10,004 - INFO -   [LR] Tasa de aprendizaje actual: 0.000050
+2026-01-04 18:12:10,005 - INFO -   [Mejora Loss] 0.9363 -> 0.9027. Reseteando paciencia.
+2026-01-04 18:12:10,515 - INFO - Val Loss: 0.9027 Acc: 0.6667
+2026-01-04 18:12:10,516 - INFO - --- Época 51/150 ---
+2026-01-04 18:13:28,960 - INFO - Train Loss: 0.6527 Acc: 0.7774
+2026-01-04 18:13:36,267 - INFO -   [LR] Tasa de aprendizaje actual: 0.000050
+2026-01-04 18:13:36,269 - INFO -   [Sin mejora Loss] Paciencia: 1/10
+2026-01-04 18:13:36,271 - INFO - Val Loss: 0.9972 Acc: 0.6167
+2026-01-04 18:13:36,272 - INFO - --- Época 52/150 ---
+2026-01-04 18:14:53,022 - INFO - Train Loss: 0.6373 Acc: 0.8001
+2026-01-04 18:14:59,678 - INFO -   [LR] Tasa de aprendizaje actual: 0.000050
+2026-01-04 18:14:59,679 - INFO -   [Sin mejora Loss] Paciencia: 2/10
+2026-01-04 18:14:59,680 - INFO - Val Loss: 0.9084 Acc: 0.6500
+2026-01-04 18:14:59,681 - INFO - --- Época 53/150 ---
+2026-01-04 18:16:20,528 - INFO - Train Loss: 0.5974 Acc: 0.8027
+2026-01-04 18:16:27,335 - INFO -   [LR] Tasa de aprendizaje actual: 0.000050
+2026-01-04 18:16:27,336 - INFO -   [Sin mejora Loss] Paciencia: 3/10
+2026-01-04 18:16:27,337 - INFO - Val Loss: 0.9418 Acc: 0.6417
+2026-01-04 18:16:27,338 - INFO - --- Época 54/150 ---
+2026-01-04 18:17:49,395 - INFO - Train Loss: 0.6273 Acc: 0.7846
+2026-01-04 18:17:56,328 - INFO -   [LR] Tasa de aprendizaje actual: 0.000050
+2026-01-04 18:17:56,329 - INFO -   [Sin mejora Loss] Paciencia: 4/10
+2026-01-04 18:17:56,330 - INFO - Val Loss: 0.9651 Acc: 0.6250
+2026-01-04 18:17:56,331 - INFO - --- Época 55/150 ---
+2026-01-04 18:19:17,250 - INFO - Train Loss: 0.6277 Acc: 0.7833
+2026-01-04 18:19:22,366 - INFO -   [LR] Tasa de aprendizaje actual: 0.000050
+2026-01-04 18:19:22,368 - INFO -   [Sin mejora Loss] Paciencia: 5/10
+2026-01-04 18:19:22,370 - INFO - Val Loss: 0.9552 Acc: 0.6333
+2026-01-04 18:19:22,372 - INFO - --- Época 56/150 ---
+2026-01-04 18:20:30,335 - INFO - Train Loss: 0.6063 Acc: 0.7917
+2026-01-04 18:20:32,727 - INFO -   [LR] Tasa de aprendizaje actual: 0.000025
+2026-01-04 18:20:32,728 - INFO -   [Sin mejora Loss] Paciencia: 6/10
+2026-01-04 18:20:32,729 - INFO - Val Loss: 0.9218 Acc: 0.6458
+2026-01-04 18:20:32,730 - INFO - --- Época 57/150 ---
+2026-01-04 18:21:02,327 - INFO - Train Loss: 0.5970 Acc: 0.8170
+2026-01-04 18:21:04,724 - INFO -   [LR] Tasa de aprendizaje actual: 0.000025
+2026-01-04 18:21:04,725 - INFO -   [Mejora Loss] 0.9027 -> 0.8901. Reseteando paciencia.
+2026-01-04 18:21:05,183 - INFO - Val Loss: 0.8901 Acc: 0.6875
+2026-01-04 18:21:05,184 - INFO - --- Época 58/150 ---
+2026-01-04 18:21:34,784 - INFO - Train Loss: 0.6003 Acc: 0.7995
+2026-01-04 18:21:37,196 - INFO -   [LR] Tasa de aprendizaje actual: 0.000025
+2026-01-04 18:21:37,197 - INFO -   [Mejora Loss] 0.8901 -> 0.8512. Reseteando paciencia.
+2026-01-04 18:21:37,688 - INFO - Val Loss: 0.8512 Acc: 0.7083
+2026-01-04 18:21:37,689 - INFO - --- Época 59/150 ---
+2026-01-04 18:22:06,945 - INFO - Train Loss: 0.5966 Acc: 0.8047
+2026-01-04 18:22:09,342 - INFO -   [LR] Tasa de aprendizaje actual: 0.000025
+2026-01-04 18:22:09,342 - INFO -   [Sin mejora Loss] Paciencia: 1/10
+2026-01-04 18:22:09,344 - INFO - Val Loss: 0.9341 Acc: 0.6375
+2026-01-04 18:22:09,345 - INFO - --- Época 60/150 ---
+2026-01-04 18:22:38,652 - INFO - Train Loss: 0.6031 Acc: 0.7917
+2026-01-04 18:22:41,100 - INFO -   [LR] Tasa de aprendizaje actual: 0.000025
+2026-01-04 18:22:41,101 - INFO -   [Sin mejora Loss] Paciencia: 2/10
+2026-01-04 18:22:41,102 - INFO - Val Loss: 0.9243 Acc: 0.6625
+2026-01-04 18:22:41,104 - INFO - --- Época 61/150 ---
+2026-01-04 18:23:10,342 - INFO - Train Loss: 0.5924 Acc: 0.8034
+2026-01-04 18:23:12,569 - INFO -   [LR] Tasa de aprendizaje actual: 0.000025
+2026-01-04 18:23:12,570 - INFO -   [Sin mejora Loss] Paciencia: 3/10
+2026-01-04 18:23:12,571 - INFO - Val Loss: 0.8737 Acc: 0.6792
+2026-01-04 18:23:12,572 - INFO - --- Época 62/150 ---
+2026-01-04 18:23:41,970 - INFO - Train Loss: 0.5868 Acc: 0.8177
+2026-01-04 18:23:44,261 - INFO -   [LR] Tasa de aprendizaje actual: 0.000025
+2026-01-04 18:23:44,262 - INFO -   [Sin mejora Loss] Paciencia: 4/10
+2026-01-04 18:23:44,263 - INFO - Val Loss: 0.9491 Acc: 0.6333
+2026-01-04 18:23:44,264 - INFO - --- Época 63/150 ---
+2026-01-04 18:24:13,018 - INFO - Train Loss: 0.5745 Acc: 0.8027
+2026-01-04 18:24:15,304 - INFO -   [LR] Tasa de aprendizaje actual: 0.000025
+2026-01-04 18:24:15,304 - INFO -   [Sin mejora Loss] Paciencia: 5/10
+2026-01-04 18:24:15,306 - INFO - Val Loss: 0.9301 Acc: 0.6375
+2026-01-04 18:24:15,306 - INFO - --- Época 64/150 ---
+2026-01-04 18:24:43,682 - INFO - Train Loss: 0.5839 Acc: 0.8202
+2026-01-04 18:24:45,903 - INFO -   [LR] Tasa de aprendizaje actual: 0.000013
+2026-01-04 18:24:45,904 - INFO -   [Sin mejora Loss] Paciencia: 6/10
+2026-01-04 18:24:45,905 - INFO - Val Loss: 0.8969 Acc: 0.6500
+2026-01-04 18:24:45,905 - INFO - --- Época 65/150 ---
+2026-01-04 18:25:14,654 - INFO - Train Loss: 0.5896 Acc: 0.8086
+2026-01-04 18:25:16,987 - INFO -   [LR] Tasa de aprendizaje actual: 0.000013
+2026-01-04 18:25:16,988 - INFO -   [Sin mejora Loss] Paciencia: 7/10
+2026-01-04 18:25:16,989 - INFO - Val Loss: 0.8809 Acc: 0.6750
+2026-01-04 18:25:16,989 - INFO - --- Época 66/150 ---
+2026-01-04 18:25:45,821 - INFO - Train Loss: 0.5627 Acc: 0.8131
+2026-01-04 18:25:48,287 - INFO -   [LR] Tasa de aprendizaje actual: 0.000013
+2026-01-04 18:25:48,288 - INFO -   [Sin mejora Loss] Paciencia: 8/10
+2026-01-04 18:25:48,290 - INFO - Val Loss: 0.9020 Acc: 0.6583
+2026-01-04 18:25:48,291 - INFO - --- Época 67/150 ---
+2026-01-04 18:26:17,362 - INFO - Train Loss: 0.5827 Acc: 0.8086
+2026-01-04 18:26:19,752 - INFO -   [LR] Tasa de aprendizaje actual: 0.000013
+2026-01-04 18:26:19,753 - INFO -   [Sin mejora Loss] Paciencia: 9/10
+2026-01-04 18:26:19,754 - INFO - Val Loss: 0.9074 Acc: 0.6625
+2026-01-04 18:26:19,756 - INFO - --- Época 68/150 ---
+2026-01-04 18:26:48,412 - INFO - Train Loss: 0.5733 Acc: 0.8157
+2026-01-04 18:26:50,743 - INFO -   [LR] Tasa de aprendizaje actual: 0.000013
+2026-01-04 18:26:50,744 - INFO -   [Sin mejora Loss] Paciencia: 10/10
+2026-01-04 18:26:50,744 - INFO - ¡EARLY STOPPING ACTIVADO!
+2026-01-04 18:26:50,746 - INFO - Val Loss: 0.9285 Acc: 0.6208
+2026-01-04 18:26:50,747 - INFO - Entrenamiento finalizado en 71m 52s
+2026-01-04 18:26:52,491 - INFO - Cargando el mejor modelo para la evaluación...
+2026-01-04 18:26:53,272 - INFO - 
+========================================
+2026-01-04 18:26:53,273 - INFO - --- INICIANDO EVALUACIÓN EN TEST SET ---
+2026-01-04 18:26:53,275 - INFO - ========================================
+2026-01-04 18:26:55,751 - INFO - Calculando métricas estadísticas...
+2026-01-04 18:26:55,760 - INFO - Generando matriz de confusión...
+2026-01-04 18:26:56,131 - INFO - Gráfico guardado en: models/sbtaylor_kan_cotton\run_20260104_171427\confusion_matrix.png
+2026-01-04 18:26:56,133 - INFO - Escribiendo reporte final...
+2026-01-04 18:26:56,139 - INFO - Reporte de texto guardado en: models/sbtaylor_kan_cotton\run_20260104_171427\test_metrics_report.txt
+2026-01-04 18:26:56,141 - INFO - --- EVALUACIÓN FINALIZADA ---

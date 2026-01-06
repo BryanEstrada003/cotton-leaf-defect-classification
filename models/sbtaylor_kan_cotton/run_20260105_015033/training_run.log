@@ -1,0 +1,81 @@
+2026-01-05 01:50:33,271 - INFO - Modelo SBTAYLOR_KAN.Net importado correctamente.
+2026-01-05 01:50:33,272 - INFO - Los pesos del modelo se guardarán en: 'models/sbtaylor_kan_cotton\run_20260105_015033\sbtaylor_kan.best_weights.pth'
+2026-01-05 01:50:33,273 - INFO - El registro de entrenamiento se guardará en: 'models/sbtaylor_kan_cotton\run_20260105_015033\training_run.log'
+2026-01-05 01:50:33,299 - INFO - Versión de PyTorch: 2.9.0+cu126
+2026-01-05 01:50:33,301 - INFO - ¿CUDA está disponible?: True
+2026-01-05 01:50:33,302 - INFO - Versión de CUDA con la que PyTorch fue compilado: 12.6
+2026-01-05 01:50:33,304 - INFO - Número de GPUs disponibles: 1
+2026-01-05 01:50:33,307 - INFO - Nombre de la GPU actual: NVIDIA GeForce RTX 4090
+2026-01-05 01:50:33,332 - INFO - --- Hyperparámetros de Entrenamiento ---
+2026-01-05 01:50:33,333 - INFO - Batch Size: 64
+2026-01-05 01:50:33,335 - INFO - Num Epochs: 150
+2026-01-05 01:50:33,335 - INFO - Learning Rate: 0.0001
+2026-01-05 01:50:33,367 - INFO - 
+Cargando dataset de ./Preprocessed Leaf_FILTERED...
+2026-01-05 02:06:57,807 - INFO - 
+Cargando dataset de ./Preprocessed Leaf_FILTERED...
+2026-01-05 02:06:57,832 - INFO - Clases detectadas: ['Curl Virus', 'Fresh_Leaf', 'Leaf_Reddening', 'Leaf_Spot_Bacterial_Blight']
+2026-01-05 02:06:57,848 - INFO - 
+Usando dispositivo: cuda
+2026-01-05 02:08:43,198 - INFO - Iniciando entrenamiento por 150 épocas...
+2026-01-05 02:08:43,201 - INFO - Paciencia configurada: 10 épocas.
+2026-01-05 02:08:43,203 - INFO - --- Época 1/150 ---
+2026-01-05 02:11:30,531 - INFO - Train Loss: 1.3601 Acc: 0.3222
+2026-01-05 02:11:47,709 - INFO -   [LR] Tasa de aprendizaje actual: 0.000100
+2026-01-05 02:11:47,711 - INFO -   [Mejora Loss] inf -> 1.2731. Reseteando paciencia.
+2026-01-05 02:11:48,603 - INFO -   [Nuevo Récord Loss] Guardado en: models/sbtaylor_kan_cotton\run_20260105_015033\best_model.pth
+2026-01-05 02:11:48,606 - INFO - Val Loss: 1.2731 Acc: 0.5494
+2026-01-05 02:11:48,619 - INFO - --- Época 2/150 ---
+2026-01-05 02:14:35,354 - INFO - Train Loss: 1.1733 Acc: 0.5084
+2026-01-05 02:14:48,256 - INFO -   [LR] Tasa de aprendizaje actual: 0.000100
+2026-01-05 02:14:48,257 - INFO -   [Mejora Loss] 1.2731 -> 1.1039. Reseteando paciencia.
+2026-01-05 02:14:49,085 - INFO -   [Nuevo Récord Loss] Guardado en: models/sbtaylor_kan_cotton\run_20260105_015033\best_model.pth
+2026-01-05 02:14:49,088 - INFO - Val Loss: 1.1039 Acc: 0.6395
+2026-01-05 02:14:49,090 - INFO - --- Época 3/150 ---
+2026-01-05 02:17:35,959 - INFO - Train Loss: 1.0630 Acc: 0.5604
+2026-01-05 02:17:49,188 - INFO -   [LR] Tasa de aprendizaje actual: 0.000100
+2026-01-05 02:17:49,190 - INFO -   [Mejora Loss] 1.1039 -> 1.0178. Reseteando paciencia.
+2026-01-05 02:17:49,965 - INFO -   [Nuevo Récord Loss] Guardado en: models/sbtaylor_kan_cotton\run_20260105_015033\best_model.pth
+2026-01-05 02:17:49,968 - INFO - Val Loss: 1.0178 Acc: 0.6599
+2026-01-05 02:17:49,971 - INFO - --- Época 4/150 ---
+2026-01-05 02:20:33,413 - INFO - Train Loss: 0.9916 Acc: 0.5938
+2026-01-05 02:20:46,725 - INFO -   [LR] Tasa de aprendizaje actual: 0.000100
+2026-01-05 02:20:46,728 - INFO -   [Mejora Loss] 1.0178 -> 0.9814. Reseteando paciencia.
+2026-01-05 02:20:47,480 - INFO -   [Nuevo Récord Loss] Guardado en: models/sbtaylor_kan_cotton\run_20260105_015033\best_model.pth
+2026-01-05 02:20:47,482 - INFO - Val Loss: 0.9814 Acc: 0.6744
+2026-01-05 02:20:47,483 - INFO - --- Época 5/150 ---
+2026-01-05 02:23:35,336 - INFO - Train Loss: 0.9500 Acc: 0.6007
+2026-01-05 02:23:48,598 - INFO -   [LR] Tasa de aprendizaje actual: 0.000100
+2026-01-05 02:23:48,599 - INFO -   [Mejora Loss] 0.9814 -> 0.9545. Reseteando paciencia.
+2026-01-05 02:23:49,405 - INFO -   [Nuevo Récord Loss] Guardado en: models/sbtaylor_kan_cotton\run_20260105_015033\best_model.pth
+2026-01-05 02:23:49,409 - INFO - Val Loss: 0.9545 Acc: 0.6570
+2026-01-05 02:23:49,411 - INFO - --- Época 6/150 ---
+2026-01-05 02:26:34,365 - INFO - Train Loss: 0.9228 Acc: 0.6175
+2026-01-05 02:26:51,263 - INFO -   [LR] Tasa de aprendizaje actual: 0.000100
+2026-01-05 02:26:51,267 - INFO -   [Mejora Loss] 0.9545 -> 0.9541. Reseteando paciencia.
+2026-01-05 02:26:51,761 - INFO -   [Nuevo Récord Loss] Guardado en: models/sbtaylor_kan_cotton\run_20260105_015033\best_model.pth
+2026-01-05 02:26:51,763 - INFO - Val Loss: 0.9541 Acc: 0.6628
+2026-01-05 02:26:51,764 - INFO - --- Época 7/150 ---
+2026-01-05 02:29:37,338 - INFO - Train Loss: 0.8962 Acc: 0.6429
+2026-01-05 02:29:50,609 - INFO -   [LR] Tasa de aprendizaje actual: 0.000100
+2026-01-05 02:29:50,610 - INFO -   [Mejora Loss] 0.9541 -> 0.9253. Reseteando paciencia.
+2026-01-05 02:29:51,255 - INFO -   [Nuevo Récord Loss] Guardado en: models/sbtaylor_kan_cotton\run_20260105_015033\best_model.pth
+2026-01-05 02:29:51,257 - INFO - Val Loss: 0.9253 Acc: 0.6890
+2026-01-05 02:29:51,258 - INFO - --- Época 8/150 ---
+2026-01-05 02:32:36,414 - INFO - Train Loss: 0.8889 Acc: 0.6396
+2026-01-05 02:32:50,527 - INFO -   [LR] Tasa de aprendizaje actual: 0.000100
+2026-01-05 02:32:50,529 - INFO -   [Sin mejora Loss] Paciencia: 1/10
+2026-01-05 02:32:50,530 - INFO - Val Loss: 0.9502 Acc: 0.6686
+2026-01-05 02:32:50,532 - INFO - --- Época 9/150 ---
+2026-01-05 02:35:36,080 - INFO - Train Loss: 0.8631 Acc: 0.6451
+2026-01-05 02:35:49,908 - INFO -   [LR] Tasa de aprendizaje actual: 0.000100
+2026-01-05 02:35:49,910 - INFO -   [Mejora Loss] 0.9253 -> 0.8966. Reseteando paciencia.
+2026-01-05 02:35:50,717 - INFO -   [Nuevo Récord Loss] Guardado en: models/sbtaylor_kan_cotton\run_20260105_015033\best_model.pth
+2026-01-05 02:35:50,720 - INFO - Val Loss: 0.8966 Acc: 0.7122
+2026-01-05 02:35:50,722 - INFO - --- Época 10/150 ---
+2026-01-05 02:38:36,030 - INFO - Train Loss: 0.8633 Acc: 0.6542
+2026-01-05 02:38:49,489 - INFO -   [LR] Tasa de aprendizaje actual: 0.000100
+2026-01-05 02:38:49,490 - INFO -   [Mejora Loss] 0.8966 -> 0.8929. Reseteando paciencia.
+2026-01-05 02:38:50,379 - INFO -   [Nuevo Récord Loss] Guardado en: models/sbtaylor_kan_cotton\run_20260105_015033\best_model.pth
+2026-01-05 02:38:50,382 - INFO - Val Loss: 0.8929 Acc: 0.7093
+2026-01-05 02:38:50,384 - INFO - --- Época 11/150 ---

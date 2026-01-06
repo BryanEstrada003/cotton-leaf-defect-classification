@@ -1,0 +1,38 @@
+2026-01-04 23:22:26,949 - INFO - Modelo SBTAYLOR_KAN.Net importado correctamente.
+2026-01-04 23:22:26,951 - INFO - Los pesos del modelo se guardarán en: 'models/sbtaylor_kan_cotton\run_20260104_232226\sbtaylor_kan.best_weights.pth'
+2026-01-04 23:22:26,952 - INFO - El registro de entrenamiento se guardará en: 'models/sbtaylor_kan_cotton\run_20260104_232226\training_run.log'
+2026-01-04 23:22:26,978 - INFO - Versión de PyTorch: 2.9.0+cu126
+2026-01-04 23:22:26,979 - INFO - ¿CUDA está disponible?: True
+2026-01-04 23:22:26,980 - INFO - Versión de CUDA con la que PyTorch fue compilado: 12.6
+2026-01-04 23:22:26,983 - INFO - Número de GPUs disponibles: 1
+2026-01-04 23:22:26,987 - INFO - Nombre de la GPU actual: NVIDIA GeForce RTX 4090
+2026-01-04 23:22:27,013 - INFO - --- Hyperparámetros de Entrenamiento ---
+2026-01-04 23:22:27,015 - INFO - Batch Size: 64
+2026-01-04 23:22:27,016 - INFO - Num Epochs: 150
+2026-01-04 23:22:27,017 - INFO - Learning Rate: 0.0001
+2026-01-04 23:22:27,046 - INFO - 
+Cargando dataset de ./Cotton Disease...
+2026-01-04 23:22:27,065 - INFO - Clases detectadas: ['diseased cotton leaf', 'diseased cotton plant', 'fresh cotton leaf', 'fresh cotton plant']
+2026-01-04 23:22:27,089 - INFO - 
+Usando dispositivo: cuda
+2026-01-04 23:22:57,743 - INFO - Iniciando entrenamiento por 150 épocas...
+2026-01-04 23:22:57,745 - INFO - Paciencia configurada: 10 épocas.
+2026-01-04 23:22:57,746 - INFO - --- Época 1/150 ---
+2026-01-04 23:23:26,078 - INFO - Train Loss: 1.4154 Acc: 0.2855
+2026-01-04 23:23:27,910 - INFO -   [LR] Tasa de aprendizaje actual: 0.000100
+2026-01-04 23:23:27,911 - INFO -   [Mejora Loss] inf -> 1.3486. Reseteando paciencia.
+2026-01-04 23:23:28,413 - INFO -   [Nuevo Récord Loss] Guardado en: models/sbtaylor_kan_cotton\run_20260104_232226\best_model.pth
+2026-01-04 23:23:28,416 - INFO - Val Loss: 1.3486 Acc: 0.5455
+2026-01-04 23:23:28,417 - INFO - --- Época 2/150 ---
+2026-01-04 23:23:56,604 - INFO - Train Loss: 1.2931 Acc: 0.4505
+2026-01-04 23:23:58,270 - INFO -   [LR] Tasa de aprendizaje actual: 0.000100
+2026-01-04 23:23:58,271 - INFO -   [Mejora Loss] 1.3486 -> 1.2106. Reseteando paciencia.
+2026-01-04 23:23:59,945 - INFO -   [Nuevo Récord Loss] Guardado en: models/sbtaylor_kan_cotton\run_20260104_232226\best_model.pth
+2026-01-04 23:23:59,946 - INFO - Val Loss: 1.2106 Acc: 0.6917
+2026-01-04 23:23:59,947 - INFO - --- Época 3/150 ---
+2026-01-04 23:24:26,952 - INFO - Train Loss: 1.1636 Acc: 0.5105
+2026-01-04 23:24:28,570 - INFO -   [LR] Tasa de aprendizaje actual: 0.000100
+2026-01-04 23:24:28,571 - INFO -   [Mejora Loss] 1.2106 -> 1.0543. Reseteando paciencia.
+2026-01-04 23:24:29,023 - INFO -   [Nuevo Récord Loss] Guardado en: models/sbtaylor_kan_cotton\run_20260104_232226\best_model.pth
+2026-01-04 23:24:29,025 - INFO - Val Loss: 1.0543 Acc: 0.6838
+2026-01-04 23:24:29,026 - INFO - --- Época 4/150 ---
