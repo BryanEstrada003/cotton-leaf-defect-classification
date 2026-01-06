@@ -6,34 +6,28 @@ from app.kan_model import Net
 BASE_DIR = Path(__file__).resolve().parent.parent
 MODEL_PATH = BASE_DIR / "models" / "kan_model.pth"
 
-device = torch.device("cpu")
+DEVICE = torch.device("cpu")
 
-model_kan = Net(num_classes=6)
-state_dict = torch.load(MODEL_PATH, map_location=device)
+CLASS_NAMES = ['Curl Virus', 'Fresh_Leaf', 'Leaf_Reddening', 'Leaf_Spot_Bacterial_Blight']
+
+model_kan = Net(num_classes=len(CLASS_NAMES))
+state_dict = torch.load(MODEL_PATH, map_location=DEVICE)
 model_kan.load_state_dict(state_dict)
 model_kan.eval()
 
-CLASS_NAMES = [
-    "Alphids",
-    "Army worm",
-    "Bacterial Blight",
-    "Healthy",
-    "Powdery Mildew",
-    "Target spot"
-]
-
 
 @torch.no_grad()
-def predict_kan(image_tensor):
+def predict_kan(image_tensor: torch.Tensor):
     outputs = model_kan(image_tensor)
     probs = torch.softmax(outputs, dim=1)[0]
 
     idx = probs.argmax().item()
+
     return {
         "class_name": CLASS_NAMES[idx],
-        "confidence": probs[idx].item(),
+        "confidence": float(probs[idx]),
         "probabilities": {
-            CLASS_NAMES[i]: probs[i].item()
+            CLASS_NAMES[i]: float(probs[i])
             for i in range(len(CLASS_NAMES))
         },
     }

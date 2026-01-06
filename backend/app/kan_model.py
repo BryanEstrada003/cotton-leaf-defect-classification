@@ -5,6 +5,10 @@ import torch.nn as nn
 import torch.nn.functional as F
 
 
+# =========================================================
+#                  KAN LINEAR LAYER
+# =========================================================
+
 class KANLinear(nn.Module):
     def __init__(
         self,
@@ -14,7 +18,6 @@ class KANLinear(nn.Module):
         spline_order=3,
         scale_noise=0.1,
         base_activation=nn.SiLU,
-        grid_eps=0.02,
         grid_range=[-1, 1],
     ):
         super().__init__()
@@ -52,9 +55,11 @@ class KANLinear(nn.Module):
                     self.out_features,
                     self.in_features,
                     self.grid_size + self.spline_order,
-                ) - 0.5) * 0.1 / self.grid_size
+                ) - 0.5)
+                * 0.1
+                / self.grid_size
             )
-            self.spline_weight.data.copy_(noise)
+            self.spline_weight.copy_(noise)
 
     def b_splines(self, x):
         x = x.unsqueeze(-1)
@@ -73,15 +78,19 @@ class KANLinear(nn.Module):
         return bases.contiguous()
 
     def forward(self, x):
-        base_output = F.linear(self.base_activation(x), self.base_weight)
+        base_out = F.linear(self.base_activation(x), self.base_weight)
         spline_basis = self.b_splines(x)
-        spline_output = torch.einsum(
+        spline_out = torch.einsum(
             "bfi,ofi->bo",
             spline_basis,
             self.spline_weight * self.spline_scaler.unsqueeze(-1),
         )
-        return base_output + spline_output
+        return base_out + spline_out
 
+
+# =========================================================
+#                  TAYLOR APPROX
+# =========================================================
 
 class TaylorSeriesApproximation(nn.Module):
     def __init__(self, n_terms=5):
@@ -101,10 +110,15 @@ class TaylorSeriesApproximation(nn.Module):
         return out
 
 
+# =========================================================
+#                  MAIN NETWORK
+# =========================================================
+
 class Net(nn.Module):
-    def __init__(self, num_classes=6):
+    def __init__(self, num_classes=4, input_size=(3, 224, 224)):
         super().__init__()
 
+        # --- CNN FEATURE EXTRACTOR ---
         self.features = nn.Sequential(
             nn.Conv2d(3, 32, 3, padding=1),
             nn.BatchNorm2d(32),
@@ -127,18 +141,28 @@ class Net(nn.Module):
             nn.MaxPool2d(2),
         )
 
+        self.gap = nn.AdaptiveAvgPool2d(1)
         self.taylor_approx = TaylorSeriesApproximation()
 
-        self.fc1 = KANLinear(25088, 256)
+        # --- DIMENSION AUTO ---
+        with torch.no_grad():
+            dummy = torch.zeros(1, *input_size)
+            d = self.gap(self.features(dummy))
+            self.flatten_dim = d.view(1, -1).size(1)  # → 128
+
+        # --- KAN HEAD ---
+        self.fc1 = KANLinear(self.flatten_dim, 256)
         self.fc2 = KANLinear(256, 128)
         self.fc3 = KANLinear(128, num_classes)
 
     def forward(self, x):
         x = self.features(x)
+        x = self.gap(x)
         x = torch.flatten(x, 1)
+
         x = torch.tanh(x)
         x = self.taylor_approx(x)
+
         x = F.relu(self.fc1(x))
         x = F.relu(self.fc2(x))
         return self.fc3(x)
-
