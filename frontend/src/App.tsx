@@ -12,6 +12,7 @@ import Home from './pages/Home'
 import Analyze from './pages/Analyze'
 import Result from './pages/Result'
 import About from './pages/About'
+import History from './pages/History'
 
 export default function App() {
   return (
@@ -27,6 +28,7 @@ export default function App() {
               <Route path="/analyze" element={<Analyze />} />
               <Route path="/result" element={<Result />} />
               <Route path="/about" element={<About />} />
+              <Route path="/history" element={<History />} />
             </Route>
           </Routes>
 

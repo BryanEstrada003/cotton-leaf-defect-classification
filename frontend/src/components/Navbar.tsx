@@ -25,6 +25,9 @@ export default function Navbar() {
           <Button color="inherit" onClick={() => navigate('/about')}>
             Proyecto
           </Button>
+          <Button color="inherit" onClick={() => navigate('/history')}>
+            Historial
+          </Button>
         </Box>
       </Toolbar>
     </AppBar>

@@ -4,7 +4,7 @@ from pathlib import Path
 from app.kan_model import Net
 
 BASE_DIR = Path(__file__).resolve().parent.parent
-MODEL_PATH = BASE_DIR / "models" / "kan_model.pth"
+MODEL_PATH = BASE_DIR / "models" / "kan_model2.pth"
 
 DEVICE = torch.device("cpu")
 

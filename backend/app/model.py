@@ -1,7 +1,7 @@
 import tensorflow as tf
 import numpy as np
 
-MODEL_PATH = "models/vgg16_model.h5"
+MODEL_PATH = "models/vgg16_model2.h5"
 
 model = tf.keras.models.load_model(MODEL_PATH)
 print("Model output shape:", model.output_shape)
