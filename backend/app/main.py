@@ -6,11 +6,12 @@ from app.schemas import PredictionResponse
 
 # ===== VGG16 (TensorFlow) =====
 from app.preprocessing import load_and_preprocess_image
-from app.model import predict as predict_vgg
+from app.model import predict_with_cam as predict_vgg_with_cam
+
 
 # ===== KAN (PyTorch) =====
 from app.preprocessing_kan import load_and_preprocess_image_kan
-from app.model_kan import predict_kan
+from app.model_kan import predict_kan, predict_kan_with_gradcam
 
 
 app = FastAPI(
@@ -21,7 +22,7 @@ app = FastAPI(
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # en producción se restringe
+    allow_origins=["*"],
     allow_methods=["*"],
     allow_headers=["*"],
 )
@@ -34,22 +35,23 @@ async def predict_endpoint(
 ):
     """
     Endpoint de inferencia.
-    Permite seleccionar el modelo de clasificación (VGG16 o KAN).
+    Grad-CAM para VGG16 y KAN.
     """
     start_time = time.time()
-
-    # Leer imagen
     image_bytes = await image.read()
 
-    # Selección de modelo
+    # ===== SELECCIÓN DE MODELO =====
     if model.lower() == "kan":
         image_tensor = load_and_preprocess_image_kan(image_bytes)
-        result = predict_kan(image_tensor)
+        result = predict_kan_with_gradcam(image_tensor)
         model_used = "KAN"
+        heatmap = result.get("heatmap_base64")
+
     else:
         image_tensor = load_and_preprocess_image(image_bytes)
-        result = predict_vgg(image_tensor)
+        result = predict_vgg_with_cam(image_tensor)
         model_used = "VGG16"
+        heatmap = result.get("heatmap_base64")
 
     inference_time_ms = int((time.time() - start_time) * 1000)
 
@@ -59,7 +61,7 @@ async def predict_endpoint(
         "model_used": model_used,
         "inference_time_ms": inference_time_ms,
         "probabilities": result["probabilities"],
-        "heatmap_url": None,  # Grad-CAM solo se aplicará a VGG16
+        "heatmap_url": heatmap,
         "recommendations": [
             "Monitorear la evolución de la hoja",
             "Aplicar tratamiento localizado si es necesario",

@@ -70,7 +70,11 @@ export default function Result() {
       )}
       <ConfidenceBar confidence={result.confidence} />
       <ProbabilityChart probabilities={result.probabilities} />
-      <GradCamOverlay image={image} />
+      <GradCamOverlay image={image} heatmap={result.heatmap_url
+  ? result.heatmap_url.startsWith('data:image')
+    ? result.heatmap_url
+    : `data:image/png;base64,${result.heatmap_url}`
+  : null} />
     </>
   );
 }
