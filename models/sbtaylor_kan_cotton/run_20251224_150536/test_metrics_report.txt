@@ -1,0 +1,35 @@
+==================================================
+ REPORTE DE EVALUACIÓN: 2025-12-24 16:53
+==================================================
+
+Métricas Globales:
+- Accuracy:          0.9302 (93.02%)
+- Macro Precision:   0.9319
+- Macro Recall:      0.9303
+- Macro F1-Score:    0.9307
+
+------------------------------
+EFICIENCIA (Velocidad)
+------------------------------
+- Muestras totales:  358
+- Tiempo total:      0.9610 seg
+- Tiempo por imagen: 2.6843 ms
+
+------------------------------
+DETALLE POR CLASE
+------------------------------
+           Clase  Precision  Recall  F1-Score
+          Aphids     0.9643  0.9000    0.9310
+       Army worm     0.8889  0.9333    0.9106
+Bacterial Blight     0.8571  0.9000    0.8780
+         Healthy     0.9828  0.9661    0.9744
+  Powdery Mildew     0.9661  0.9500    0.9580
+     Target spot     0.9322  0.9322    0.9322
+
+Matriz de Confusión (Texto):
+[[54,  1,  3,  1,  1,  0],
+ [ 0, 56,  2,  0,  1,  1],
+ [ 1,  2, 54,  0,  0,  3],
+ [ 1,  1,  0, 57,  0,  0],
+ [ 0,  3,  0,  0, 57,  0],
+ [ 0,  0,  4,  0,  0, 55]]

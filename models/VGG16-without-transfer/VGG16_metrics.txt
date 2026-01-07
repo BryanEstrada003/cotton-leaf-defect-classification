@@ -1,0 +1,22 @@
+Accuracy: 0.9357541899441341
+
+Confusion Matrix:
+[[55  0  1  0  4  0]
+ [ 1 59  0  0  0  0]
+ [ 1  0 52  1  1  5]
+ [ 0  1  0 57  0  1]
+ [ 0  0  0  0 59  1]
+ [ 0  0  5  0  1 53]]
+
+Metrics Table:
+           Clase  Accuracy  Precision   Recall  F1-Score
+         Alphids  0.916667   0.964912 0.916667  0.940171
+       Army worm  0.983333   0.983333 0.983333  0.983333
+Bacterial Blight  0.866667   0.896552 0.866667  0.881356
+         Healthy  0.966102   0.982759 0.966102  0.974359
+  Powdery Mildew  0.983333   0.907692 0.983333  0.944000
+     Target spot  0.898305   0.883333 0.898305  0.890756
+
+Average Precision: 0.9364302666480526
+Average Recall: 0.9357344632768362
+Average F1-Score: 0.9356625804312744

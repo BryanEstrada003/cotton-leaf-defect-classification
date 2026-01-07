@@ -1,0 +1,27 @@
+==================================================
+      INFORME DE MÉTRICAS - CONJUNTO DE PRUEBA      
+==================================================
+
+Accuracy General: 0.6750
+
+--- Métricas Promediadas (Macro) ---
+Precisión Promedio: 0.7060
+Recall Promedio:    0.6750
+F1-Score Promedio:  0.6681
+
+--- Rendimiento de Inferencia ---
+Tiempo total de inferencia: 0.03 segundos
+Tiempo promedio por imagen: 0.2545 ms
+
+--- Métricas por Clase ---
+                     Clase  Precision   Recall  F1-Score
+                Fresh_Leaf   0.648649 0.800000  0.716418
+            Leaf_Reddening   0.888889 0.533333  0.666667
+Leaf_Spot_Bacterial_Blight   0.604651 0.866667  0.712329
+            Yellowish_Leaf   0.681818 0.500000  0.576923
+
+--- Matriz de Confusión ---
+[[24,  0,  1,  5],
+ [ 1, 16, 13,  0],
+ [ 0,  2, 26,  2],
+ [12,  0,  3, 15]]

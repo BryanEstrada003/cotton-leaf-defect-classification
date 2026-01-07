@@ -1,0 +1,31 @@
+==================================================
+ REPORTE DE EVALUACIÓN: 2026-01-05 20:50
+==================================================
+
+Métricas Globales:
+- Accuracy:          0.9480 (94.80%)
+- Macro Precision:   0.9456
+- Macro Recall:      0.9495
+- Macro F1-Score:    0.9474
+
+------------------------------
+EFICIENCIA (Velocidad)
+------------------------------
+- Muestras totales:  346
+- Tiempo total:      0.6797 seg
+- Tiempo por imagen: 1.9644 ms
+
+------------------------------
+DETALLE POR CLASE
+------------------------------
+                     Clase  Precision  Recall  F1-Score
+                Curl Virus     0.9348  0.9773    0.9556
+                Fresh_Leaf     0.9780  0.9780    0.9780
+            Leaf_Reddening     0.9231  0.8889    0.9057
+Leaf_Spot_Bacterial_Blight     0.9466  0.9538    0.9502
+
+Matriz de Confusión (Texto):
+[[ 43,   0,   1,   0],
+ [  1,  89,   0,   1],
+ [  2,   1,  72,   6],
+ [  0,   1,   5, 124]]

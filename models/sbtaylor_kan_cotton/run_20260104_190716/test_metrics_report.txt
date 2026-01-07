@@ -1,0 +1,35 @@
+==================================================
+ REPORTE DE EVALUACIÓN: 2026-01-04 21:32
+==================================================
+
+Métricas Globales:
+- Accuracy:          0.7458 (74.58%)
+- Macro Precision:   0.8135
+- Macro Recall:      0.7458
+- Macro F1-Score:    0.7400
+
+------------------------------
+EFICIENCIA (Velocidad)
+------------------------------
+- Muestras totales:  240
+- Tiempo total:      0.0801 seg
+- Tiempo por imagen: 0.3338 ms
+
+------------------------------
+DETALLE POR CLASE
+------------------------------
+                  Clase  Precision  Recall  F1-Score
+       Bacterial Blight     1.0000   0.575    0.7302
+             Curl Virus     0.7750   0.775    0.7750
+           Healthy Leaf     0.8750   0.350    0.5000
+Herbicide Growth Damage     0.9250   0.925    0.9250
+    Leaf Hopper Jassids     0.4800   0.900    0.6261
+           Leaf Redding     0.8261   0.950    0.8837
+
+Matriz de Confusión (Texto):
+[[23,  3,  2,  3,  8,  1],
+ [ 0, 31,  0,  0,  8,  1],
+ [ 0,  3, 14,  0, 21,  2],
+ [ 0,  3,  0, 37,  0,  0],
+ [ 0,  0,  0,  0, 36,  4],
+ [ 0,  0,  0,  0,  2, 38]]

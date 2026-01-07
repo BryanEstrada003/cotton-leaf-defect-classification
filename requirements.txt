@@ -1,10 +1,35 @@
-tensorflow==2.6.0
-keras==2.6.0
-matplotlib==3.3.4
-pandas==1.2.5
-scikit-learn==1.3.2
-numpy==1.19.5
-scipy==1.10.1
-seaborn==0.11.2
-Pillow==10.4.0
-h5py==3.1.0
+# =================================================
+#  Dependencias del Proyecto
+# =================================================
+
+# --- Framework de Deep Learning (PyTorch con CUDA ) ---
+# Se usa --index-url para forzar a pip a buscar en el repositorio de PyTorch para CUDA 12.6.
+# Esto asegura que se instale una versión compatible con la GPU.
+--index-url https://download.pytorch.org/whl/cu126
+
+torch
+torchvision
+
+# --- Ecosistema de TensorFlow y Data Science ---
+# Se usa --extra-index-url para añadir PyPI (el repositorio estándar ) como fuente secundaria.
+--extra-index-url https://pypi.org/simple
+
+tensorflow
+tensorflow-datasets
+pandas
+scikit-learn
+numpy
+scipy
+seaborn
+Pillow
+h5py
+
+# --- Herramientas de Desarrollo y Notebooks ---
+ipython
+jupyter
+prettytable
+matplotlib
+tqdm
+bayesian-optimization
+kagglehub
+scikit-learn
