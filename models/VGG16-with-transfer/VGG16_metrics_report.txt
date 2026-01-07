@@ -1,31 +1,31 @@
 ==================================================
- REPORTE DE EVALUACIÓN VGG16: 2026-01-07 02:21
+ REPORTE DE EVALUACIÓN VGG16: 2026-01-07 14:31
 ==================================================
 
 Métricas Globales:
-- Accuracy:          0.9364 (93.64%)
-- Macro Precision:   0.9349
-- Macro Recall:      0.9404
-- Macro F1-Score:    0.9368
+- Accuracy:          0.8873 (88.73%)
+- Macro Precision:   0.8838
+- Macro Recall:      0.8943
+- Macro F1-Score:    0.8886
 
 ------------------------------
 EFICIENCIA (Velocidad)
 ------------------------------
 - Muestras totales:  346
-- Tiempo total:      9.4845 segundos
-- Tiempo por imagen: 27.4117 ms
+- Tiempo total:      10.2866 segundos
+- Tiempo por imagen: 29.7300 ms
 
 ------------------------------
 DETALLE POR CLASE
 ------------------------------
                      Clase  Precision  Recall  F1-Score
-                Curl Virus     0.9167  1.0000    0.9565
-                Fresh_Leaf     0.9775  0.9560    0.9667
-            Leaf_Reddening     0.9200  0.8519    0.8846
-Leaf_Spot_Bacterial_Blight     0.9254  0.9538    0.9394
+                Curl Virus     0.8750  0.9545    0.9130
+                Fresh_Leaf     0.9438  0.9231    0.9333
+            Leaf_Reddening     0.8250  0.8148    0.8199
+Leaf_Spot_Bacterial_Blight     0.8915  0.8846    0.8880
 
 Matriz de Confusión (Texto):
-[[ 44,   0,   0,   0],
- [  2,  87,   1,   1],
- [  2,   1,  69,   9],
- [  0,   1,   5, 124]]
+[[ 42,   0,   2,   0],
+ [  1,  84,   1,   5],
+ [  4,   2,  66,   9],
+ [  1,   3,  11, 115]]
