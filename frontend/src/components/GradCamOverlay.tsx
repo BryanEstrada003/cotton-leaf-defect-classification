@@ -13,7 +13,10 @@ export default function GradCamOverlay({ image, heatmap }: Props) {
 
   return (
     <>
-      <Typography variant="h6" sx={{ mt: 6, mb: 2 }} />
+      <Typography variant="h6" sx={{ mt: 6, mb: 2 }}>
+        Mapa de calor Grad-CAM
+      </Typography>
+
       <Typography color="text.secondary" sx={{ mb: 2 }} />
 
       {/* Contenedor: manda la imagen más pequeña */}

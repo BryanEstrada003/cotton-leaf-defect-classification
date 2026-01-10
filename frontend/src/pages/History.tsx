@@ -1,17 +1,12 @@
 import { Grid, Typography } from '@mui/material'
-import { useEffect, useState } from 'react'
 import HistoryCard from '../components/HistoryCard'
+import { useHistoryStore } from '../stores/useHistoryStore'
 
 export default function History() {
-  const [items, setItems] = useState<any[]>([])
-
-  useEffect(() => {
-    const raw = localStorage.getItem('history')
-    if (raw) setItems(JSON.parse(raw))
-  }, [])
+  const items = useHistoryStore((s) => s.history)
 
   if (items.length === 0) {
-    return <Typography>No hay diagnósticos guardados.</Typography>
+    return <Typography variant="h5">No hay diagnósticos guardados.</Typography>
   }
 
   return (

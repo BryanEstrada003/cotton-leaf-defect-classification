@@ -8,7 +8,7 @@ import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import Layout from './components/Layout'
 
-import Home from './pages/Home'
+import About from './pages/About'
 import Analyze from './pages/Analyze'
 import Result from './pages/Result'
 import Catalog from './pages/Catalog'
@@ -24,8 +24,8 @@ export default function App() {
 
           <Routes>
             <Route element={<Layout />}>
-              <Route path="/" element={<Home />} />
-              <Route path="/analyze" element={<Analyze />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/" element={<Analyze />} />
               <Route path="/result" element={<Result />} />
               <Route path="/catalog" element={<Catalog />} />
               <Route path="/history" element={<History />} />

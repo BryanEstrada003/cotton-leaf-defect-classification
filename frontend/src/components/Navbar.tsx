@@ -12,21 +12,18 @@ export default function Navbar() {
           sx={{ flexGrow: 1, cursor: 'pointer' }}
           onClick={() => navigate('/')}
         >
-          CotVision
+          Analizar
         </Typography>
 
         <Box>
-          <Button color="inherit" onClick={() => navigate('/')}>
-            Inicio
-          </Button>
-          <Button color="inherit" onClick={() => navigate('/analyze')}>
-            Analizar
+          <Button color="inherit" onClick={() => navigate('/history')}>
+            Historial
           </Button>
           <Button color="inherit" onClick={() => navigate('/catalog')}>
             Catálogo
           </Button>
-          <Button color="inherit" onClick={() => navigate('/history')}>
-            Historial
+          <Button color="inherit" onClick={() => navigate('/about')}>
+            CotVision
           </Button>
         </Box>
       </Toolbar>

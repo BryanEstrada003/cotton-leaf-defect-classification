@@ -1,12 +1,12 @@
 // pages/Analyze.tsx
 import { Typography, Card, CardContent } from '@mui/material'
-import { useState } from 'react'
 import ImageUploader from '../components/ImageUploader'
+import { Box } from '@mui/material'
 
 export default function Analyze() {
 
   return (
-    <>
+    <Box align="center">
       <Typography variant="h4" gutterBottom>
         Análisis de imagen
       </Typography>
@@ -21,6 +21,6 @@ export default function Analyze() {
           <ImageUploader />
         </CardContent>
       </Card>
-    </>
+    </Box>
   )
 }

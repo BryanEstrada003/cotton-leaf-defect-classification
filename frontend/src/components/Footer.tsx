@@ -11,7 +11,7 @@ export default function Footer() {
       }}
     >
       <Typography variant="body2">
-        CotVision © 2025 · Proyecto académico de Inteligencia Artificial
+        CotVision © 2025 · Grupo 7 · Curso de Inteligencia Artificial · ESPOL
       </Typography>
     </Box>
   )

@@ -3,33 +3,31 @@ import {
   CardContent,
   CardMedia,
   Typography,
-  Chip
+  Chip,
 } from '@mui/material'
 import { useNavigate } from 'react-router-dom'
+import { useCurrentDiagnosisStore } from '../stores/useCurrentDiagnosisStore'
 
 export default function HistoryCard({ item }: any) {
   const navigate = useNavigate()
+  const setCurrent = useCurrentDiagnosisStore((s) => s.setCurrent)
 
   const handleClick = () => {
-    localStorage.setItem('prediction', JSON.stringify(item.result))
-    localStorage.setItem('uploaded_image', item.image)
+    setCurrent(item)
     navigate('/result')
   }
 
   const isCorrected = item.review?.status === 'corrected'
 
   const renderReviewChip = () => {
-    // ⏳ Pendiente
     if (!item.review) {
-      return <Chip label="Pendiente" color="default" size="small" />
+      return <Chip label="Pendiente" size="small" />
     }
 
-    // ✏️ Corregido
     if (item.review.status === 'corrected') {
       return <Chip label="Corregido" color="warning" size="small" />
     }
 
-    // ✅ Confirmado
     if (item.review.status === 'approved') {
       return <Chip label="Confirmado" color="success" size="small" />
     }
@@ -54,15 +52,7 @@ export default function HistoryCard({ item }: any) {
         </Typography>
 
         {isCorrected ? (
-          <Typography
-            variant="body2"
-            color="text.secondary"
-            noWrap
-            sx={{
-              overflow: 'hidden',
-              textOverflow: 'ellipsis'
-            }}
-          >
+          <Typography variant="body2" color="text.secondary" noWrap>
             {item.review?.comments}
           </Typography>
         ) : (
@@ -71,13 +61,17 @@ export default function HistoryCard({ item }: any) {
           </Typography>
         )}
 
-        <div style={{ marginTop: 8 }}>
-          {renderReviewChip()}
-        </div>
-
+        <div style={{ marginTop: 8 }}>{renderReviewChip()}</div>
+        
+        {!isCorrected ? (
         <Typography variant="caption" display="block" sx={{ mt: 1 }}>
-          {new Date(item.created_at).toLocaleString()}
+          {new Date(item.createdAt).toLocaleString()}
         </Typography>
+        ) : (
+        <Typography variant="caption" display="block" sx={{ mt: 1 }}>
+          {new Date(item.review?.reviewedAt).toLocaleString()}
+        </Typography>
+        )}
       </CardContent>
     </Card>
   )

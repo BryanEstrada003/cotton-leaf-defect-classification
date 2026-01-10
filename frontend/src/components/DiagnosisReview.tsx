@@ -53,7 +53,7 @@ export default function DiagnosisReview({
       reviewed_class:
         status === 'approved' ? detectedClass : reviewedClass,
       comments,
-      reviewed_at: new Date().toISOString(),
+      reviewedAt: new Date().toISOString(),
     })
   }
 
@@ -67,22 +67,22 @@ export default function DiagnosisReview({
         <TextField
           select
           fullWidth
-          label="Estado del diagnóstico"
+          label="Decisión"
           value={status}
           onChange={(e) =>
             setStatus(e.target.value as 'approved' | 'corrected')
           }
           sx={{ mb: 2 }}
         >
-          <MenuItem value="approved">Aprobado</MenuItem>
-          <MenuItem value="corrected">Corregido</MenuItem>
+          <MenuItem value="approved">Aprobar</MenuItem>
+          <MenuItem value="corrected">Corregir</MenuItem>
         </TextField>
 
         {status === 'corrected' && (
           <TextField
             select
             fullWidth
-            label="Clase corregida"
+            label="Nuevo diagnóstico"
             value={reviewedClass}
             onChange={(e) => setReviewedClass(e.target.value)}
             sx={{ mb: 2 }}

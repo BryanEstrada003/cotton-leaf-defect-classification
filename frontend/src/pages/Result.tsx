@@ -1,113 +1,82 @@
-import { useEffect, useState } from "react";
-import type { PredictionResult } from "../types/prediction";
-import { Box } from "@mui/material";
+import { useState } from 'react'
+import { Box } from '@mui/material'
 
-import DiagnosisCard from "../components/DiagnosisCard";
-import ConfidenceBar from "../components/ConfidenceBar";
-import ProbabilityChart from "../components/ProbabilityChart";
-import GradCamOverlay from "../components/GradCamOverlay";
-import Loader from "../components/Loader";
-import DiagnosisReview from "../components/DiagnosisReview";
-import ReviewCard from "../components/ReviewCard";
+import DiagnosisCard from '../components/DiagnosisCard'
+import ConfidenceBar from '../components/ConfidenceBar'
+import ProbabilityChart from '../components/ProbabilityChart'
+import GradCamOverlay from '../components/GradCamOverlay'
+import Loader from '../components/Loader'
+import DiagnosisReview from '../components/DiagnosisReview'
+import ReviewCard from '../components/ReviewCard'
+import { useNavigate } from 'react-router-dom'
+
+import { useCurrentDiagnosisStore } from '../stores/useCurrentDiagnosisStore'
+import { useHistoryStore } from '../stores/useHistoryStore'
 
 export default function Result() {
-  const [result, setResult] = useState<PredictionResult | null>(null);
-  const [image, setImage] = useState<string | null>(null);
-  const [historyItem, setHistoryItem] = useState<any>(null);
-  const [editingReview, setEditingReview] = useState(false);
+  const current = useCurrentDiagnosisStore((s) => s.current)
+  const updateDiagnosis = useHistoryStore((s) => s.updateDiagnosis)
 
-  useEffect(() => {
-    const storedPrediction = localStorage.getItem("prediction");
-    const storedImage = localStorage.getItem("uploaded_image");
-    const rawHistory = localStorage.getItem("history");
+  const [editingReview, setEditingReview] = useState(false)
+  const navigate = useNavigate()
 
-    if (!storedPrediction || !storedImage || !rawHistory) return;
 
-    const parsedResult = JSON.parse(storedPrediction);
-    const parsedHistory = JSON.parse(rawHistory);
-
-    const current = parsedHistory.find(
-      (item: any) =>
-        item.image === storedImage &&
-        item.result.class === parsedResult.class
-    );
-
-    setResult(parsedResult);
-    setImage(storedImage);
-    setHistoryItem(current);
-  }, []);
-
-  if (!result || !image || !historyItem) {
-    return <Loader />;
+  if (!current) {
+    return <Loader />
   }
 
-  const isPinned = historyItem.reviewPinned === true;
+  const { result, image, review } = current
+  const isPinned = !!review
 
-  const handleSaveReview = (review: any) => {
-    const raw = localStorage.getItem("history");
-    const history = raw ? JSON.parse(raw) : [];
+  const handleSaveReview = (reviewData: any) => {
+    console.log('Saving review:', reviewData)
+    updateDiagnosis(current.id, {
+      review: reviewData,
+    })
+    console.log('Review saved.')
+    setEditingReview(false)
+    navigate('/history')
 
-    const updated = history.map((item: any) =>
-      item.id === historyItem.id
-        ? {
-            ...item,
-            review,
-            reviewPinned: true, // 🔒 se fija para siempre
-          }
-        : item
-    );
-
-    localStorage.setItem("history", JSON.stringify(updated));
-
-    setHistoryItem({
-      ...historyItem,
-      review,
-      reviewPinned: true,
-    });
-
-    setEditingReview(false);
-  };
+    console.log('Exited editing mode.')
+  }
 
   const ReviewComponent =
-    !historyItem.review || editingReview ? (
+    !review || editingReview ? (
       <DiagnosisReview
         detectedClass={result.class}
-        initialReview={historyItem.review}
+        initialReview={review}
         onSave={handleSaveReview}
       />
     ) : (
       <ReviewCard
-        review={historyItem.review}
+        review={review}
         onEdit={() => setEditingReview(true)}
       />
-    );
+    )
 
   return (
     <>
       <DiagnosisCard result={result} />
 
-      {/* POSICIÓN 1 */}
       {isPinned && ReviewComponent}
 
       <ConfidenceBar confidence={result.confidence} />
       <ProbabilityChart probabilities={result.probabilities} />
 
-      <Box align="center" >
+      <Box align="center">
         <GradCamOverlay
-        image={image}
-        heatmap={
-          result.heatmap_url
-            ? result.heatmap_url.startsWith("data:image")
-              ? result.heatmap_url
-              : `data:image/png;base64,${result.heatmap_url}`
-            : null
-        }
-      />
+          image={image}
+          heatmap={
+            result.heatmap_url
+              ? result.heatmap_url.startsWith('data:image')
+                ? result.heatmap_url
+                : `data:image/png;base64,${result.heatmap_url}`
+              : null
+          }
+        />
       </Box>
-        
-      
-      {/* POSICIÓN 2 */}
+
       {!isPinned && ReviewComponent}
     </>
-  );
+  )
 }
