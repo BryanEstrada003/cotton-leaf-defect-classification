@@ -2,10 +2,8 @@
 import { Typography, Card, CardContent } from '@mui/material'
 import { useState } from 'react'
 import ImageUploader from '../components/ImageUploader'
-import ModelToggle from '../components/ModelToggle'
 
 export default function Analyze() {
-  const [model, setModel] = useState<'vgg16' | 'kan'>('vgg16')
 
   return (
     <>
@@ -20,15 +18,7 @@ export default function Analyze() {
 
       <Card>
         <CardContent>
-          <ModelToggle
-            model={model}
-            onChange={(newModel) => {
-              setModel(newModel)
-              console.log('Modelo seleccionado:', newModel)
-            }}
-          />
-
-          <ImageUploader model={model} />
+          <ImageUploader />
         </CardContent>
       </Card>
     </>

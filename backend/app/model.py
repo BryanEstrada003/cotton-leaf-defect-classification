@@ -1,68 +1,78 @@
-import tensorflow as tf
-import numpy as np
-import cv2
+# app/model_kan.py
+import torch
+from pathlib import Path
+from io import BytesIO
 import base64
+from PIL import Image
 
-MODEL_PATH = "models/vgg16_model2.h5"
+from app.kan_model import Net
+from app.gradcam_kan import generate_gradcam_kan
 
-model = tf.keras.models.load_model(MODEL_PATH)
+BASE_DIR = Path(__file__).resolve().parent.parent
+MODEL_WEIGHTS = BASE_DIR / "app" / "kan_weights.pth"
+
+DEVICE = torch.device("cpu")
 
 CLASS_NAMES = [
     "Curl Virus",
-    "Healthy",
+    "Hoja Sana",
     "Leaf Reddening",
     "Leaf Spot Bacterial Blight",
 ]
 
-# -------------------------------------------------
-# CAM PROXY (SIN GRADIENTES)
-# -------------------------------------------------
-def generate_cam_proxy(image_tensor: np.ndarray):
-    """
-    Proxy CAM usando activaciones de la última capa conv.
-    Compatible con tu modelo actual.
-    """
-
-    # Extraer el backbone VGG16
-    backbone = model.get_layer("vgg16")
-
-    # Forward SOLO hasta conv
-    conv_features = backbone(image_tensor, training=False)
-    conv_features = conv_features[0]  # (7, 7, 512)
-
-    # Promedio por canal
-    cam = tf.reduce_mean(conv_features, axis=-1)
-
-    cam = cam.numpy()
-    cam = np.maximum(cam, 0)
-    cam /= cam.max() + 1e-8
-
-    # Resize a 224x224
-    cam = cv2.resize(cam, (224, 224))
-
-    cam_uint8 = np.uint8(255 * cam)
-    heatmap = cv2.applyColorMap(cam_uint8, cv2.COLORMAP_JET)
-
-    _, buffer = cv2.imencode(".png", heatmap)
-    return base64.b64encode(buffer).decode("utf-8")
+# 🔹 Cargar modelo
+model_kan = Net(num_classes=len(CLASS_NAMES))
+state_dict = torch.load(MODEL_WEIGHTS, map_location=DEVICE)
+model_kan.load_state_dict(state_dict)
+model_kan.to(DEVICE)
+model_kan.eval()
 
 
-# -------------------------------------------------
-# PREDICT + CAM
-# -------------------------------------------------
-def predict_with_cam(image_tensor: np.ndarray):
-    preds = model(image_tensor, training=False)[0]
+@torch.no_grad()
+def predict_kan(image_tensor: torch.Tensor):
+    outputs = model_kan(image_tensor)
+    probs = torch.softmax(outputs, dim=1)[0]
 
-    idx = int(tf.argmax(preds))
-    confidence = float(preds[idx])
-
-    heatmap_base64 = generate_cam_proxy(image_tensor)
+    idx = probs.argmax().item()
 
     return {
         "class_name": CLASS_NAMES[idx],
-        "confidence": confidence,
+        "confidence": float(probs[idx]),
         "probabilities": {
-            CLASS_NAMES[i]: float(preds[i]) for i in range(len(CLASS_NAMES))
+            CLASS_NAMES[i]: float(probs[i])
+            for i in range(len(CLASS_NAMES))
         },
-        "heatmap_base64": heatmap_base64,
+    }
+
+
+def predict_kan_with_gradcam(image_tensor: torch.Tensor):
+    image_tensor = image_tensor.to(DEVICE)
+
+    outputs = model_kan(image_tensor)
+    probs = torch.softmax(outputs, dim=1)[0]
+
+    idx = probs.argmax().item()
+
+    # 🔹 Grad-CAM (CNN + KAN, como en el paper)
+    heatmap = generate_gradcam_kan(
+        model_kan,
+        image_tensor,
+        class_idx=idx,
+        target_size=(224, 224),
+    )
+
+    # 🔹 Convertir a base64 (frontend-friendly)
+    img = Image.fromarray(heatmap)
+    buffer = BytesIO()
+    img.save(buffer, format="PNG")
+    heatmap_b64 = base64.b64encode(buffer.getvalue()).decode("utf-8")
+
+    return {
+        "class_name": CLASS_NAMES[idx],
+        "confidence": float(probs[idx]),
+        "probabilities": {
+            CLASS_NAMES[i]: float(probs[i])
+            for i in range(len(CLASS_NAMES))
+        },
+        "heatmap_base64": heatmap_b64,
     }

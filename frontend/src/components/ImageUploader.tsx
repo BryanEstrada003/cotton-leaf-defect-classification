@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom'
 import { sendImage } from '../services/api'
 import { v4 as uuidv4 } from 'uuid'
 
-export default function ImageUploader({ model }: { model: 'vgg16' | 'kan' }) {
+export default function ImageUploader() {
   const [image, setImage] = useState<File | null>(null)
   const [loading, setLoading] = useState(false)
   const navigate = useNavigate()
@@ -17,7 +17,7 @@ export default function ImageUploader({ model }: { model: 'vgg16' | 'kan' }) {
 
     reader.onload = async () => {
       const base64Image = reader.result as string
-      const result = await sendImage(image, model)
+      const result = await sendImage(image)
 
       // Guardar resultado actual
       localStorage.setItem('prediction', JSON.stringify(result))
@@ -31,7 +31,6 @@ export default function ImageUploader({ model }: { model: 'vgg16' | 'kan' }) {
         id: uuidv4(),
         image: base64Image,
         result,
-        model_used: result.model_used,
         created_at: new Date().toISOString(),
         review: undefined,
       })

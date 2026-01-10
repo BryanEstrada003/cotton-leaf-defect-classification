@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import { Grid } from "@mui/material";
 import type { PredictionResult } from "../types/prediction";
+import { Box } from "@mui/material";
 
 import DiagnosisCard from "../components/DiagnosisCard";
 import ConfidenceBar from "../components/ConfidenceBar";
@@ -28,7 +28,8 @@ export default function Result() {
 
     const current = parsedHistory.find(
       (item: any) =>
-        item.image === storedImage && item.result.class === parsedResult.class
+        item.image === storedImage &&
+        item.result.class === parsedResult.class
     );
 
     setResult(parsedResult);
@@ -40,41 +41,73 @@ export default function Result() {
     return <Loader />;
   }
 
+  const isPinned = historyItem.reviewPinned === true;
+
   const handleSaveReview = (review: any) => {
     const raw = localStorage.getItem("history");
     const history = raw ? JSON.parse(raw) : [];
 
     const updated = history.map((item: any) =>
-      item.id === historyItem.id ? { ...item, review } : item
+      item.id === historyItem.id
+        ? {
+            ...item,
+            review,
+            reviewPinned: true, // 🔒 se fija para siempre
+          }
+        : item
     );
 
     localStorage.setItem("history", JSON.stringify(updated));
-    setHistoryItem({ ...historyItem, review });
+
+    setHistoryItem({
+      ...historyItem,
+      review,
+      reviewPinned: true,
+    });
+
     setEditingReview(false);
   };
+
+  const ReviewComponent =
+    !historyItem.review || editingReview ? (
+      <DiagnosisReview
+        detectedClass={result.class}
+        initialReview={historyItem.review}
+        onSave={handleSaveReview}
+      />
+    ) : (
+      <ReviewCard
+        review={historyItem.review}
+        onEdit={() => setEditingReview(true)}
+      />
+    );
 
   return (
     <>
       <DiagnosisCard result={result} />
-      {!historyItem.review || editingReview ? (
-        <DiagnosisReview
-          detectedClass={result.class}
-          initialReview={historyItem.review}
-          onSave={handleSaveReview}
-        />
-      ) : (
-        <ReviewCard
-          review={historyItem.review}
-          onEdit={() => setEditingReview(true)}
-        />
-      )}
+
+      {/* POSICIÓN 1 */}
+      {isPinned && ReviewComponent}
+
       <ConfidenceBar confidence={result.confidence} />
       <ProbabilityChart probabilities={result.probabilities} />
-      <GradCamOverlay image={image} heatmap={result.heatmap_url
-  ? result.heatmap_url.startsWith('data:image')
-    ? result.heatmap_url
-    : `data:image/png;base64,${result.heatmap_url}`
-  : null} />
+
+      <Box align="center" >
+        <GradCamOverlay
+        image={image}
+        heatmap={
+          result.heatmap_url
+            ? result.heatmap_url.startsWith("data:image")
+              ? result.heatmap_url
+              : `data:image/png;base64,${result.heatmap_url}`
+            : null
+        }
+      />
+      </Box>
+        
+      
+      {/* POSICIÓN 2 */}
+      {!isPinned && ReviewComponent}
     </>
   );
 }

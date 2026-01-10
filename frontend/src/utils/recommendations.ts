@@ -17,7 +17,7 @@ export const recommendationsByClass: Record<string, string[]> = {
     "Eliminar restos vegetales infectados.",
   ],
 
-  "Healthy": [
+  "Hoja Sana": [
     "La planta se encuentra en buen estado.",
     "Mantener monitoreo periódico.",
     "Aplicar prácticas agrícolas preventivas.",

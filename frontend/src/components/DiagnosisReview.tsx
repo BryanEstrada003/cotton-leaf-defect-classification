@@ -11,7 +11,7 @@ import { useState, useEffect } from 'react'
 
 const ALL_CLASSES = [
   'Curl Virus',
-  'Healthy',
+  'Hoja Sana',
   'Leaf Reddening',
   'Leaf Spot Bacterial Blight',
 ]
@@ -58,7 +58,7 @@ export default function DiagnosisReview({
   }
 
   return (
-    <Card>
+    <Card sx={{ mt: 2 }}>
       <CardContent>
         <Typography variant="h6" gutterBottom>
           Revisión profesional

@@ -30,7 +30,7 @@ export default function Home() {
         para apoyar la toma de decisiones agrícolas.
       </Typography>
 
-      <Grid container spacing={4} sx={{ mt: 6 }}>
+      <Grid container justifyContent="center" spacing={4} sx={{ mt: 6 }}>
         {[
           {
             title: 'Detección Automática',

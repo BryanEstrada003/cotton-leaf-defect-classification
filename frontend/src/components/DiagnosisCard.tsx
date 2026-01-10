@@ -19,10 +19,6 @@ export default function DiagnosisCard({ result }: Props) {
 
         <Box sx={{ mt: 2 }}>
           <Chip
-            label={`Modelo: ${result.model_used}`}
-            sx={{ mr: 1 }}
-          />
-          <Chip
             label={`Tiempo: ${result.inference_time_ms} ms`}
             color="secondary"
           />

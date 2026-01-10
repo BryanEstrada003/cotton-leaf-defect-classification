@@ -7,7 +7,7 @@ interface Props {
 
 export default function ReviewCard({ review, onEdit }: Props) {
   return (
-    <Card>
+    <Card sx={{ mt: 2 }}>
       <CardContent>
         <Typography variant="h5">
           Revisión

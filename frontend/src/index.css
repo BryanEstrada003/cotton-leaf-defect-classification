@@ -66,3 +66,18 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+.gradcam-wrapper {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  justify-content: center;
+}
+
+.gradcam-wrapper img {
+  max-width: 100%;
+  max-height: 400px; /* 👈 límite común */
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
