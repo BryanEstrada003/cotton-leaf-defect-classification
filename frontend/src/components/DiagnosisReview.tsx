@@ -13,7 +13,7 @@ const ALL_CLASSES = [
   'Curl Virus',
   'Hoja Sana',
   'Leaf Reddening',
-  'Leaf Spot Bacterial Blight',
+  'Bacterial Blight',
 ]
 
 interface Props {

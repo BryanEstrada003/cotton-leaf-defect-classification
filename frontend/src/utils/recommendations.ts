@@ -11,7 +11,7 @@ export const recommendationsByClass: Record<string, string[]> = {
     "Evaluar condiciones de estrés ambiental.",
   ],
 
-  "Leaf Spot Bacterial Blight": [
+  "Bacterial Blight": [
     "Aplicar bactericidas específicos.",
     "Evitar el riego por aspersión.",
     "Eliminar restos vegetales infectados.",

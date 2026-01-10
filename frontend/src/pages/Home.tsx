@@ -37,10 +37,6 @@ export default function Home() {
             desc: 'Identificación temprana de enfermedades en hojas de algodón.',
           },
           {
-            title: 'Modelos de IA',
-            desc: 'Comparación entre arquitecturas KAN y CNN tradicionales.',
-          },
-          {
             title: 'Interpretabilidad',
             desc: 'Visualización Grad-CAM para explicar decisiones del modelo.',
           },

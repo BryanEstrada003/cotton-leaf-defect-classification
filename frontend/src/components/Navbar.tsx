@@ -22,8 +22,8 @@ export default function Navbar() {
           <Button color="inherit" onClick={() => navigate('/analyze')}>
             Analizar
           </Button>
-          <Button color="inherit" onClick={() => navigate('/about')}>
-            Proyecto
+          <Button color="inherit" onClick={() => navigate('/catalog')}>
+            Catálogo
           </Button>
           <Button color="inherit" onClick={() => navigate('/history')}>
             Historial

@@ -17,7 +17,7 @@ CLASS_NAMES = [
     "Curl Virus",
     "Hoja Sana",
     "Leaf Reddening",
-    "Leaf Spot Bacterial Blight",
+    "Bacterial Blight",
 ]
 
 # 🔹 Cargar modelo
