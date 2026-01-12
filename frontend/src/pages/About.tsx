@@ -51,21 +51,11 @@ export default function About() {
       ],
     },
     {
-      icon: <History />,
-      title: 'Historial de Diagnósticos',
-      items: [
-        'Registro completo de análisis',
-        'Búsqueda y filtrado avanzado',
-        'Exportación de reportes en múltiples formatos',
-      ],
-    },
-    {
       icon: <VerifiedUser />,
       title: 'Revisión por Profesionales',
       items: [
         'Validación experta por agrónomos',
         'Sistema de comentarios y correcciones',
-        'Control de calidad de diagnósticos',
       ],
     },
   ]
@@ -86,7 +76,6 @@ export default function About() {
       items: [
         'Herramienta de apoyo complementaria al expertise profesional',
         'Gestión centralizada de múltiples cultivos',
-        'Documentación automática para reportes',
       ],
     },
   ]
@@ -282,7 +271,6 @@ export default function About() {
                   flexWrap="wrap"
                   justifyContent="center"
                 >
-                  <Chip label="Material-UI" size="small" />
                   <Chip label="Diseño responsivo" size="small" />
                   <Chip label="Interfaz intuitiva" size="small" />
                   <Chip label="Compatibilidad móvil" size="small" />
@@ -306,9 +294,8 @@ export default function About() {
                   flexWrap="wrap"
                   justifyContent="center"
                 >
-                  <Chip label="Backend para imágenes" size="small" />
+                  <Chip label="Backend para procesamiento" size="small" />
                   <Chip label="Almacenamiento seguro" size="small" />
-                  <Chip label="Sistema de autenticación" size="small" />
                 </Stack>
               </Box>
             </Grid>
