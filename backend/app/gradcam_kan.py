@@ -4,7 +4,6 @@ import torch.nn.functional as F
 import numpy as np
 import cv2
 
-
 def generate_gradcam_kan(
     model: torch.nn.Module,
     input_tensor: torch.Tensor,
@@ -12,62 +11,71 @@ def generate_gradcam_kan(
     target_size=(224, 224),
 ):
     """
-    Grad-CAM aplicado al bloque CNN del modelo KAN
-    (igual que en el paper).
+    Grad-CAM adaptado específicamente para la arquitectura SBTAYLOR-KAN.
+    Resalta las regiones críticas que influyen en la clasificación.
     """
 
     model.eval()
 
-    # 🔹 Última capa convolucional
-    target_layer = model.features[-2]
+    # 🔹 Capa objetivo ajustada a tu arquitectura:
+    # En tu modelo 'Net', model.features[12] es la última capa Conv2d.
+    target_layer = model.features[12]
 
     activations = []
     gradients = []
 
-    # 🔹 Hooks
+    # 🔹 Hooks para capturar activaciones y gradientes [cite: 1288]
     def forward_hook(_, __, output):
         activations.append(output)
 
     def backward_hook(_, grad_input, grad_output):
+        # Captura los gradientes que fluyen hacia la última capa convolucional [cite: 26]
         gradients.append(grad_output[0])
 
     h1 = target_layer.register_forward_hook(forward_hook)
     h2 = target_layer.register_full_backward_hook(backward_hook)
 
-    # 🔹 Forward
+    # 🔹 Forward pass
     outputs = model(input_tensor)
+    
+    # Si no se proporciona class_idx, usamos la clase con mayor probabilidad
+    if class_idx is None:
+        class_idx = outputs.argmax(dim=1).item()
+        
     score = outputs[:, class_idx]
 
-    # 🔹 Backward
+    # 🔹 Backward pass para calcular gradientes respecto a la clase objetivo [cite: 1288]
     model.zero_grad()
     score.backward()
 
     # 🔹 Obtener activaciones y gradientes
-    acts = activations[0]          # [1, C, H, W]
-    grads = gradients[0]           # [1, C, H, W]
+    acts = activations[0]          # [1, 128, 14, 14]
+    grads = gradients[0]           # [1, 128, 14, 14]
 
-    # 🔹 Pesos α_k
+    # 🔹 Pesos α_k: Global Average Pooling de los gradientes [cite: 1288]
     weights = grads.mean(dim=(2, 3), keepdim=True)
 
-    # 🔹 Grad-CAM
+    # 🔹 Combinación lineal ponderada (Grad-CAM)
     cam = (weights * acts).sum(dim=1)
+    
+    # 🔹 ReLU para resaltar solo las características con influencia positiva [cite: 1305]
     cam = F.relu(cam)
 
-    # 🔹 Normalizar
+    # 🔹 Normalizar el mapa de calor
     cam = cam.squeeze().detach().cpu().numpy()
-    cam -= cam.min()
-    cam /= (cam.max() + 1e-8)
+    cam_min, cam_max = cam.min(), cam.max()
+    cam = (cam - cam_min) / (cam_max - cam_min + 1e-8)
 
-    # 🔹 Resize a tamaño original
+    # 🔹 Redimensionar al tamaño de la imagen original (target_size)
     cam = cv2.resize(cam, target_size)
 
-    # 🔹 Colormap
+    # 🔹 Generar mapa de calor visual (Heatmap) [cite: 26, 1294]
     heatmap = cv2.applyColorMap(
         np.uint8(255 * cam), cv2.COLORMAP_JET
     )
     heatmap = cv2.cvtColor(heatmap, cv2.COLOR_BGR2RGB)
 
-    # 🔹 Limpiar hooks
+    # 🔹 Limpiar hooks para evitar fugas de memoria o errores en llamadas futuras
     h1.remove()
     h2.remove()
 

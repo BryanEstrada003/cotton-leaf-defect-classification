@@ -1,12 +1,11 @@
-# app/model_kan.py
 import torch
 from pathlib import Path
 from io import BytesIO
 import base64
 from PIL import Image
 
-from app.kan_model import Net
-from app.gradcam_kan import generate_gradcam_kan
+from .kan_model import Net
+from .gradcam_kan import generate_gradcam_kan
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 MODEL_WEIGHTS = BASE_DIR / "app" / "kan_weights.pth"
@@ -58,7 +57,7 @@ def predict_kan_with_gradcam(image_tensor: torch.Tensor):
         model_kan,
         image_tensor,
         class_idx=idx,
-        target_size=(224, 224),
+        target_size=(224, 224)
     )
 
     # 🔹 Convertir a base64 (frontend-friendly)
