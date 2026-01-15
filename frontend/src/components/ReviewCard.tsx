@@ -1,4 +1,6 @@
 import { Card, CardContent, Typography, Button } from '@mui/material'
+import { useAppStore } from '../stores/appMode'
+
 
 interface Props {
   review: any
@@ -6,6 +8,9 @@ interface Props {
 }
 
 export default function ReviewCard({ review, onEdit }: Props) {
+
+  const { isTechnician } = useAppStore();
+
   return (
     <Card sx={{ mt: 2 }}>
       <CardContent>
@@ -22,10 +27,11 @@ export default function ReviewCard({ review, onEdit }: Props) {
             {review.comments}
           </Typography>
         )}
-
+        {!isTechnician && (
         <Button variant="outlined" onClick={onEdit} sx={{ mt: 2 }}>
           Editar revisión
         </Button>
+        )}
       </CardContent>
     </Card>
   )

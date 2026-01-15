@@ -5,24 +5,28 @@ import DiagnosisCard from '../components/DiagnosisCard'
 import ConfidenceBar from '../components/ConfidenceBar'
 import ProbabilityChart from '../components/ProbabilityChart'
 import GradCamOverlay from '../components/GradCamOverlay'
-import Loader from '../components/Loader'
+import About from './About'
 import DiagnosisReview from '../components/DiagnosisReview'
 import ReviewCard from '../components/ReviewCard'
 import { useNavigate } from 'react-router-dom'
 
 import { useCurrentDiagnosisStore } from '../stores/useCurrentDiagnosisStore'
 import { useHistoryStore } from '../stores/useHistoryStore'
+import { useAppStore } from "../stores/appMode";
+
 
 export default function Result() {
   const current = useCurrentDiagnosisStore((s) => s.current)
   const updateDiagnosis = useHistoryStore((s) => s.updateDiagnosis)
+
+  const { isTechnician } = useAppStore();
 
   const [editingReview, setEditingReview] = useState(false)
   const navigate = useNavigate()
 
 
   if (!current) {
-    return <Loader />
+    return <About />
   }
 
   const { result, image, review } = current
@@ -58,7 +62,10 @@ export default function Result() {
     <>
       <DiagnosisCard result={result} />
 
-      {isPinned && ReviewComponent}
+      {!isTechnician && isPinned && ReviewComponent}
+      {isTechnician && isPinned && <ReviewCard
+        review={review}
+      />}
 
       <ConfidenceBar confidence={result.confidence} />
       <ProbabilityChart probabilities={result.probabilities} />
@@ -76,7 +83,7 @@ export default function Result() {
         />
       </Box>
 
-      {!isPinned && ReviewComponent}
+      {!isTechnician && !isPinned && ReviewComponent}
     </>
   )
 }
