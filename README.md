@@ -1,35 +1,34 @@
 # 🌱 CotVision
 
-CotVision es una plataforma de diagnóstico agrícola basada en inteligencia artificial
-para la detección de enfermedades foliares en hojas de algodón, utilizando visión por
-computador, deep learning e interpretabilidad mediante Grad-CAM.
+CotVision is an AI-based agricultural diagnosis platform for the detection of foliar diseases in cotton leaves, utilizing computer vision, deep learning, and interpretability via Grad-CAM.
 
 ---
 
-## 🚀 Características principales
+## 🚀 Key Features
 
-* 📷 Carga de imágenes de hojas de algodón
-* 🤖 Inferencia mediante modelo de IA
-* 📊 Visualización de probabilidades por clase
-* 🔍 Interpretabilidad visual mediante Grad-CAM
-* 🧩 Arquitectura desacoplada (React + FastAPI)
-* 📄 Documentación automática de la API (Swagger)
+* 📷 Cotton leaf image upload
+* 🤖 Inference via AI model
+* 📊 Visualization of probabilities per class
+* 🔍 Visual interpretability via Grad-CAM
+* 🧩 Decoupled architecture (React + FastAPI)
+* 📄 Automatic API documentation (Swagger)
 
 ---
 
-## 🏗️ Arquitectura del proyecto
+## 🏗️ Project Architecture
 
 ```text
 cotvision/
-├── frontend/   # Interfaz gráfica (React + TypeScript + Material UI)
-└── backend/    # API REST (FastAPI)
+├── frontend/   # User Interface (React + TypeScript + Material UI)
+└── backend/    # REST API (FastAPI)
+
 ```
 
 ---
 
 ## 🖥️ Frontend
 
-### Tecnologías utilizadas
+### Technologies Used
 
 * React
 * TypeScript
@@ -39,30 +38,33 @@ cotvision/
 * Recharts
 * Vite
 
-### 📦 Instalación del frontend
+### 📦 Frontend Installation
 
 ```bash
 cd frontend
 npm install
+
 ```
 
-### ▶️ Ejecución del frontend
+### ▶️ Running the Frontend
 
 ```bash
 npm run dev
+
 ```
 
-La aplicación estará disponible en:
+The application will be available at:
 
 ```
 http://localhost:5173
+
 ```
 
 ---
 
 ## ⚙️ Backend
 
-### Tecnologías utilizadas
+### Technologies Used
 
 * Python 3.9+
 * FastAPI
@@ -71,47 +73,52 @@ http://localhost:5173
 * Pillow
 * python-multipart
 
-### 📦 Instalación del backend
+### 📦 Backend Installation
 
 ```bash
 cd backend
 python3 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
+
 ```
 
-### ▶️ Ejecución del backend
+### ▶️ Running the Backend
 
 ```bash
 uvicorn app.main:app --reload --port 8000
+
 ```
 
-La API estará disponible en:
+The API will be available at:
 
 ```
 http://localhost:8000
+
 ```
 
-Documentación interactiva de la API (Swagger UI):
+Interactive API documentation (Swagger UI):
 
 ```
 http://localhost:8000/docs
+
 ```
 
 ---
 
-## 🔄 Flujo de funcionamiento
+## 🔄 Workflow
 
-1. El usuario carga una imagen desde la interfaz web
-2. La imagen se envía al backend mediante el endpoint `POST /predict`
-3. El backend procesa la imagen
-4. Se devuelve la predicción con:
+1. The user uploads an image via the web interface
+2. The image is sent to the backend via the `POST /predict` endpoint
+3. The backend processes the image
+4. The prediction is returned containing:
+* Detected class
+* Confidence level
+* Probabilities per class
+* Inference time
+* Grad-CAM (heatmap)
 
-   * Clase detectada
-   * Nivel de confianza
-   * Probabilidades por clase
-   * Tiempo de inferencia
-   * Grad-CAM (heatmap)
-5. El frontend muestra los resultados, métricas e interpretabilidad visual
+
+5. The frontend displays the results, metrics, and visual interpretability
 
 ---
