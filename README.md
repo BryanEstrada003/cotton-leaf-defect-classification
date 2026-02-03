@@ -50,7 +50,6 @@ The model was trained on a composite dataset merging **SAR-CLD-2024** and **COT-
 | Metric | VGG16 (Transfer Learning) | SBTAYLOR-KAN (Proposed) |
 | :--- | :---: | :---: |
 | **Accuracy** | 88.73% | **94.80%** |
-| **Parameters** | ~14.8 Million | **~241,536** (Compact) |
 | **Inference Time** | Slower | **~300ms** (Real-time ready) |
 | **Convergence** | Slow | Fast |
 
