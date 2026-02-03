@@ -1,4 +1,4 @@
-# Cotton Leaf Disease Diagnosis System 🌿🦠
+# Cotton Leaf Defect Classification System 🌿🦠
 
 ![Project Status](https://img.shields.io/badge/Status-Completed-success)
 ![Institution](https://img.shields.io/badge/Institution-ESPOL-blue)
@@ -68,8 +68,8 @@ The model was trained on a composite dataset merging **SAR-CLD-2024** and **COT-
 
 1.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/yourusername/cotton-disease-diagnosis.git](https://github.com/yourusername/cotton-disease-diagnosis.git)
-    cd cotton-disease-diagnosis
+    git clone [https://github.com/BryanEstrada003/cotton-leaf-defect-classification.git](https://github.com/BryanEstrada003/cotton-leaf-defect-classification.git)
+    cd cotton-leaf-defect-classification
     ```
 
 2.  **Install dependencies:**
